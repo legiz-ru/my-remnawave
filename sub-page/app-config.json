@@ -4,7 +4,7 @@
             "id": "sing-box",
             "name": "sing-box",
             "isFeatured": true,
-            "urlScheme": "happ://add/",
+            "urlScheme": "sing-box://import-remote-profile/?url=",
             "installationStep": {
                 "buttons": [
                     {
