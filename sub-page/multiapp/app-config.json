@@ -470,6 +470,80 @@
                     "ru": "Выбрать сервер можно в разделе Прокси, включить VPN можно в разделе Настройки. Установите переключатель TUN Mode в положение ВКЛ."
                 }
             }
+        },
+        {
+            "id": "flclash",
+            "name": "FlClash",
+            "isFeatured": false,
+            "urlScheme": "clash://install-config?url=",
+            "installationStep": {
+                "buttons": [
+                    {
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-windows-amd64-setup.exe",
+                        "buttonText": {
+                            "en": "Windows",
+                            "fa": "ویندوز",
+                            "ru": "Windows"
+                        }
+                    },
+                    {
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-macos-amd64.dmg",
+                        "buttonText": {
+                            "en": "macOS (Intel)",
+                            "fa": "مک (اینتل)",
+                            "ru": "macOS (Intel)"
+                        }
+                    },
+                    {
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-macos-arm64.dmg",
+                        "buttonText": {
+                            "en": "macOS (Apple Silicon)",
+                            "fa": "مک (Apple Silicon)",
+                            "ru": "macOS (Apple Silicon)"
+                        }
+                    },
+                    {
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/latest",
+                        "buttonText": {
+                            "en": "Linux",
+                            "fa": "لینوکس",
+                            "ru": "Linux"
+                        }
+                    }
+                ],
+                "description": {
+                    "en": "Choose the version for your device, click the button below and install the app.",
+                    "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                    "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
+                }
+            },
+            "addSubscriptionStep": {
+                "description": {
+                    "en": "Click the button below to add subscription",
+                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку"
+                }
+            },
+            "additionalAfterAddSubscriptionStep": {
+                "buttons": [],
+                "title": {
+                    "en": "If the subscription is not added",
+                    "fa": "اگر اشتراک در برنامه نصب نشده است",
+                    "ru": "Если подписка не добавилась"
+                },
+                "description": {
+                    "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
+                    "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
+                    "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить"
+                }
+            },
+            "connectAndUseStep": {
+                "description": {
+                    "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
+                    "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
+                    "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. "
+                }
+            }
         }
     ]
 }
