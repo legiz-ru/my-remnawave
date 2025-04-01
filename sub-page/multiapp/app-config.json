@@ -140,6 +140,44 @@
                     "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
                 }
             }
+        },
+        {
+            "id": "shadowrocket",
+            "name": "Shadowrocket",
+            "isFeatured": false,
+            "urlScheme": "sub://",
+            "isNeedBase64Encoding": true,
+            "installationStep": {
+                "buttons": [
+                    {
+                        "buttonLink": "https://apps.apple.com/ru/app/shadowrocket/id932747118",
+                        "buttonText": {
+                            "en": "Open in App Store",
+                            "fa": "باز کردن در App Store",
+                            "ru": "Открыть в App Store"
+                        }
+                    }
+                ],
+                "description": {
+                    "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                    "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                    "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
+                }
+            },
+            "addSubscriptionStep": {
+                "description": {
+                    "en": "Click the button below — the app will open and the subscription will be added automatically",
+                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
+                }
+            },
+            "connectAndUseStep": {
+                "description": {
+                    "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                    "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                    "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
+                }
+            }
         }
     ],
     "android": [
