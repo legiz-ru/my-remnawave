@@ -304,9 +304,9 @@
                     }
                 ],
                 "description": {
-                    "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
-                    "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
-                    "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
+                    "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
+                    "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
+                    "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
                 }
             },
             "addSubscriptionStep": {
@@ -318,9 +318,9 @@
             },
             "connectAndUseStep": {
                 "description": {
-                    "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
-                    "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
-                    "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN."
+                    "en": "On the Dashboard page, select the added profile and click the Enable button in the bottom right corner to connect to the VPN.",
+                    "fa": "در صفحه اصلی داشبورد، پروفایل اضافه‌شده را انتخاب کنید و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید تا به VPN متصل شوید.",
+                    "ru": "На главной странице Dashboard выберите добавленный профиль и нажмите кнопку Включить в правом нижнем углу для подключения к VPN."
                 }
             }
         },
@@ -361,11 +361,24 @@
                     "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
                 }
             },
+            "additionalAfterAddSubscriptionStep": {
+                "buttons": [],
+                "title": {
+                    "en": "Update subscriptions",
+                    "fa": "به‌روزرسانی اشتراک‌ها",
+                    "ru": "Обновление подписки"
+                },
+                "description": {
+                    "en": "Tap the three dots in the top-right corner and select Update subscription. After that, the available servers will appear in the list.",
+                    "fa": "روی سه نقطه در گوشه بالا سمت راست کلیک کنید و گزینه به‌روزرسانی اشتراک را انتخاب کنید. سپس سرورهای موجود در لیست ظاهر می‌شوند.",
+                    "ru": "Нажмите на три точечки справа сверху и выберите Обновить подписку. После этого в списке появятся доступные серверы"
+                }
+            },
             "connectAndUseStep": {
                 "description": {
-                    "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
-                    "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
-                    "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN."
+                    "en": "Select the required server and click the Enable button in the bottom right corner.",
+                    "fa": "سرور موردنظر را انتخاب کنید و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید.",
+                    "ru": "Выберите требуемый сервер и нажмите кнопку Включить в правом нижнем углу"
                 }
             }
         }
