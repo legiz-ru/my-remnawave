@@ -189,7 +189,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.7/cmfa-2.11.7-meta-universal-release.apk",
+                        "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.8/cmfa-2.11.8-meta-universal-release.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -287,7 +287,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.6/SFA-1.11.6-universal.apk",
+                        "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.7/SFA-1.11.7-universal.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -379,6 +379,64 @@
                     "en": "Select the required server and click the Enable button in the bottom right corner.",
                     "fa": "سرور موردنظر را انتخاب کنید و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید.",
                     "ru": "Выберите требуемый сервер и нажмите кнопку Включить в правом нижнем углу"
+                }
+            }
+        },
+        {
+            "id": "exclave",
+            "name": "Exclave",
+            "isFeatured": false,
+            "urlScheme": "exclave://subscription?url=",
+            "installationStep": {
+                "buttons": [
+                    {
+                        "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.13.14/Exclave-0.13.14-arm64-v8a.apk",
+                        "buttonText": {
+                            "en": "Download APK",
+                            "fa": "دانلود APK",
+                            "ru": "Скачать APK"
+                        }
+                    },
+                    {
+                        "buttonLink": "https://f-droid.org/packages/com.github.dyhkwong.sagernet",
+                        "buttonText": {
+                            "en": "Open in F-Droid",
+                            "fa": "در F-Droid باز کنید",
+                            "ru": "Открыть в F-Droid"
+                        }
+                    }
+                ],
+                "description": {
+                    "en": "Download and install Exclave APK",
+                    "fa": "دانلود و نصب Exclave APK",
+                    "ru": "Скачайте и установите Exclave APK"
+                }
+            },
+            "addSubscriptionStep": {
+                "description": {
+                    "en": "Click the button below to add subscription",
+                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку"
+                }
+            },
+            "additionalAfterAddSubscriptionStep": {
+                "buttons": [],
+                "title": {
+                    "en": "Enable subscription auto-renewal", 
+                    "fa": "تمدید خودکار اشتراک را فعال کنید", 
+                    "ru": "Включите автообновление подписки"
+                },
+                "description": {
+                    "en": "In the Groups section, go to the editing mode of the added subscription and enable the toggle next to Auto-Renewal. You can also rename the subscription if needed.",
+                    "fa": "در بخش گروه‌ها، وارد حالت ویرایش اشتراک اضافه‌شده شوید و گزینه تمدید خودکار را فعال کنید. همچنین در صورت نیاز می‌توانید نام اشتراک را تغییر دهید.",
+                    "ru": "В разделе Группы перейдите в режим редактирования добавленной подписки, включите переключатель у пункта Автоматическое обновление. Так же вы можете переименовать подписку, если требуется."
+                }
+            },
+            "connectAndUseStep": {
+                "description": {
+                    "en": "Select the desired server in the Configuration section and click the Enable button in the bottom right corner.",
+                    "fa": "در بخش پیکربندی، سرور مورد نظر را انتخاب کرده و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید.",
+                    "ru": "Выберите требуемый сервер в разделе Конфигурация и нажмите кнопку Включить в правом нижнем углу"
                 }
             }
         }
@@ -479,7 +537,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-windows-amd64-setup.exe",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.81/FlClash-0.8.81-windows-amd64-setup.exe",
                         "buttonText": {
                             "en": "Windows",
                             "fa": "ویندوز",
@@ -487,7 +545,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-macos-amd64.dmg",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.81/FlClash-0.8.81-macos-amd64.dmg",
                         "buttonText": {
                             "en": "macOS (Intel)",
                             "fa": "مک (اینتل)",
@@ -495,7 +553,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.80/FlClash-0.8.80-macos-arm64.dmg",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.81/FlClash-0.8.81-macos-arm64.dmg",
                         "buttonText": {
                             "en": "macOS (Apple Silicon)",
                             "fa": "مک (Apple Silicon)",

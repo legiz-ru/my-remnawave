@@ -2,6 +2,30 @@
 ## remnawave-subscription-page [сlient configuration](https://remna.st/subscription-templating/client-configuration#client-configuration)
   - [simple (Clash Verge Rev for PC, Clash Meta for Android, sing-box for iOS)](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/app-config.json)
   - [multiapp](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/multiapp/app-config.json)
+<details>
+  <summary>multiapp</summary>
+  
+[link to multiapp app-config.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/multiapp/app-config.json)
+
+included apps:
+  - iOS:
+  - - sing-box
+  - - Happ
+  - - Streisand
+  - - ShadowRocket
+  - Android:
+  - - Clash Meta for Android
+  - - Happ
+  - - sing-box
+  - - v2rayNG
+  - - Exclave
+  - PC:
+  - - Clash Verge Rev
+  - - FlClash
+  - - Happ (alpha)
+
+</details>
+
 ## remnawave subscription  templates for clients
   - [mihomo](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/remnawave.yaml)
   - [sing-box (1.11 sing-box, 1.10 sing-box legacy)](https://github.com/legiz-ru/sb-rule-sets/tree/main/.github/sub2sing-box)
