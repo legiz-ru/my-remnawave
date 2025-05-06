@@ -178,6 +178,43 @@
                     "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
                 }
             }
+        },
+        {
+            "id": "clash-mi",
+            "name": "Clash Mi",
+            "isFeatured": false,
+            "urlScheme": "clash://install-config?overwrite=no&name=Remnawave&url=",
+            "installationStep": {
+                "buttons": [
+                    {
+                        "buttonLink": "https://testflight.apple.com/join/bjHXktB3",
+                        "buttonText": {
+                            "en": "Open in TestFlight",
+                            "fa": "باز کردن در TestFlight",
+                            "ru": "Открыть в TestFlight"
+                        }
+                    }
+                ],
+                "description": {
+                    "en": "Open the TestFlight page and install the app.",
+                    "fa": "صفحه TestFlight را باز کرده و برنامه را نصب کنید.",
+                    "ru": "Откройте страницу в TestFlight и установите приложение."
+                }
+            },
+            "addSubscriptionStep": {
+                "description": {
+                    "en": "Tap the button below — the app will open and the subscription will be added automatically.",
+                    "fa": "روی دکمه زیر ضربه بزنید — برنامه باز می‌شود و اشتراک به‌صورت خودکار اضافه می‌گردد.",
+                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
+                }
+            },
+            "connectAndUseStep": {
+                "description": {
+                    "en": "On the main screen, tap the Disconnected button, then in the VPN configuration prompt tap Allow and enter your password to connect.",
+                    "fa": "در صفحه اصلی روی دکمه Disconnected بزنید، سپس در پنجره مجوز پیکربندی VPN روی Allow ضربه بزنید و برای اتصال، رمز عبور خود را وارد کنید.",
+                    "ru": "На главной странице нажми кнопку Disconnected,  в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN."
+                }
+            }
         }
     ],
     "android": [
@@ -185,11 +222,11 @@
             "id": "clash-meta",
             "name": "Clash Meta",
             "isFeatured": true,
-            "urlScheme": "clash://install-config?url=",
+            "urlScheme": "clash://install-config?name=Remnawave&url=",
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.8/cmfa-2.11.8-meta-universal-release.apk",
+                        "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.9/cmfa-2.11.9-meta-universal-release.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -287,7 +324,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.7/SFA-1.11.7-universal.apk",
+                        "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.10/SFA-1.11.10-universal.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -328,7 +365,7 @@
             "id": "v2rayNG",
             "name": "v2rayNG",
             "isFeatured": false,
-            "urlScheme": "v2rayng://install-config?url=",
+            "urlScheme": "v2rayng://install-config?name=Remnawave&url=",
             "installationStep": {
                 "buttons": [
                     {
@@ -340,7 +377,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.9.45/v2rayNG_1.9.45_universal.apk",
+                        "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.1/v2rayNG_1.10.1_universal.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -390,7 +427,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.13.14/Exclave-0.13.14-arm64-v8a.apk",
+                        "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.14.5/Exclave-0.14.5-arm64-v8a.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -422,8 +459,8 @@
             "additionalAfterAddSubscriptionStep": {
                 "buttons": [],
                 "title": {
-                    "en": "Enable subscription auto-renewal", 
-                    "fa": "تمدید خودکار اشتراک را فعال کنید", 
+                    "en": "Enable subscription auto-renewal",
+                    "fa": "تمدید خودکار اشتراک را فعال کنید",
                     "ru": "Включите автообновление подписки"
                 },
                 "description": {
@@ -446,7 +483,7 @@
             "id": "clash-verge",
             "name": "Clash Verge",
             "isFeatured": true,
-            "urlScheme": "clash://install-config?url=",
+            "urlScheme": "clash://install-config?name=Remnawave&url=",
             "installationStep": {
                 "buttons": [
                     {
@@ -533,11 +570,11 @@
             "id": "flclash",
             "name": "FlClash",
             "isFeatured": false,
-            "urlScheme": "clash://install-config?url=",
+            "urlScheme": "clash://install-config?name=Remnawave&url=",
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.81/FlClash-0.8.81-windows-amd64-setup.exe",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.84/FlClash-0.8.84-windows-amd64-setup.exe",
                         "buttonText": {
                             "en": "Windows",
                             "fa": "ویندوز",
@@ -545,7 +582,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.81/FlClash-0.8.81-macos-amd64.dmg",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.84/FlClash-0.8.84-macos-amd64.dmg",
                         "buttonText": {
                             "en": "macOS (Intel)",
                             "fa": "مک (اینتل)",
@@ -553,7 +590,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.81/FlClash-0.8.81-macos-arm64.dmg",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.84/FlClash-0.8.84-macos-arm64.dmg",
                         "buttonText": {
                             "en": "macOS (Apple Silicon)",
                             "fa": "مک (Apple Silicon)",

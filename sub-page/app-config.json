@@ -43,7 +43,7 @@
             "id": "clash-meta",
             "name": "Clash Meta",
             "isFeatured": true,
-            "urlScheme": "clash://install-config?url=",
+            "urlScheme": "clash://install-config?name=Remnawave&url=",
             "installationStep": {
                 "buttons": [
                     {
@@ -90,7 +90,7 @@
             "id": "clash-verge",
             "name": "Clash Verge",
             "isFeatured": true,
-            "urlScheme": "clash://install-config?url=",
+            "urlScheme": "clash://install-config?name=Remnawave&url=",
             "installationStep": {
                 "buttons": [
                     {

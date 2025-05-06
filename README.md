@@ -12,6 +12,7 @@ included apps:
   - - Happ
   - - Streisand
   - - ShadowRocket
+  - - Clash Mi
   - Android:
   - - Clash Meta for Android
   - - Happ
@@ -144,6 +145,26 @@ happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI
   "scMinPostsIntervalMs": 30,
   "scStreamUpServerSecs": "20-80"
 }
+```
+
+</details>
+
+<details>
+  <summary>remnanode docker compose:</summary>
+
+```yaml
+services:
+
+  remnanode:
+    image: remnawave/node:latest
+    container_name: remnanode
+    hostname: remnanode
+    restart: always
+    env_file:
+      - .env-node
+    volumes:
+      - /dev/shm:/dev/shm
+    network_mode: host
 ```
 
 </details>
