@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%= metaTitle %>
+    </title>
+    <meta name="description" content="<%= metaDescription %>" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        .fixed {
+            position: fixed;
+        }
+
+        #subscription-qr-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        аы #subscription-qr-container button {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        #subscription-qr-container button:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        #subscription-qr {
+            padding: 0.5rem;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #1e293b;
+            border-radius: 9999px;
+            height: 8px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 9999px;
+            transition: width 0.3s ease;
+        }
+
+        .power-button-container {
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            margin-top: 2rem;
+        }
+
+        .power-button {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #1a2437, #0d1524);
+            position: relative;
+            margin: 2rem auto;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow:
+                0 0 30px rgba(59, 130, 246, 0.3),
+                inset 0 0 15px rgba(0, 0, 0, 0.5);
+            border: 4px solid rgba(59, 130, 246, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .power-symbol {
+            width: 50%;
+            height: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .power-symbol::before {
+            content: '';
+            width: 8px;
+            height: 50%;
+            background: #3b82f6;
+            position: absolute;
+            top: 0;
+            border-radius: 4px;
+            box-shadow: 0 0 15px #3b82f6;
+        }
+
+        .power-symbol::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 8px solid #3b82f6;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 0 15px #3b82f6;
+            clip-path: inset(25% 0 0 0);
+        }
+
+        .power-button:hover {
+            transform: scale(1.05);
+            box-shadow:
+                0 0 50px rgba(59, 130, 246, 0.5),
+                inset 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .power-button:active {
+            transform: scale(0.95);
+            box-shadow:
+                0 0 20px rgba(59, 130, 246, 0.3),
+                inset 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .power-button.active {
+            animation: glow 2s infinite;
+        }
+
+        .power-panel {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 15px;
+            background: rgba(30, 41, 59, 0.5);
+            margin-top: 1rem;
+        }
+
+        .power-status {
+            font-family: 'Roboto Mono', monospace;
+            color: #3b82f6;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .modal.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: #1e293b;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+            width: 90%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: #64748b;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .modal-close:hover {
+            color: #e2e8f0;
+        }
+
+        .download-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0.5rem 0;
+            transition: transform 0.2s ease;
+        }
+
+        .download-button:hover {
+            transform: scale(1.05);
+        }
+
+        .download-button img {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 50px rgba(59, 130, 246, 0.6);
+            }
+
+            100% {
+                box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto relative"> <!-- Добавлен класс relative -->
+            <!-- QR код кнопка -->
+            <button onclick="generateSubscriptionQR()"
+                class="absolute -top-4 right-0 w-10 h-10 flex items-center justify-center bg-slate-700 hover:bg-slate-600 rounded-full transition-colors z-50">
+                <i class="fas fa-qrcode text-gray-300"></i>
+            </button>
+
+            <!-- Контейнер для QR кода -->
+            <div id="subscription-qr-container"
+                class="hidden absolute top-8 right-0 bg-white p-4 rounded-lg shadow-lg z-50">
+                <button onclick="generateSubscriptionQR()"
+                    class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div id="subscription-qr" class="mt-4"></div>
+            </div>
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <div class="inline-block p-2 rounded-full bg-blue-500 bg-opacity-10 mb-4">
+                    <i class="fas fa-shield-alt text-blue-500 text-3xl"></i>
+                </div>
+                <h1 class="text-4xl font-bold mb-2 gradient-text">
+                    <%= metaTitle %>
+                </h1>
+                <p class="text-xl text-gray-400">
+                    <%= metaDescription %>
+                </p>
+            </div>
+
+            <div id="app" class="opacity-0 transition-opacity duration-700">
+                <!-- User Info Card -->
+                <div class="glass-effect p-6 mb-8">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div>
+                            <h2 class="text-2xl font-bold mb-1">
+                                Добро пожаловать,
+                                <span id="username" class="text-blue-500"></span>
+                            </h2>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <div id="status-container" class="flex items-center px-3 py-1 rounded-full">
+                                <span id="status-dot" class="w-3 h-3 rounded-full mr-2"></span>
+                                <span id="user-status"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Subscription Expiry -->
+                        <div class="p-4 rounded-lg bg-slate-800">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-400">Срок действия подписки</span>
+                                <span id="days-left" class="font-semibold text-blue-500"></span>
+                            </div>
+                            <p id="expires-at" class="text-lg font-bold"></p>
+                        </div>
+
+                        <!-- Traffic Usage Section -->
+                        <!-- Traffic Usage Section -->
+                        <div class="p-4 rounded-lg bg-slate-800">
+                            <!-- Desktop версия (2 строки) -->
+                            <div class="hidden md:block">
+                                <!-- Первая строка -->
+                                <div class="flex justify-between items-center mb-2">
+                                    <div class="text-gray-400">Сброс трафика</div>
+                                    <div id="traffic-strategy-desktop" class="font-semibold text-blue-500"></div>
+                                </div>
+                                <!-- Вторая строка -->
+                                <div class="flex justify-between items-center">
+                                    <div class="text-gray-400">Использовано трафика:</div>
+                                    <div id="traffic-used-desktop" class="font-bold"></div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile версия (4 строки) -->
+                            <div class="block md:hidden">
+                                <!-- Первая строка -->
+                                <div class="text-gray-400 mb-1">Сброс трафика</div>
+                                <!-- Вторая строка -->
+                                <div id="traffic-strategy-mobile" class="font-semibold text-blue-500 mb-3"></div>
+                                <!-- Третья строка -->
+                                <div class="text-gray-400 mb-1">Использовано трафика:</div>
+                                <!-- Четвертая строка -->
+                                <div id="traffic-used-mobile" class="font-bold"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Button -->
+                <div class="power-button-container glass-effect">
+                    <div id="powerButton" class="power-button">
+                        <div class="power-symbol"></div>
+                    </div>
+                    <div class="power-panel">
+                        <div class="power-status" id="powerStatus">СИСТЕМА ГОТОВА К ЗАПУСКУ</div>
+                    </div>
+                </div>
+
+                <!-- Hidden subscription URL input -->
+                <input id="subscription-url" type="hidden" value="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="modal-close">&times;</button>
+            <p class="text-xl mb-6">Не включилось? Сначала скачай приложение:</p>
+            <div id="downloadButtons" class="flex flex-col gap-4">
+                <!-- Download buttons will be injected here -->
+            </div>
+        </div>
+    </div>
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script>
+        function generateSubscriptionQR() {
+            const subscriptionUrl = document.getElementById('subscription-url')?.value;
+            const qrContainer = document.getElementById('subscription-qr-container');
+            const qrElement = document.getElementById('subscription-qr');
+
+            if (!subscriptionUrl) {
+                return;
+            }
+
+            if (qrContainer.classList.contains('hidden')) {
+                qrElement.innerHTML = '';
+                qrContainer.classList.remove('hidden');
+
+                new QRCode(qrElement, {
+                    text: subscriptionUrl,
+                    width: 180,
+                    height: 180,
+                    colorDark: '#000000',
+                    colorLight: '#ffffff',
+                    correctLevel: QRCode.CorrectLevel.H,
+                });
+            } else {
+                qrContainer.classList.add('hidden');
+            }
+        }
+
+        function getDownloadButtons(platform) {
+            switch (platform) {
+                case 'android':
+                    return `
+                                    <div class="flex flex-col gap-4">
+                                        <a href="https://play.google.com/store/apps/details?id=com.happproxy" target="_blank" class="download-button">
+                                            <img alt="Get it on Google Play" src="https://camo.githubusercontent.com/1c498046b5901ad8edbda2642aac002794df0c6f17aac9787f648bf776912914/68747470733a2f2f706c61792e676f6f676c652e636f6d2f696e746c2f656e5f75732f6261646765732f696d616765732f67656e657269632f656e5f62616467655f7765625f67656e657269632e706e67" style="height: 60px;"/>
+                                        </a>
+                                        <a href="https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk" target="_blank" class="download-button">
+                                            <img alt="Get it on GitHub" src="https://raw.githubusercontent.com/mateusz-bak/openreads/master/doc/github/get-it-on-github.png" style="height: 60px;"/>
+                                        </a>
+                                    </div>`;
+                case 'iphone':
+                    return `
+                                    <a href="https://apps.apple.com/us/app/happ-proxy-utility/id6504287215" target="_blank" class="download-button">
+                                        <img alt="Download on the App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 60px;"/>
+                                    </a>`;
+                case 'ipad':
+                    return `
+                                    <a href="https://apps.apple.com/us/app/happ-proxy-utility/id6504287215" target="_blank" class="download-button">
+                                        <img alt="Download on the App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 60px;"/>
+                                    </a>`;
+                case 'windows':
+                    return `
+                                    <a href="https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe" target="_blank" class="download-button">
+                                        <img alt="Get it on GitHub" src="https://raw.githubusercontent.com/mateusz-bak/openreads/master/doc/github/get-it-on-github.png" style="height: 60px;"/>
+                                    </a>`;
+                case 'linux':
+                    return `
+                                    <a href="https://github.com/Happ-proxy/happ-desktop/releases/" target="_blank" class="download-button">
+                                        <img alt="Get it on GitHub" src="https://raw.githubusercontent.com/mateusz-bak/openreads/master/doc/github/get-it-on-github.png" style="height: 60px;"/>
+                                    </a>`;
+                case 'macos':
+                    return `
+                                    <a href="https://github.com/Happ-proxy/happ-desktop/releases/" target="_blank" class="download-button">
+                                        <img alt="Get it on GitHub" src="https://raw.githubusercontent.com/mateusz-bak/openreads/master/doc/github/get-it-on-github.png" style="height: 60px;"/>
+                                    </a>`;
+                default:
+                    return `
+                                    <a href="https://github.com/Happ-proxy/happ-desktop/releases/" target="_blank" class="download-button">
+                                        <img alt="Get it on GitHub" src="https://raw.githubusercontent.com/mateusz-bak/openreads/master/doc/github/get-it-on-github.png" style="height: 60px;"/>
+                                    </a>`;
+            }
+        }
+
+        function detectPlatform() {
+            const ua = navigator.userAgent.toLowerCase();
+            if (ua.includes('android')) return 'android';
+            if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod')) return 'ios';
+            if (ua.includes('win')) return 'windows';
+            if (ua.includes('mac')) return 'macos';
+            if (ua.includes('linux')) return 'linux';
+            return 'unknown';
+        }
+
+        function handlePowerClick() {
+            const powerButton = document.getElementById('powerButton');
+            const powerStatus = document.getElementById('powerStatus');
+            const subscriptionUrl = document.getElementById('subscription-url')?.value || '';
+            const modal = document.getElementById('modal');
+            const downloadButtons = document.getElementById('downloadButtons');
+
+            powerButton.classList.add('active');
+            powerStatus.textContent = 'АКТИВАЦИЯ...';
+
+            // Use happ:// URL for all platforms
+            const primaryUrl = `happ://add/${subscriptionUrl}`;
+            const platform = detectPlatform();
+
+            // Update download buttons based on platform
+            downloadButtons.innerHTML = getDownloadButtons(platform);
+
+            // Try to open primary URL first
+            window.location.href = primaryUrl;
+
+            // Show modal if primary URL doesn't open
+            setTimeout(() => {
+                modal.classList.add('active');
+                powerStatus.textContent = 'СИСТЕМА ГОТОВА К ЗАПУСКУ';
+            }, 1000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const powerButton = document.getElementById('powerButton');
+            const modal = document.getElementById('modal');
+            const closeModal = document.getElementById('closeModal');
+
+            if (powerButton) {
+                powerButton.addEventListener('click', handlePowerClick);
+            }
+
+            if (closeModal) {
+                closeModal.addEventListener('click', () => {
+                    modal.classList.remove('active');
+                });
+            }
+
+            // Initialize with panel data
+            let panelData = '<%- panelData %>';
+            document.getElementById('app').style.opacity = '1';
+
+            try {
+                panelData = JSON.parse(atob(panelData));
+                if (panelData && panelData.response) {
+                    renderData(panelData.response);
+                } else if (typeof panelData === 'object') {
+                    renderData(panelData);
+                }
+            } catch (error) {
+                console.error('Error parsing panel data:', error);
+                showError('Ошибка обработки данных: ' + error.message);
+            }
+        });
+
+        function renderData(data) {
+            if (data.response && typeof data.response === 'object') {
+                data = data.response;
+            }
+
+            if (!data || (data.isFound !== undefined && !data.isFound)) {
+                showError('Данные не найдены');
+                return;
+            }
+
+            try {
+                const { user, subscriptionUrl } = data;
+
+                // User info
+                if (user) {
+                    const usernameEl = document.getElementById('username');
+                    if (usernameEl) usernameEl.textContent = user.username || 'Пользователь';
+
+                    const userStatusEl = document.getElementById('user-status');
+                    const statusContainer = document.getElementById('status-container');
+                    const statusDot = document.getElementById('status-dot');
+
+                    if (userStatusEl && statusContainer && statusDot) {
+                        const statusText = getStatusText(user.userStatus);
+                        userStatusEl.textContent = statusText;
+
+                        // Устанавливаем цвета в зависимости от статуса
+                        if (user.userStatus === 'ACTIVE') {
+                            statusContainer.className = 'flex items-center text-green-400 bg-green-400 bg-opacity-10 px-3 py-1 rounded-full';
+                            statusDot.className = 'w-3 h-3 bg-green-400 rounded-full mr-2 animate-pulse';
+                        } else {
+                            statusContainer.className = 'flex items-center text-red-400 bg-red-400 bg-opacity-10 px-3 py-1 rounded-full';
+                            statusDot.className = 'w-3 h-3 bg-red-400 rounded-full mr-2 animate-pulse';
+                        }
+                    }
+
+                    // Days left and expiry
+                    const daysLeftEl = document.getElementById('days-left');
+                    if (daysLeftEl) daysLeftEl.textContent = `${user.daysLeft || 0} дней`;
+
+                    const expiresAtEl = document.getElementById('expires-at');
+                    if (expiresAtEl)
+                        expiresAtEl.textContent = user.expiresAt
+                            ? formatDate(user.expiresAt)
+                            : 'Неизвестно';
+
+                    // Traffic usage
+                    // Traffic usage
+                    try {
+                        // Traffic strategy
+                        const strategyText = getTrafficStrategyText(user.trafficLimitStrategy);
+                        const trafficStrategyDesktop = document.getElementById('traffic-strategy-desktop');
+                        const trafficStrategyMobile = document.getElementById('traffic-strategy-mobile');
+                        if (trafficStrategyDesktop) trafficStrategyDesktop.textContent = strategyText;
+                        if (trafficStrategyMobile) trafficStrategyMobile.textContent = strategyText;
+
+                        // Traffic usage
+                        const trafficText = `${user.trafficUsed} / ${user.trafficLimit}`;
+                        const trafficUsedDesktop = document.getElementById('traffic-used-desktop');
+                        const trafficUsedMobile = document.getElementById('traffic-used-mobile');
+                        if (trafficUsedDesktop) trafficUsedDesktop.textContent = trafficText;
+                        if (trafficUsedMobile) trafficUsedMobile.textContent = trafficText;
+
+                        // Progress bar calculation
+                        console.log('Raw traffic data:', {
+                            used: user.trafficUsed,
+                            limit: user.trafficLimit
+                        });
+
+                        const trafficUsedBytes = parseTrafficValue(user.trafficUsed);
+                        const trafficLimitBytes = parseTrafficValue(user.trafficLimit);
+
+                        console.log('Parsed traffic data (bytes):', {
+                            used: trafficUsedBytes,
+                            limit: trafficLimitBytes
+                        });
+
+                        let trafficPercentage = 0;
+                        if (trafficLimitBytes > 0) {
+                            trafficPercentage = Math.min((trafficUsedBytes / trafficLimitBytes) * 100, 100);
+                            console.log('Calculated percentage:', trafficPercentage);
+                        }
+
+                        // Update progress bar
+                        const trafficProgressEl = document.getElementById('traffic-progress');
+                        if (trafficProgressEl) {
+                            trafficProgressEl.style.width = `${trafficPercentage}%`;
+                        }
+
+                    } catch (error) {
+                        console.error('Error processing traffic data:', error);
+                        console.error('Error details:', error.stack);
+                    }
+                }
+
+                // Subscription URL
+                if (subscriptionUrl) {
+                    const subUrlEl = document.getElementById('subscription-url');
+                    if (subUrlEl) subUrlEl.value = subscriptionUrl;
+                }
+
+            } catch (error) {
+                console.error('Error rendering data:', error);
+                showError('Ошибка при отображении данных: ' + error.message);
+            }
+        }
+        // Helper functions
+        function getStatusText(status) {
+            switch (status) {
+                case 'ACTIVE':
+                    return 'Активна';
+                case 'DISABLED':
+                    return 'Неактивна';
+                case 'LIMITED':
+                    return 'Ограничена';
+                case 'EXPIRED':
+                    return 'Истекла';
+                default:
+                    return status;
+            }
+        }
+
+        function getTrafficStrategyText(strategy) {
+            switch (strategy) {
+                case 'NO_RESET':
+                    return 'Никогда';
+                case 'DAY':
+                    return 'Ежедневно';
+                case 'WEEK':
+                    return 'Еженедельно';
+                case 'MONTH':
+                    return 'Ежемесячно';
+                default:
+                    return strategy || 'Не задано';
+            }
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('ru-RU', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+            });
+        }
+
+        function parseTrafficValue(trafficStr) {
+            if (!trafficStr) return 0;
+
+            // Разбиваем строку на число и единицу измерения
+            const matches = trafficStr.match(/^([\d.]+)\s*(B|KiB|MiB|GiB|TiB)$/);
+            if (!matches) return 0;
+
+            const value = parseFloat(matches[1]);
+            const unit = matches[2];
+
+            // Переводим все в байты
+            switch (unit) {
+                case 'B': return value;
+                case 'KiB': return value * 1024;
+                case 'MiB': return value * 1024 * 1024;
+                case 'GiB': return value * 1024 * 1024 * 1024;
+                case 'TiB': return value * 1024 * 1024 * 1024 * 1024;
+                default: return 0;
+            }
+        }
+
+        function formatTraffic(bytes, isAlreadyGiB = false) {
+            if (typeof bytes === 'string' && bytes.includes('GiB') && isAlreadyGiB) {
+                // Если это уже строка с GiB, просто возвращаем её
+                return bytes;
+            }
+
+            // Преобразуем в число
+            const bytesNum = typeof bytes === 'string' ? parseTrafficValue(bytes) : Number(bytes);
+            if (isNaN(bytesNum) || bytesNum === 0) return '0 GiB';
+
+            // Если значение уже в GiB
+            if (isAlreadyGiB) {
+                return bytesNum.toFixed(2) + ' GiB';
+            }
+
+            // Константы для перевода
+            const GiB = 1024 * 1024 * 1024;
+            const MiB = 1024 * 1024;
+            const KiB = 1024;
+
+            // Выбираем подходящую единицу измерения
+            if (bytesNum >= GiB) {
+                return (bytesNum / GiB).toFixed(2) + ' GiB';
+            } else if (bytesNum >= MiB) {
+                return (bytesNum / MiB).toFixed(2) + ' MiB';
+            } else if (bytesNum >= KiB) {
+                return (bytesNum / KiB).toFixed(2) + ' KiB';
+            } else {
+                return bytesNum.toFixed(2) + ' B';
+            }
+        }
+
+        function showError(message) {
+            const app = document.getElementById('app');
+            app.innerHTML = `
+                            <div class="glass-effect p-8 text-center">
+                                <div class="text-red-500 text-5xl mb-4">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <h2 class="text-2xl font-bold mb-2">Ошибка</h2>
+                                <p class="text-gray-400">${message}</p>
+                            </div>
+                        `;
+            app.style.opacity = '1';
+        }
+    </script>
+</body>
+
+</html>

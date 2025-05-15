@@ -26,6 +26,9 @@ included apps:
 
 </details>
 
+## remnawave-subscription-page [custom web template](https://remna.st/docs/install/remnawave-subscription-page#mounting-custom-template)
+  - [simple happ only](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
+
 ## remnawave subscription  templates for clients
   - [mihomo](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/remnawave.yaml)
   - [sing-box (1.11 sing-box, 1.10 sing-box legacy)](https://github.com/legiz-ru/sb-rule-sets/tree/main/.github/sub2sing-box)
