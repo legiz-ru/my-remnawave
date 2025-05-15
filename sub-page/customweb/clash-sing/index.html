@@ -1,0 +1,1412 @@
+<!doctype html>
+<html lang="en" data-bs-theme="system">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= metaDescription %>" />
+    <meta name="theme-color" content="#fff">
+    <title>
+        <%= metaTitle %>
+    </title>
+    <script>
+        // В начало скрипта, перед const SUB_URL
+        let userData = {};
+        try {
+            const panelData = JSON.parse(atob('<%- panelData %>'));
+            if (panelData && panelData.response) {
+                userData = panelData.response.user;
+                // Сохраняем subscription URL
+                window.subscriptionUrl = panelData.response.subscriptionUrl;
+            }
+        } catch (error) {
+            console.error('Error parsing panel data:', error);
+        }
+
+        // Обновляем SUB_URL
+        const SUB_URL = window.subscriptionUrl || window.location.href;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize with panel data
+            let panelData = '<%- panelData %>';
+            document.getElementById('app').style.opacity = '1';
+
+            try {
+                panelData = JSON.parse(atob(panelData));
+                if (panelData && panelData.response) {
+                    renderData(panelData.response);
+                } else if (typeof panelData === 'object') {
+                    renderData(panelData);
+                }
+            } catch (error) {
+                console.error('Error parsing panel data:', error);
+                showError('Ошибка обработки данных: ' + error.message);
+            }
+        });
+
+        function renderData(data) {
+            if (data.response && typeof data.response === 'object') {
+                data = data.response;
+            }
+
+            if (!data || (data.isFound !== undefined && !data.isFound)) {
+                showError('Данные не найдены');
+                return;
+            }
+
+            try {
+                const { user, subscriptionUrl } = data;
+
+                if (user) {
+                    // Логирование даты/времени и логина
+                    console.log('Current Date and Time (UTC):', user.currentDateTime);
+                    console.log('Current User\'s Login:', user.username);
+
+                    // Имя пользователя
+                    const usernameEl = document.getElementById('username');
+                    if (usernameEl) usernameEl.textContent = user.username || 'Пользователь';
+
+                    // Статус пользователя
+                    const statusEl = document.getElementById('status');
+                    if (statusEl) {
+                        const statusText = getStatusText(user.status);
+                        statusEl.textContent = statusText;
+                        // Добавляем классы в зависимости от статуса
+                        if (user.status === 'active') {
+                            statusEl.className = 'status-active';
+                        } else {
+                            statusEl.className = 'status-inactive';
+                        }
+                    }
+
+                    // Срок действия подписки
+                    const expiryEl = document.getElementById('expire_date');
+                    if (expiryEl) {
+                        expiryEl.textContent = user.expire
+                            ? formatDate(user.expire)
+                            : 'Неизвестно';
+                    }
+
+                    // Трафик
+                    const usedTrafficEl = document.getElementById('used_traffic');
+                    const dataLimitEl = document.getElementById('data_limit');
+                    if (usedTrafficEl && user.used_traffic) {
+                        usedTrafficEl.textContent = formatTraffic(user.used_traffic);
+                    }
+                    if (dataLimitEl && user.data_limit) {
+                        dataLimitEl.textContent = formatTraffic(user.data_limit);
+                    }
+
+                    // Прогресс-бар трафика
+                    const progressEl = document.getElementById('usage_progress');
+                    if (progressEl && user.used_traffic && user.data_limit) {
+                        const percentage = Math.min((user.used_traffic / user.data_limit) * 100, 100);
+                        progressEl.style.width = `${percentage}%`;
+                    }
+                }
+
+                // Subscription URL для импорта
+                if (subscriptionUrl) {
+                    const subUrlEl = document.getElementById('subscription-url');
+                    if (subUrlEl) subUrlEl.value = subscriptionUrl;
+                }
+
+            } catch (error) {
+                console.error('Error rendering data:', error);
+                showError('Ошибка при отображении данных: ' + error.message);
+            }
+        }
+
+        function getStatusText(status) {
+            switch (status) {
+                case 'active':
+                    return 'Активен';
+                case 'disabled':
+                    return 'Отключен';
+                case 'limited':
+                    return 'Ограничен';
+                case 'expired':
+                    return 'Истёк';
+                default:
+                    return status;
+            }
+        }
+
+        function formatDate(timestamp) {
+            const date = new Date(timestamp * 1000);
+            return date.toLocaleDateString('ru-RU', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        function formatTraffic(bytes) {
+            const sizes = ['B', 'KB', 'MB', 'GB', 'TB'];
+            if (bytes === 0) return '0 B';
+            const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+            return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+        }
+
+        function handlePowerClick() {
+            const subscriptionUrl = document.getElementById('subscription-url')?.value;
+            if (!subscriptionUrl) {
+                showError('Ссылка подписки не найдена');
+                return;
+            }
+
+            const platform = detectPlatform();
+            const urlScheme = 'vmess://'; // или другие схемы в зависимости от конфигурации
+
+            // Пытаемся открыть приложение
+            window.location.href = urlScheme + subscriptionUrl;
+
+            // Показываем модальное окно с вариантами скачивания
+            setTimeout(() => {
+                const modal = document.getElementById('modal');
+                if (modal) {
+                    modal.style.display = 'block';
+                    const downloadButtons = document.getElementById('downloadButtons');
+                    if (downloadButtons) {
+                        downloadButtons.innerHTML = getDownloadButtons(platform);
+                    }
+                }
+            }, 1000);
+        }
+
+        // Color mode toggler.
+
+        const COLOR_SCHEME = '(prefers-color-scheme: dark)';
+
+        // Defines the default website theme used when the user hasn't
+        // selected a different one.
+        const DEFAULT_THEME = 'system';
+        // Colors for light and dark themes in the theme-color value,
+        // used to change browser interface colors, like the top bar in Safari.
+        const META_THEME_COLORS = { light: '#fff', dark: '#151515' };
+
+        function getUserTheme() {
+            return localStorage.getItem('theme') || DEFAULT_THEME;
+        }
+
+        function setTheme(theme) {
+            if (theme === 'system') {
+                theme = window.matchMedia(COLOR_SCHEME).matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-bs-theme', theme);
+            document
+                .querySelector(`[name='theme-color']`)
+                .setAttribute('content', META_THEME_COLORS[theme]);
+        }
+
+        setTheme(getUserTheme());
+        window.matchMedia(COLOR_SCHEME).addEventListener('change', () => {
+            if (getUserTheme() === 'system') setTheme('system');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnTheme = document.getElementById('btn-theme');
+            document.querySelectorAll('.my-dropdown-item-theme').forEach(item => {
+                item.addEventListener('click', () => {
+                    localStorage.setItem('theme', item.dataset.themeVal);
+                    setTheme(item.dataset.themeVal);
+                    showActiveDropdownItem(
+                        btnTheme,
+                        item,
+                        document.querySelector('.my-dropdown-item-theme.active'),
+                    );
+                });
+            });
+
+            showActiveDropdownItem(
+                btnTheme,
+                document.querySelector(`[data-theme-val="${getUserTheme()}"]`),
+                document.querySelector('.my-dropdown-item-theme.active'),
+            );
+        })
+    </script>
+    <link href="https://raw.githubusercontent.com/dermv/marzbanify-template/refs/heads/main/img/apple-touch-icon.png"
+        rel="apple-touch-icon" sizes="180x180">
+    <link href="https://raw.githubusercontent.com/dermv/marzbanify-template/refs/heads/main/img/favicon-16x16.png"
+        rel="icon" sizes="16x16" type="image/png">
+    <link href="https://raw.githubusercontent.com/dermv/marzbanify-template/refs/heads/main/img/favicon-32x32.png"
+        rel="icon" sizes="32x32" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+        :root {
+            --bs-body-font-family: "Inter", sans-serif;
+        }
+
+        [data-bs-theme='light'] {
+            --bs-body-bg: #fff;
+
+            --my-gray-color: #f6f5f4;
+            --my-dark-gray-color: #eaeaea;
+            --my-alpha-gray-color: rgba(50, 50, 50, .75);
+            --my-alpha-dark-gray-color: rgba(0, 0, 0, .15);
+            --my-emphasis-focus-shadow-rgb: 0, 0, 0;
+
+            --my-heading-color: rgb(30, 25, 20);
+            --my-content-color: rgba(0, 0, 0, .65);
+            --my-dropdown-bg: #fff;
+            --my-dropdown-link-hover-bg: rgba(55, 53, 47, .05);
+            --my-modal-bg: #fff;
+        }
+
+        [data-bs-theme='dark'] {
+            --bs-body-bg: #151515;
+
+            --my-gray-color: #232323;
+            --my-dark-gray-color: #1c1c1c;
+            --my-alpha-gray-color: rgba(255, 255, 255, .5);
+            --my-alpha-dark-gray-color: rgba(255, 255, 255, .15);
+            --my-emphasis-focus-shadow-rgb: 255, 255, 255;
+
+            --my-heading-color: rgb(225, 225, 225);
+            --my-content-color: rgba(255, 255, 255, .55);
+            --my-dropdown-bg: #2c2c2c;
+            --my-dropdown-link-hover-bg: rgba(255, 255, 255, .05);
+            --my-modal-bg: #232323;
+        }
+
+        .bi {
+            fill: currentColor;
+            width: 1em;
+            height: 1em;
+        }
+
+        .dropdown-toggle::after {
+            mask: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M8.7 13.7c.4-.4 1.1-.4 1.5 0l6 6 6-6c.4-.4 1.1-.4 1.5 0s.4 1.1 0 1.5L17 21.9c-.4.4-1.1.4-1.5 0l-6.7-6.7c-.5-.6-.5-1.1-.1-1.5'/%3E%3C/svg%3E") 50% 50% / cover no-repeat;
+            float: right;
+            width: 1em;
+            height: 1.25em;
+            margin-right: -3px;
+            margin-left: 3px;
+            background-color: currentColor;
+        }
+
+        .modal-backdrop {
+            --bs-backdrop-opacity: .75;
+        }
+
+        .my-container {
+            max-width: 1024px;
+        }
+
+        .my-navbar {
+            --bs-navbar-nav-link-padding-x: .75rem;
+        }
+
+        .my-navbar .navbar-toggler {
+            --bs-navbar-toggler-border-color: transparent;
+            --bs-navbar-toggler-padding-x: 0;
+            --bs-navbar-toggler-padding-y: 0;
+        }
+
+        @media (max-width: 576px) {
+            .my-navbar .navbar-nav {
+                --bs-nav-link-padding-y: .75rem;
+            }
+
+            .my-navbar .nav-item .nav-link {
+                border-top: 1px solid var(--my-alpha-dark-gray-color);
+            }
+
+            .my-navbar .dropdown-menu {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .my-nav-link,
+        .my-nav-outline {
+            display: flex;
+            align-items: center;
+        }
+
+        .my-nav-link:focus-visible,
+        .my-nav-outline:focus-visible {
+            border-radius: var(--bs-border-radius-lg);
+            box-shadow: 0 0 0 .25rem var(--my-alpha-gray-color);
+        }
+
+        .my-nav-link .bi,
+        .my-nav-outline .bi {
+            margin-right: .5rem;
+            font-size: 1.25rem;
+        }
+
+        .my-nav-link-text {
+            margin-right: auto;
+        }
+
+        .my-nav-outline {
+            --bs-nav-link-padding-x: .85rem;
+            --bs-nav-link-padding-y: .25rem;
+            --bs-nav-link-color: var(--my-heading-color);
+            --bs-nav-link-hover-color: var(--my-heading-color);
+            border: 1px solid var(--my-alpha-dark-gray-color);
+            border-radius: var(--bs-border-radius-lg);
+        }
+
+        .my-nav-outline:hover {
+            background-color: var(--my-gray-color);
+        }
+
+        .my-nav-outline.show {
+            background-color: var(--my-gray-color);
+        }
+
+        .my-dropdown .dropdown-menu {
+            --bs-dropdown-padding-x: .25rem;
+            --bs-dropdown-padding-y: .25rem;
+            --bs-dropdown-spacer: 0;
+            --bs-dropdown-bg: var(--my-dropdown-bg);
+            --bs-dropdown-border-color: none;
+            --bs-dropdown-border-radius: var(--bs-border-radius-lg);
+            --bs-dropdown-link-color: var(--my-heading-color);
+            --bs-dropdown-link-hover-color: var(--my-heading-color);
+            --bs-dropdown-link-hover-bg: var(--my-dropdown-link-hover-bg);
+            --bs-dropdown-link-active-color: var(--my-heading-color);
+            --bs-dropdown-link-active-bg: var(--my-dropdown-bg);
+            --bs-dropdown-item-padding-x: 1rem;
+            --bs-dropdown-item-padding-y: .5rem;
+            --bs-dropdown-item-border-radius: var(--bs-border-radius);
+            box-shadow: 0 .25rem 1rem rgba(0, 0, 0, .175);
+        }
+
+        .my-dropdown .dropdown-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .my-dropdown .dropdown-item span {
+            margin-right: 2rem;
+        }
+
+        .my-dropdown .dropdown-item.active:hover {
+            background-color: var(--my-dropdown-link-hover-bg);
+        }
+
+        .my-dropdown .dropdown-item:hover:active {
+            background-color: var(--my-dropdown-link-hover-bg);
+        }
+
+        .my-dropdown .my-dropdown-item-icon {
+            margin-right: .5rem;
+            color: var(--my-alpha-gray-color);
+        }
+
+        .my-dropdown .my-dropdown-item-check {
+            margin-left: auto;
+            color: transparent;
+        }
+
+        .my-dropdown .active .my-dropdown-item-check {
+            color: var(--my-heading-color);
+        }
+
+        .my-btn-primary,
+        .my-btn-secondary,
+        .my-btn-neutral,
+        .my-btn-outline {
+            --bs-btn-padding-x: .85rem;
+            --bs-btn-padding-y: .25rem;
+            --bs-btn-color: #fff;
+            --bs-btn-border-radius: var(--bs-border-radius-lg);
+            --bs-btn-hover-color: #fff;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-border-color: transparent;
+        }
+
+        .my-btn-primary {
+            --bs-btn-bg: rgb(25, 125, 225);
+            --bs-btn-hover-bg: rgb(0, 110, 210);
+            --bs-btn-focus-shadow-rgb: 25, 125, 225;
+            --bs-btn-active-bg: rgb(0, 95, 195);
+        }
+
+        .my-btn-secondary {
+            --bs-btn-color: rgb(25, 125, 225);
+            --bs-btn-bg: rgba(25, 125, 225, .15);
+            --bs-btn-hover-color: rgb(25, 125, 225);
+            --bs-btn-hover-bg: rgba(25, 125, 225, .2);
+            --bs-btn-focus-shadow-rgb: 25, 125, 225;
+            --bs-btn-active-color: rgb(25, 125, 225);
+            --bs-btn-active-bg: rgba(25, 125, 225, .25);
+            --bs-btn-active-border-color: transparent;
+        }
+
+        .my-btn-neutral {
+            --bs-btn-bg: rgb(50, 50, 50);
+            --bs-btn-hover-bg: rgb(65, 65, 65);
+            --bs-btn-focus-shadow-rgb: var(--my-emphasis-focus-shadow-rgb);
+            --bs-btn-active-bg: rgb(75, 75, 75);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: rgb(50, 50, 50);
+            --bs-btn-disabled-border-color: transparent;
+        }
+
+        .my-btn-outline {
+            --bs-btn-color: var(--my-heading-color);
+            --bs-btn-bg: transparent;
+            --bs-btn-border-color: var(--my-alpha-dark-gray-color);
+            --bs-btn-hover-color: var(--my-heading-color);
+            --bs-btn-hover-bg: var(--my-gray-color);
+            --bs-btn-hover-border-color: var(--my-alpha-dark-gray-color);
+            --bs-btn-focus-shadow-rgb: var(--my-emphasis-focus-shadow-rgb);
+            --bs-btn-active-color: var(--my-heading-color);
+            --bs-btn-active-bg: var(--my-dark-gray-color);
+            --bs-btn-active-border-color: var(--my-alpha-dark-gray-color);
+        }
+
+        .my-modal {
+            --bs-modal-margin: 1rem;
+            --bs-modal-bg: var(--my-modal-bg);
+            --bs-modal-border-width: 0;
+            --bs-modal-border-radius: var(--bs-border-radius-xl);
+            --bs-modal-header-padding: 1.5rem 1.5rem 0;
+            --bs-modal-header-border-width: 0;
+        }
+
+        @media (min-width: 576px) {
+            .my-modal {
+                --bs-modal-padding: 2rem;
+            }
+        }
+
+        .my-modal .modal-dialog {
+            max-width: 420px;
+        }
+
+        .my-modal .modal-content {
+            padding-bottom: 1.5rem;
+        }
+
+        #qr-code canvas {
+            width: 100%;
+            max-width: 240px;
+            margin-top: .5rem;
+            border-radius: var(--bs-border-radius-xl);
+        }
+
+        @media (max-width: 320px) {
+            .my-row-xs>* {
+                width: 100%;
+            }
+        }
+
+        .my-block,
+        .my-block-big {
+            border-radius: var(--bs-border-radius-xl);
+            background-color: var(--my-gray-color);
+        }
+
+        .my-block {
+            padding: 1rem;
+        }
+
+        .my-block .bi {
+            font-size: 1.5rem;
+        }
+
+        .my-block-big {
+            padding: 1.5rem;
+            padding-top: .75rem;
+        }
+
+        .my-text-blue {
+            color: #0a85d1;
+        }
+
+        .my-text-green {
+            color: #1aad3a;
+        }
+
+        .my-text-red {
+            color: #ea4e43;
+        }
+
+        .my-text-yellow {
+            color: #fb3;
+        }
+
+        .my-text-heading {
+            color: var(--my-heading-color);
+        }
+
+        .my-text-content {
+            color: var(--my-content-color);
+        }
+
+        .my-step-counter {
+            display: block;
+            color: #57b5ef;
+            font-weight: 500;
+            font-size: 2.5rem;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .my-step-counter::after {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+        }
+
+        .my-tab-pane {
+            counter-reset: step-counter 0;
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <!-- Icons from https://icons.getbootstrap.com -->
+        <symbol id="android" viewBox="0 0 16 16">
+            <path
+                d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.9 8.9 0 0 1 8 5a8.9 8.9 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+        </symbol>
+        <symbol id="apple" viewBox="0 0 16 16">
+            <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+        </symbol>
+        <symbol id="arrow-down-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5" />
+        </symbol>
+        <symbol id="calendar3" viewBox="0 0 16 16">
+            <path
+                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+            <path
+                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+        </symbol>
+        <symbol id="check-lg" viewBox="0 0 16 16">
+            <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+        </symbol>
+        <symbol id="emoji-frown-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m-2.715 5.933a.5.5 0 0 1-.183-.683A4.5 4.5 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 0 1-.866.5A3.5 3.5 0 0 0 8 10.5a3.5 3.5 0 0 0-3.032 1.75.5.5 0 0 1-.683.183M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8" />
+        </symbol>
+        <symbol id="emoji-smile-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+        </symbol>
+        <symbol id="pc-display" viewBox="0 0 16 16">
+            <path
+                d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
+        </symbol>
+        <symbol id="person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+        </symbol>
+        <symbol id="translate" viewBox="0 0 16 16">
+            <path
+                d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+            <path
+                d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+        </symbol>
+    </svg>
+    <header class="navbar my-navbar navbar-expand-sm pb-5" x-data>
+        <div class="container my-container px-3">
+            <a class="navbar-brand" href="#">
+                <img src="https://raw.githubusercontent.com/dermv/marzbanify-template/refs/heads/main/img/logo.png"
+                    alt="Logo" width="32" height="32">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-collapse-content" aria-controls="navbar-collapse-content" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse mt-2 mt-sm-0" id="navbar-collapse-content">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link my-nav-link" href="https://t.me/yourID" rel="noopener noreferrer"
+                            target="_blank" x-text="$t('support')"></a>
+                    </li>
+                    <li class="nav-item dropdown my-dropdown">
+                        <a class="nav-link my-nav-link dropdown-toggle" id="btn-theme" role="button"
+                            data-bs-toggle="dropdown" tabindex="0" aria-expanded="false">
+                            <svg class="bi my-nav-link-icon">
+                                <use href="#circle-half"></use>
+                            </svg>
+                            <span class="my-nav-link-text"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="dropdown-item my-dropdown-item-theme active" type="button"
+                                    data-theme-val="system" aria-pressed="true">
+                                    <svg class="bi my-dropdown-item-icon">
+                                        <use href="#circle-half"></use>
+                                    </svg>
+                                    <span x-text="$t('system')"></span>
+                                    <svg class="bi my-dropdown-item-check">
+                                        <use href="#check-lg"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item my-dropdown-item-theme" type="button"
+                                    data-theme-val="light" aria-pressed="false">
+                                    <svg class="bi my-dropdown-item-icon">
+                                        <use href="#sun-fill"></use>
+                                    </svg>
+                                    <span x-text="$t('light')"></span>
+                                    <svg class="bi my-dropdown-item-check">
+                                        <use href="#check-lg"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item my-dropdown-item-theme" type="button" data-theme-val="dark"
+                                    aria-pressed="false">
+                                    <svg class="bi my-dropdown-item-icon">
+                                        <use href="#moon-stars-fill"></use>
+                                    </svg>
+                                    <span x-text="$t('dark')"></span>
+                                    <svg class="bi my-dropdown-item-check">
+                                        <use href="#check-lg"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown my-dropdown">
+                        <a class="nav-link my-nav-link dropdown-toggle" id="btn-lang" role="button"
+                            data-bs-toggle="dropdown" tabindex="0" aria-expanded="false">
+                            <svg class="bi">
+                                <use href="#translate"></use>
+                            </svg>
+                            <span class="my-nav-link-text">English</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="dropdown-item my-dropdown-item-lang active" type="button"
+                                    data-locale="en" aria-pressed="true">
+                                    <span>English</span>
+                                    <svg class="bi my-dropdown-item-check">
+                                        <use href="#check-lg"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item my-dropdown-item-lang" type="button" data-locale="zh"
+                                    aria-pressed="false">
+                                    <span>中文</span>
+                                    <svg class="bi my-dropdown-item-check">
+                                        <use href="#check-lg"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item my-dropdown-item-lang" type="button" data-locale="ru"
+                                    aria-pressed="false">
+                                    <span>Русский</span>
+                                    <svg class="bi my-dropdown-item-check">
+                                        <use href="#check-lg"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container my-container px-3 pb-3" x-data>
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+            <h4 class="my-text-heading fw-bold me-auto mb-0" x-text="$t('subscription')"></h4>
+            <button class="btn my-btn-outline" data-bs-toggle="modal" data-bs-target="#get-link-modal"
+                x-text="$t('getLink')"></button>
+            <div class="modal my-modal fade" id="get-link-modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close my-btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center" x-data="copyLink">
+                            <div class="mb-4" id="qr-code"></div>
+                            <h4 class="my-text-heading fw-semibold" x-text="$t('getLinkModalTitle')"></h4>
+                            <p class="my-text-content" x-text="$t('getLinkModalSubtitle')"></p>
+                            <button class="btn my-btn-neutral" @click="copyToClipboard" :disabled="isDisabled"
+                                x-text="isDisabled ? $t('copied') : $t('copyLink')"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-row-xs row-cols-2 row-cols-md-4 g-3 mb-5">
+            <div class="col">
+                <div class="my-block" x-data="blockName">
+                    <div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start mb-1 mb-sm-0">
+                        <svg class="bi my-text-blue me-2 mb-0 mb-sm-2">
+                            <use href="#person-fill"></use>
+                        </svg>
+                        <h5 class="my-text-heading mb-0" x-text="$t('name')"></h5>
+                    </div>
+                    <p class="text-truncate my-text-content mb-0" x-text="getText"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="my-block" x-data="blockStatus">
+                    <div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start mb-1 mb-sm-0">
+                        <svg class="bi my-text-green me-2 mb-0 mb-sm-2">
+                            <use :href="getIcon"></use>
+                        </svg>
+                        <h5 class="my-text-heading mb-0" x-text="$t('status')"></h5>
+                    </div>
+                    <p class="text-truncate my-text-content mb-0" x-text="getText"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="my-block" x-data="blockDuration">
+                    <div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start mb-1 mb-sm-0">
+                        <svg class="bi my-text-red me-2 mb-0 mb-sm-2">
+                            <use href="#calendar3"></use>
+                        </svg>
+                        <h5 class="my-text-heading mb-0" x-text="$t('duration')"></h5>
+                    </div>
+                    <p class="text-truncate my-text-content mb-0" x-text="getText"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="my-block" x-data="blockTraffic">
+                    <div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start mb-1 mb-sm-0">
+                        <svg class="bi my-text-yellow me-2 mb-0 mb-sm-2">
+                            <use href="#arrow-down-up"></use>
+                        </svg>
+                        <h5 class="my-text-heading mb-0" x-text="$t('traffic')"></h5>
+                    </div>
+                    <p class="text-truncate my-text-content mb-0" x-text="getText"></p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+            <h4 class="my-text-heading fw-bold me-auto mb-0" x-text="$t('guide')"></h4>
+            <div class="dropdown my-dropdown">
+                <button class="nav-link my-nav-outline dropdown-toggle" id="btn-guide" type="button"
+                    data-bs-toggle="dropdown">
+                    <svg class="bi my-nav-link-icon">
+                        <use href="#android"></use>
+                    </svg>
+                    <span class="my-nav-link-text"></span>
+                </button>
+                <ul class="dropdown-menu" role="tablist">
+                    <li>
+                        <button class="dropdown-item my-dropdown-item-guide active" id="btn-guide-android-tab"
+                            type="button" data-bs-target="#tab-android" data-bs-toggle="tab" role="tab"
+                            aria-controls="tab-android" aria-selected="true">
+                            <svg class="bi my-dropdown-item-icon">
+                                <use href="#android"></use>
+                            </svg>
+                            <span>Android</span>
+                            <svg class="bi my-dropdown-item-check">
+                                <use href="#check-lg"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item my-dropdown-item-guide" id="btn-guide-ios-tab" type="button"
+                            data-bs-target="#tab-ios" data-bs-toggle="tab" role="tab" aria-controls="tab-ios"
+                            aria-selected="false">
+                            <svg class="bi my-dropdown-item-icon">
+                                <use href="#apple"></use>
+                            </svg>
+                            <span>iOS</span>
+                            <svg class="bi my-dropdown-item-check">
+                                <use href="#check-lg"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item my-dropdown-item-guide" id="btn-guide-pc-tab" type="button"
+                            data-bs-target="#tab-pc" data-bs-toggle="tab" role="tab" aria-controls="tab-pc"
+                            aria-selected="false">
+                            <svg class="bi my-dropdown-item-icon">
+                                <use href="#pc-display"></use>
+                            </svg>
+                            <span x-text="$t('pc')"></span>
+                            <svg class="bi my-dropdown-item-check">
+                                <use href="#check-lg"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" role="tablist">
+            <div id="tab-android" class="tab-pane my-tab-pane fade show active" aria-labelledby="btn-guide-android-tab"
+                role="tabpanel">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.android.first.title')">
+                            </h5>
+                            <p class="my-text-content" x-html="$t('guideContent.android.first.text')"></p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a class="btn my-btn-secondary"
+                                    href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.11/cmfa-2.11.11-meta-universal-release.apk"
+                                    role="button" rel="noopener noreferrer" target="_blank">
+                                    <span class="fw-semibold" x-text="$t('downloadGitHub')"></span>
+                                </a>
+                                <a class="btn my-btn-secondary"
+                                    href="https://f-droid.org/packages/com.github.metacubex.clash.meta/" role="button"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <span class="fw-semibold" x-text="$t('downloadFdroid')"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.android.second.title')">
+                            </h5>
+                            <p class="my-text-content" x-html="$t('guideContent.android.second.text')"></p>
+                            <a class="btn my-btn-primary fw-semibold" id="sub-url-android" role="button"
+                                rel="noopener noreferrer" target="_blank" x-text="$t('addSubscription')"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.android.third.title')">
+                            </h5>
+                            <p class="my-text-content mb-0" x-html="$t('guideContent.android.third.text')"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-ios" class="tab-pane my-tab-pane fade" aria-labelledby="btn-guide-ios-tab" role="tabpanel">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.ios.first.title')"></h5>
+                            <p class="my-text-content" x-html="$t('guideContent.ios.first.text')"></p>
+                            <a class="btn my-btn-secondary" href="https://apps.apple.com/app/sing-box-vt/id6673731168"
+                                role="button" rel="noopener noreferrer" target="_blank">
+                                <span class="fw-semibold" x-text="$t('openInApp', {app: 'App Store'})"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.ios.second.title')"></h5>
+                            <p class="my-text-content" x-html="$t('guideContent.ios.second.text')"></p>
+                            <a class="btn my-btn-primary fw-semibold" id="sub-url-ios" role="button"
+                                rel="noopener noreferrer" target="_blank" x-text="$t('addSubscription')"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.ios.third.title')"></h5>
+                            <p class="my-text-content mb-0" x-html="$t('guideContent.ios.third.text')"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-pc" class="tab-pane my-tab-pane fade" aria-labelledby="btn-guide-pc-tab" role="tabpanel">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.pc.first.title')"></h5>
+                            <p class="my-text-content" x-html="$t('guideContent.pc.first.text')"></p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a class="btn my-btn-secondary"
+                                    href="https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/pre-release"
+                                    role="button" rel="noopener noreferrer" target="_blank">
+                                    <span class="fw-semibold" x-text="$t('nyanpasu')"></span>
+                                </a>
+                                <a class="btn my-btn-secondary"
+                                    href="https://github.com/clash-verge-rev/clash-verge-rev/releases/latest"
+                                    role="button" rel="noopener noreferrer" target="_blank">
+                                    <span class="fw-semibold" x-text="$t('verge')"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.pc.second.title')"></h5>
+                            <p class="my-text-content" x-html="$t('guideContent.pc.second.text')"></p>
+                            <a class="btn my-btn-primary fw-semibold" id="sub-url-pc" role="button"
+                                rel="noopener noreferrer" target="_blank" x-text="$t('addSubscription')"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-block-big h-100">
+                            <span class="my-step-counter mb-1"></span>
+                            <h5 class="my-text-heading fw-semibold" x-text="$t('guideContent.pc.third.title')"></h5>
+                            <p class="my-text-content mb-0" x-html="$t('guideContent.pc.third.nyanpasuguide')"></p>
+                            <p class="my-text-content mb-0" x-html="$t('guideContent.pc.third.text')"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/qr-code-styling@1.9.1/lib/qr-code-styling.js"></script>
+    <script>
+        const SUB_URL_SCHEMES = {
+            pc: `clash://install-config?url=${window.subscriptionUrl}&name=${userData.username || 'user'}`,
+            android: `clash://install-config?url=${window.subscriptionUrl}&name=${userData.username || 'user'}`,
+            ios: `sing-box://import-remote-profile?url=${window.subscriptionUrl}#${userData.username || 'user'}`,
+        };
+        // Default locale used to display content if
+        // the user's locale is not specified.
+        const DEFAULT_LOCALE = 'en';
+        // Translation data.
+        const MESSAGES = {
+            en: {
+                support: 'Support',
+                system: 'System',
+                light: 'Light',
+                dark: 'Dark',
+                name: 'Name',
+                status: 'Status',
+                active: 'Active',
+                limited: 'Limited',
+                expired: 'Expired',
+                disabled: 'Disabled',
+                duration: 'Duration',
+                until: 'Until',
+                forever: 'Forever',
+                traffic: 'Traffic',
+                subscription: 'Subscription',
+                getLink: 'Get link',
+                getLinkModalTitle: 'Scan the QR code above in the client',
+                getLinkModalSubtitle: 'Simple subscription addition in any client. Another option: copy the link below and paste it into the client',
+                copyLink: 'Copy link',
+                copied: 'Copied',
+                guide: 'Guide',
+                pc: 'PC',
+                openInApp: 'Open in {app}',
+                downloadGitHub: 'Download from GitHub',
+                downloadFdroid: 'Download from F-Droid',
+                addSubscription: 'Add subscription',
+                nyanpasu: 'Clash Nyanpasu',
+                verge: 'Clash Verge Rev',
+                guideContent: {
+                    pc: {
+                        first: {
+                            title: 'Install and open the Mihomo client',
+                            text: `Go to the latest release page on GitHub. Download the file for your OS and install the application. Make sure to launch the app before adding a subscription.`,
+                        },
+                        second: {
+                            title: 'Add the subscription',
+                            text: `Click the button below — the application will open, and the subscription will be added automatically. If this doesn't happen (Profiles section is empty), close the app and try again, or manually add the subscription in the Profiles section by entering the URL in the Profile URL field (copy the link above) and clicking the Import button.`,
+                        },
+                        third: {
+                            title: 'Connect and enjoy',
+                            text: `· Clash Verge Rev: In the app menu, go to Settings, and in the System Settings section, switch the Tun parameter to Enabled.`,
+                            nyanpasuguide: `· Clash Nyanpasu: Go to the Dashboard and enable Tun mode (you must first run the program with administrator rights)`,
+                        },
+                    },
+                    android: {
+                        first: {
+                            title: 'Install and Open Clash Meta',
+                            text: `Open the GitHub page and install the app. Launch it.`,
+                        },
+                        second: {
+                            title: 'Add the subscription',
+                            text: `Click the button below — a profile creation window will open. You need to set up auto-update, e.g., 720 minutes. In the top right corner, click the save icon.`,
+                        },
+                        third: {
+                            title: 'Connect and enjoy',
+                            text: `Go back, open the 'Profiles' tab, and select the created profile. Go back again and connect to the profile by clicking the 'Stopped' button to start the profile or 'Running' to stop it.`,
+                        },
+                    },
+                    ios: {
+                        first: {
+                            title: 'Install and Open sing-box VT',
+                            text: `Open the App Store page and install the app. Launch the app, and when prompted to allow VPN configuration additions, tap 'Allow' and enter your passcode.`,
+                        },
+                        second: {
+                            title: 'Add the subscription',
+                            text: `"Click the button below, and in the window that appears, click 'Open' — the app will open. Confirm the import by first clicking the Import button, then the Create button.`,
+                        },
+                        third: {
+                            title: 'Connect and enjoy',
+                            text: `On the Dashboard main page, click the Enabled button to connect to the VPN. Enjoy :)`,
+                        },
+                    },
+                },
+            },
+            zh: {
+                support: '支持',
+                system: '系统',
+                light: '浅色',
+                dark: '深色',
+                name: '名字',
+                status: '状态',
+                active: '激活',
+                limited: '受限',
+                expired: '已过期',
+                disabled: '已禁用',
+                duration: '持续时间',
+                until: '直到',
+                forever: '永久',
+                traffic: '流量',
+                subscription: '订阅',
+                getLink: '获取链接',
+                getLinkModalTitle: '在客户端扫描上方二维码',
+                getLinkModalSubtitle: '简单地在任何客户端添加订阅。还有另一种方法：复制下面的链接并粘贴到客户端中。',
+                copyLink: '复制链接',
+                copied: '已复制',
+                guide: '指南',
+                pc: '电脑',
+                openInApp: '在 {app} 中打开',
+                downloadGitHub: '从 GitHub 下载',
+                downloadFdroid: '从 F-Droid 下载',
+                addSubscription: '添加订阅',
+                nyanpasu: 'Clash Nyanpasu',
+                verge: 'Clash Verge Rev',
+                guideContent: {
+                    pc: {
+                        first: {
+                            title: '安装并打开 mihomo',
+                            text: `前往 GitHub 的最新发布页面。下载适合您的操作系统的文件并安装应用程序。安装后，请务必启动应用程序，然后再添加订阅。`,
+                        },
+                        second: {
+                            title: '添加订阅',
+                            text: `点击下方按钮 — 应用程序将自动打开并添加订阅。如果未成功（“配置文件”部分为空），请关闭应用程序并重试，或通过“配置文件”部分手动添加订阅。复制上方链接并粘贴到“配置文件 URL”字段，然后点击“导入”。`,
+                        },
+                        third: {
+                            title: '连接并享受',
+                            text: `· Clash Verge Rev: 在应用程序菜单中，进入“设置”部分，在“系统设置”中将 Tun 参数切换为“启用”。`,
+                            nyanpasuguide: `· Clash Nyanpasu：转到仪表板并启用 Tun 模式（您必须首先以管理员权限运行该程序）`,
+                        },
+                    },
+                    android: {
+                        first: {
+                            title: '安装并打开 Clash Meta',
+                            text: `打开 GitHub 页面并安装应用程序。安装完成后启动应用程序。`,
+                        },
+                        second: {
+                            title: '添加订阅',
+                            text: `点击下方按钮 — 将打开一个创建配置文件的窗口，您需要设置自动更新，例如 720 分钟。在右上角点击保存图标。`,
+                        },
+                        third: {
+                            title: '连接并享受',
+                            text: `返回并进入“配置文件”选项卡，选择创建的配置文件。返回后，通过点击“停止”按钮启动配置文件，或点击“运行”按钮停止配置文件。`,
+                        },
+                    },
+                    ios: {
+                        first: {
+                            title: '安装并打开 sing-box VT',
+                            text: `"打开 App Store 页面并安装应用程序。启动应用程序后，在 VPN 配置权限窗口点击“允许”，然后输入您的密码。`,
+                        },
+                        second: {
+                            title: '添加订阅',
+                            text: `点击下方按钮，在弹出窗口中点击“打开” — 应用程序将会打开。确认导入时，先点击“导入”按钮，然后点击“创建”按钮。`,
+                        },
+                        third: {
+                            title: '连接并使用',
+                            text: `在主页面 Dashboard，点击“启用”按钮以连接到 VPN。`,
+                        },
+                    },
+                },
+            },
+            ru: {
+                support: 'Поддержка',
+                system: 'Системная',
+                light: 'Светлая',
+                dark: 'Темная',
+                name: 'Имя',
+                status: 'Статус',
+                active: 'Активна',
+                limited: 'Ограничена',
+                expired: 'Истекла',
+                disabled: 'Отключена',
+                duration: 'Срок',
+                until: 'До',
+                forever: 'Навсегда',
+                traffic: 'Трафик',
+                subscription: 'Подписка',
+                getLink: 'Получить ссылку',
+                getLinkModalTitle: 'Отсканируй QR-код выше в клиенте',
+                getLinkModalSubtitle: 'Простое добавление подписки в любой клиент. Есть и другой вариант: скопируй ссылку ниже и вставь в клиент',
+                copyLink: 'Скопировать ссылку',
+                copied: 'Скопировано',
+                guide: 'Инструкция',
+                pc: 'ПК',
+                openInApp: 'Открыть в {app}',
+                downloadGitHub: 'Скачать с GitHub',
+                downloadFdroid: 'Скачать с F-Droid',
+                addSubscription: 'Добавить подписку',
+                nyanpasu: 'Clash Nyanpasu',
+                verge: 'Clash Verge Rev',
+                guideContent: {
+                    pc: {
+                        first: {
+                            title: 'Установи и открой клиент Mihomo',
+                            text: `Перейди на страницу последнего релиза на <b>GitHub</b>. Скачай
+                файл для своей ОС и установи программу. Перед добавлением подписки обязательно <b>запусти ее</b>.`,
+                        },
+                        second: {
+                            title: 'Добавь подписку',
+                            text: `Нажми кнопку ниже — программа откроется, и подписка
+                добавится автоматически.<br>Если этого не произошло (раздел "Профили" пустой), закрой программу
+                и попробуй снова или добавь подписку вручную через раздел "Профили": в строке "URL профиля" укажи ссылку, скопировав ее выше, и нажми кнопку импорта.`,
+                        },
+                        third: {
+                            title: 'Подключись и пользуйся',
+                            text: `• <b>Clash Verge Rev</b>: В меню приложения перейди в раздел "Настройки" и в пункте "Настройки системы" включи параметр <b>Tun</b>.`,
+                            nyanpasuguide: `• <b>Clash Nyanpasu</b>: Перейди на главную страницу и включи режим <b>Tun</b>. Предварительно требуется запустить программу с правами адмнистратора.`,
+
+                        },
+                    },
+                    android: {
+                        first: {
+                            title: 'Установи и открой Clash Meta',
+                            text: `Скачай приложение по ссылке ниже, установи и запусти его.`,
+                        },
+                        second: {
+                            title: 'Добавь подписку',
+                            text: `Нажми кнопку ниже — откроется окно создания профиля. Тебе потребуется указать период автообновления, например, 720 минут. Справа вверху нажми на кнопку "Сохранить".`,
+                        },
+                        third: {
+                            title: 'Подключись и пользуйся',
+                            text: `Перейди в пункт <b>"Профили"</b> и выбери созданный профиль, затем вернись на <b>главную страницу</b>. Теперь ты можешь подключиться, нажав на кнопку <b>"Остановлен"</b>.`,
+                        },
+                    },
+                    ios: {
+                        first: {
+                            title: 'Установи и открой sing-box VT',
+                            text: `Открой страницу в <b>App Store</b> и установи приложение.
+                Запусти приложение, в окне разрешения на добавление конфигураций VPN нажми <b>«Разрешить»</b> и введи свой <b>код-пароль</b>.`,
+                        },
+                        second: {
+                            title: 'Добавь подписку',
+                            text: `Нажми на кнопку ниже и в появившемся окне нажми <b>«Открыть»</b>
+                — откроется приложение. Подтверди импорт, сначала нажав кнопку <b>"Import"</b>, а затем <b>"Create"</b>.`,
+                        },
+                        third: {
+                            title: 'Подключись и пользуйся',
+                            text: `На <b>главной странице Dashboard</b> нажми кнопку <b>Enabled</b> для подключения к VPN.`,
+                        },
+                    },
+                },
+            },
+        };
+
+        function getTabIdByDevice() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            if (userAgent.includes('android')) {
+                return '#tab-android';
+            } else if (userAgent.includes('iphone') || userAgent.includes('ipad')) {
+                return '#tab-ios';
+            } else {
+                return '#tab-pc';
+            }
+        }
+
+        function getUserLocale() {
+            const userLocale = (
+                localStorage.getItem('locale') ||
+                (navigator.language || navigator.userLanguage).split('-')[0]
+            );
+            return userLocale in MESSAGES ? userLocale : DEFAULT_LOCALE;
+        }
+
+        function showActiveDropdownItem(btn, newItem, prevItem) {
+            if (prevItem) {
+                bootstrap.Button.getOrCreateInstance(prevItem).toggle();
+                bootstrap.Button.getOrCreateInstance(newItem).toggle();
+            }
+
+            const btnIcon = btn.querySelector('.my-nav-link-icon use');
+            const newItemIcon = newItem.querySelector('.my-dropdown-item-icon use');
+            if (btnIcon && newItemIcon) {
+                btnIcon.setAttribute('href', newItemIcon.getAttribute('href'));
+            }
+
+            const btnText = btn.querySelector('.my-nav-link-text');
+            const newItemText = newItem.querySelector('span');
+            if (btnText && newItemText) {
+                btnText.innerHTML = newItemText.outerHTML;
+            }
+        }
+
+        document.addEventListener('alpine-i18n:ready', () => {
+            window.AlpineI18n.fallbackLocale = 'en';
+            window.AlpineI18n.create(getUserLocale(), MESSAGES);
+
+            const btnLang = document.getElementById('btn-lang');
+            document.querySelectorAll('.my-dropdown-item-lang').forEach(item => {
+                item.addEventListener('click', () => {
+                    localStorage.setItem('locale', item.dataset.locale);
+                    AlpineI18n.locale = item.dataset.locale;
+                    showActiveDropdownItem(
+                        btnLang,
+                        item,
+                        document.querySelector('.my-dropdown-item-lang.active'),
+                    );
+                });
+            });
+
+            showActiveDropdownItem(
+                btnLang,
+                document.querySelector(`[data-locale="${getUserLocale()}"]`),
+                document.querySelector('.my-dropdown-item-lang.active'),
+            );
+        });
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('copyLink', () => ({
+                isDisabled: false,
+                async copyToClipboard() {
+                    // Получаем URL для копирования
+                    const urlToCopy = window.subscriptionUrl || SUB_URL;
+                    try {
+                        await navigator.clipboard.writeText(urlToCopy);
+                        this.isDisabled = true;
+                        setTimeout(() => {
+                            this.isDisabled = false;
+                        }, 3000);
+                    } catch (err) {
+                        console.error('Failed to copy:', err);
+                        // Создаем временный input элемент для копирования
+                        const tempInput = document.createElement('input');
+                        tempInput.value = urlToCopy;
+                        document.body.appendChild(tempInput);
+                        tempInput.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(tempInput);
+                        this.isDisabled = true;
+                        setTimeout(() => {
+                            this.isDisabled = false;
+                        }, 3000);
+                    }
+                },
+            }));
+
+            Alpine.data('blockName', () => ({
+                username: userData.username || '{{ user.username }}',
+                getText() {
+                    if (this.username && !this.username.startsWith('{')) {
+                        return this.username;
+                    } else {
+                        return 'Unknown';
+                    }
+                },
+            }));
+
+            Alpine.data('blockStatus', () => ({
+                statusValue: userData.userStatus || '{{ user.status.value }}',
+                getIcon() {
+                    if (this.statusValue == 'ACTIVE' || this.statusValue == 'active' ||
+                        this.statusValue.startsWith('{')) {
+                        return '#emoji-smile-fill';
+                    } else {
+                        return '#emoji-frown-fill';
+                    }
+                },
+                getText() {
+                    const status = this.statusValue.toUpperCase();
+                    if (status == 'ACTIVE') {
+                        return AlpineI18n.t('active');
+                    } else if (status == 'LIMITED') {
+                        return AlpineI18n.t('limited');
+                    } else if (status == 'EXPIRED') {
+                        return AlpineI18n.t('expired');
+                    } else if (status == 'DISABLED') {
+                        return AlpineI18n.t('disabled');
+                    } else if (this.statusValue.startsWith('{')) {
+                        return 'Unknown';
+                    }
+                },
+            }));
+
+            Alpine.data('blockDuration', () => ({
+                expire: userData.expiresAt || '{% if user.expire %}{{ user.expire | datetime }}{% endif %}',
+                getText() {
+                    if (!this.expire) {
+                        return AlpineI18n.t('forever');
+                    } else if (!this.expire.startsWith('{')) {
+                        const date = new Date(this.expire).toLocaleDateString();
+                        return `${AlpineI18n.t('until')} ${date}`;
+                    } else {
+                        return 'Unknown';
+                    }
+                },
+            }));
+
+            Alpine.data('blockTraffic', () => ({
+                usedTraffic: userData.trafficUsed || '{{ user.used_traffic | bytesformat }}',
+                dataLimit: userData.trafficLimit || '{% if user.data_limit %}{{ user.data_limit | bytesformat }}{% endif %}',
+                getText() {
+                    if (!this.dataLimit) {
+                        return `${this.usedTraffic} / ∞`;
+                    } else if (!this.dataLimit.startsWith('{')) {
+                        return `${this.usedTraffic} / ${this.dataLimit}`;
+                    } else {
+                        return 'Unknown';
+                    }
+                },
+            }));
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const qrCode = new QRCodeStyling({
+                data: SUB_URL,
+                margin: 6,
+                dotsOptions: {
+                    type: 'extra-rounded',
+                },
+                cornersSquareOptions: {
+                    type: 'extra-rounded',
+                },
+            });
+            qrCode.append(document.getElementById('qr-code'));
+
+            const btnGuide = document.getElementById('btn-guide');
+            document.querySelectorAll('.my-dropdown-item-guide').forEach(item => {
+                item.addEventListener('click', () => {
+                    showActiveDropdownItem(btnGuide, item);
+                });
+            });
+
+            const itemInitialGuideTab =
+                `.my-dropdown-item-guide[data-bs-target="${getTabIdByDevice()}"]`;
+            bootstrap.Tab.getOrCreateInstance(itemInitialGuideTab).show();
+            showActiveDropdownItem(
+                btnGuide,
+                document.querySelector(itemInitialGuideTab),
+            );
+
+            for (const [os, url] of Object.entries(SUB_URL_SCHEMES)) {
+                document.getElementById(`sub-url-${os}`).href = url;
+            }
+        });
+    </script>
+</body>
+
+</html>

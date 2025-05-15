@@ -28,6 +28,7 @@ included apps:
 
 ## remnawave-subscription-page [custom web template](https://remna.st/docs/install/remnawave-subscription-page#mounting-custom-template)
   - [simple happ only](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
+  - [marzbanify clash-sing](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/clash-sing/index.html)
 
 ## remnawave subscription  templates for clients
   - [mihomo](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/remnawave.yaml)
