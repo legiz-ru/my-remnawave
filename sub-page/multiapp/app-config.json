@@ -59,6 +59,28 @@
                     "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
                 }
             },
+            "additionalBeforeAddSubscriptionStep": {
+                "title": {
+                    "en": "Warning",
+                    "fa": "هشدار",
+                    "ru": "Предупреждение"
+                },
+                "description": {
+                    "en": "Apple has removed this app from the Russian App Store. You can use the region change guide to switch your region and be able to download this app.",
+                    "fa": "اپل این برنامه را از اپ استور روسیه حذف کرده است. شما می‌توانید با استفاده از راهنمای تغییر منطقه، منطقه خود را تغییر دهید تا بتوانید این برنامه را دانلود کنید.",
+                    "ru": "Apple удалила данное приложение из российского App Store. Вы можете воспользоваться инструкцией по смене региона, чтобы иметь возможность загрузить данное приложение"
+                },
+                "buttons": [
+                    {
+                        "buttonLink": "https://dtf.ru/games/3651890-poshagovaya-instrukciya-2025-kak-pomenyat-region-v-app-store-i-ustanovit-nuzhnye-prilozheniya",
+                        "buttonText": {
+                            "en": "Open the manual",
+                            "fa": "باز کردن راهنما",
+                            "ru": "Открыть инструкцию"
+                        }
+                    }
+                ]
+            },
             "addSubscriptionStep": {
                 "description": {
                     "en": "Click the button below — the app will open and the subscription will be added automatically",
@@ -187,18 +209,18 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://testflight.apple.com/join/bjHXktB3",
+                        "buttonLink": "https://apps.apple.com/us/app/clash-mi/id6744321968",
                         "buttonText": {
-                            "en": "Open in TestFlight",
-                            "fa": "باز کردن در TestFlight",
-                            "ru": "Открыть в TestFlight"
+                            "en": "Open in App Store",
+                            "fa": "باز کردن در App Store",
+                            "ru": "Открыть в App Store"
                         }
                     }
                 ],
                 "description": {
-                    "en": "Open the TestFlight page and install the app.",
-                    "fa": "صفحه TestFlight را باز کرده و برنامه را نصب کنید.",
-                    "ru": "Откройте страницу в TestFlight и установите приложение."
+                    "en": "Open the App Store page and install the app.",
+                    "fa": "صفحه App Store را باز کرده و برنامه را نصب کنید.",
+                    "ru": "Откройте страницу в App Store и установите приложение."
                 }
             },
             "addSubscriptionStep": {
