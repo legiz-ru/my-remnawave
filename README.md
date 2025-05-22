@@ -2,7 +2,7 @@
 ## remnawave-subscription-page [сlient configuration](https://remna.st/docs/install/remnawave-subscription-page#configuring-subscription-page-optional)
   - [simple (Clash Verge Rev for PC, Clash Meta for Android, sing-box for iOS)](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/app-config.json)
 <details>
-  <summary>multiapp</summary>
+  <summary>multiapp ↓ </summary>
   
 [link to multiapp app-config.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/multiapp/app-config.json)
 
@@ -44,7 +44,7 @@ happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI
 
 ## remnawave xhttp inbound tls via nginx + stream separation
 <details>
-  <summary>XHTTP indound json:</summary>
+  <summary>↓ XHTTP indound json:</summary>
 
 ```json
     {
@@ -92,7 +92,7 @@ happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI
 </details>
 
 <details>
-  <summary>XHTTP nginx reverse proxy:</summary>
+  <summary>↓ XHTTP nginx reverse proxy:</summary>
 
 ```nginx
         location /xhttppath/ {
@@ -108,14 +108,14 @@ happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI
 </details>
 
 <details>
-  <summary>host settings for inbound screenshot</summary>
+  <summary>↓ host settings for inbound screenshot</summary>
 
 ![image](https://github.com/user-attachments/assets/5cc1c68a-517f-4f35-86ef-c81a668df793)
 
 </details>
 
 <details>
-  <summary>host extra xhttp json:</summary>
+  <summary>↓ host extra xhttp json:</summary>
 
 ```json
 {
@@ -156,7 +156,7 @@ happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI
 </details>
 
 <details>
-  <summary>remnanode docker compose:</summary>
+  <summary>↓ remnanode docker compose:</summary>
 
 ```yaml
 services:
