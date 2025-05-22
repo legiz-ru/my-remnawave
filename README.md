@@ -1,6 +1,7 @@
 # my-remnawave
 ## remnawave-subscription-page [сlient configuration](https://remna.st/docs/install/remnawave-subscription-page#configuring-subscription-page-optional)
   - [simple (Clash Verge Rev for PC, Clash Meta for Android, sing-box for iOS)](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/app-config.json)
+
 <details>
   <summary>multiapp ↓ </summary>
   
