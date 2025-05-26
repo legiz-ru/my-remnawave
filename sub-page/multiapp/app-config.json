@@ -592,7 +592,7 @@
             "id": "flclash",
             "name": "FlClash",
             "isFeatured": false,
-            "urlScheme": "clash://install-config?name=Remnawave&url=",
+            "urlScheme": "flclash://install-config?url=",
             "installationStep": {
                 "buttons": [
                     {
