@@ -45,7 +45,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
+                        "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
                         "buttonText": {
                             "en": "Open in App Store",
                             "fa": "باز کردن در App Store",
@@ -58,28 +58,6 @@
                     "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
                     "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
                 }
-            },
-            "additionalBeforeAddSubscriptionStep": {
-                "title": {
-                    "en": "Warning",
-                    "fa": "هشدار",
-                    "ru": "Предупреждение"
-                },
-                "description": {
-                    "en": "Apple has removed this app from the Russian App Store. You can use the region change guide to switch your region and be able to download this app.",
-                    "fa": "اپل این برنامه را از اپ استور روسیه حذف کرده است. شما می‌توانید با استفاده از راهنمای تغییر منطقه، منطقه خود را تغییر دهید تا بتوانید این برنامه را دانلود کنید.",
-                    "ru": "Apple удалила данное приложение из российского App Store. Вы можете воспользоваться инструкцией по смене региона, чтобы иметь возможность загрузить данное приложение"
-                },
-                "buttons": [
-                    {
-                        "buttonLink": "https://dtf.ru/games/3651890-poshagovaya-instrukciya-2025-kak-pomenyat-region-v-app-store-i-ustanovit-nuzhnye-prilozheniya",
-                        "buttonText": {
-                            "en": "Open the manual",
-                            "fa": "باز کردن راهنما",
-                            "ru": "Открыть инструкцию"
-                        }
-                    }
-                ]
             },
             "addSubscriptionStep": {
                 "description": {
