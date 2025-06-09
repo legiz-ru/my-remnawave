@@ -71,14 +71,6 @@ happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI
           "mode": "auto",
           "path": "/xhttppath/",
           "extra": {
-            "xmux": {
-              "cMaxReuseTimes": 0,
-              "maxConcurrency": "16-32",
-              "maxConnections": 0,
-              "hKeepAlivePeriod": 0,
-              "hMaxRequestTimes": "600-900",
-              "hMaxReusableSecs": "1800-3000"
-            },
             "noSSEHeader": true,
             "xPaddingBytes": "100-1000",
             "scMaxBufferedPosts": 30,
