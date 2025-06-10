@@ -226,7 +226,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.9/cmfa-2.11.9-meta-universal-release.apk",
+                        "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.13/cmfa-2.11.13-meta-universal-release.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -324,7 +324,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.10/SFA-1.11.10-universal.apk",
+                        "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.13/SFA-1.11.13-universal.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -369,15 +369,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://play.google.com/store/apps/details?id=com.v2ray.ang",
-                        "buttonText": {
-                            "en": "Open in Google Play",
-                            "fa": "باز کردن در Google Play",
-                            "ru": "Открыть в Google Play"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.1/v2rayNG_1.10.1_universal.apk",
+                        "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.4/v2rayNG_1.10.4_universal.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -427,7 +419,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.14.5/Exclave-0.14.5-arm64-v8a.apk",
+                        "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.14.10/Exclave-0.14.10-arm64-v8a.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -574,7 +566,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.84/FlClash-0.8.84-windows-amd64-setup.exe",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.85/FlClash-0.8.85-windows-amd64-setup.exe",
                         "buttonText": {
                             "en": "Windows",
                             "fa": "ویندوز",
@@ -582,7 +574,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.84/FlClash-0.8.84-macos-amd64.dmg",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.85/FlClash-0.8.85-macos-amd64.dmg",
                         "buttonText": {
                             "en": "macOS (Intel)",
                             "fa": "مک (اینتل)",
@@ -590,7 +582,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.84/FlClash-0.8.84-macos-arm64.dmg",
+                        "buttonLink": "https://github.com/chen08209/FlClash/releases/download/v0.8.85/FlClash-0.8.85-macos-arm64.dmg",
                         "buttonText": {
                             "en": "macOS (Apple Silicon)",
                             "fa": "مک (Apple Silicon)",
