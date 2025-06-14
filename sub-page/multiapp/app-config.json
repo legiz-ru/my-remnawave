@@ -475,7 +475,7 @@
             "id": "clash-verge",
             "name": "Clash Verge",
             "isFeatured": true,
-            "urlScheme": "clash://install-config?name=Remnawave&url=",
+            "urlScheme": "clash://install-config?url=",
             "installationStep": {
                 "buttons": [
                     {
