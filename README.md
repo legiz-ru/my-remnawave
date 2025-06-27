@@ -9,27 +9,32 @@
 
 included apps:
   - iOS:
-  - - sing-box
-  - - Happ
+  - - sing-box ⭐
+  - - Happ ⭐
   - - Streisand
   - - ShadowRocket
   - - Clash Mi
   - Android:
-  - - Clash Meta for Android
-  - - Happ
+  - - Clash Meta for Android ⭐
+  - - Happ ⭐
+  - - FlClash ⭐
   - - sing-box
   - - v2rayNG
   - - Exclave
   - PC:
-  - - Clash Verge Rev
+  - - Clash Verge Rev ⭐
   - - FlClash
+  - - Happ (alpha)
+  - TV only support in [material sub page](https://github.com/legiz-ru/material-remnawave-subscription-page):
+  - - vpn4tv
   - - Happ (alpha)
 
 </details>
 
 ## remnawave-subscription-page [custom web template](https://remna.st/docs/install/remnawave-subscription-page#mounting-custom-template)
-  - [simple happ only](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
+  - [⭐ material sub page (with support app-config.json)](https://github.com/legiz-ru/material-remnawave-subscription-page)
   - [marzbanify clash-sing](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/clash-sing/index.html)
+  - [simple happ only (example how to create custom web template)](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
 
 ## remnawave subscription  templates for clients
   - [mihomo](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/remnawave.yaml)
