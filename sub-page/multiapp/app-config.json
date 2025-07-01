@@ -337,9 +337,9 @@
             },
             "connectAndUseStep": {
                 "description": {
-                    "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
-                    "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
-                    "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. "
+                    "en": "Select the added profile in the Profiles section. In the Control Panel, click the Enable button in the bottom right corner. Once it's running, you can change the server you're connected to in the Proxy section.",
+                    "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
+                    "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. "
                 }
             }
         },
