@@ -47,9 +47,17 @@
                     {
                         "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
                         "buttonText": {
-                            "en": "Open in App Store",
-                            "fa": "باز کردن در App Store",
-                            "ru": "Открыть в App Store"
+                            "en": "RU App Store",
+                            "fa": "اپ استور روسیه",
+                            "ru": "RU App Store"
+                        }
+                    },
+                    {
+                        "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
+                        "buttonText": {
+                            "en": "Global App Store",
+                            "fa": "اپ استور جهانی",
+                            "ru": "Глобальный App Store"
                         }
                     }
                 ],
@@ -169,6 +177,28 @@
                     "en": "Click the button below — the app will open and the subscription will be added automatically",
                     "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
                     "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
+                }
+            },
+            "additionalAfterAddSubscriptionStep": {
+                "buttons": [
+                    {
+                        "buttonLink": "https://cdn.sm1ky.pl/s/eB4eYAxSNGk8gja/download",
+                        "buttonText": {
+                            "en": "Add rules for Russia",
+                            "fa": "قوانین روسیه را اضافه کنید",
+                            "ru": "Добавить правила для России"
+                        }
+                    }
+                ],
+                "title": {
+                    "en": "Add routing rules",
+                    "fa": "قوانین مسیریابی را اضافه کنید",
+                    "ru": "Добавить правила маршрутизации"
+                },
+                "description": {
+                    "en": "By adding routing, internal websites and applications are not passed through the VPN",
+                    "fa": "با اضافه کردن مسیریابی, وب سایت ها و برنامه های داخلی از VPN عبور داده نمیشود",
+                    "ru": "При добавлении роутинга, сайты внутри страны будут открываться без VPN"
                 }
             },
             "connectAndUseStep": {
