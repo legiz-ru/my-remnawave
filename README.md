@@ -32,6 +32,7 @@ included apps:
 </details>
 
 ## remnawave-subscription-page [custom web template](https://remna.st/docs/install/remnawave-subscription-page#mounting-custom-template)
+  - [⭐ Orion (with redirector-page & support app-config.json)](https://github.com/legiz-ru/Orion)
   - [⭐ material sub page (with support app-config.json)](https://github.com/legiz-ru/material-remnawave-subscription-page)
   - [marzbanify clash-sing](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/clash-sing/index.html)
   - [simple happ only (example how to create custom web template)](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
