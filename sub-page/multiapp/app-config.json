@@ -295,13 +295,13 @@
         },
         {
             "id": "flclash",
-            "name": "FlClash",
+            "name": "FlClashX",
             "isFeatured": true,
             "urlScheme": "flclash://install-config?url=",
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/frayZV/FlClash/releases/download/v0.8.86_special_3/FlClash-0.8.86-android-arm64-v8a.apk",
+                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-arm64-v8a.apk",
                         "buttonText": {
                             "en": "Download APK",
                             "fa": "دانلود APK",
@@ -640,13 +640,13 @@
         },
         {
             "id": "flclash",
-            "name": "FlClash",
-            "isFeatured": false,
+            "name": "FlClashX",
+            "isFeatured": true,
             "urlScheme": "flclash://install-config?url=",
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/frayZV/FlClash/releases/download/v0.8.86_special_3/FlClash-0.8.86-windows-amd64-setup.exe",
+                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-windows-amd64-setup.exe",
                         "buttonText": {
                             "en": "Windows",
                             "fa": "ویندوز",
@@ -654,7 +654,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/frayZV/FlClash/releases/download/v0.8.86_special_3/FlClash-0.8.86-macos-amd64.dmg",
+                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-macos-amd64.dmg",
                         "buttonText": {
                             "en": "macOS (Intel)",
                             "fa": "مک (اینتل)",
@@ -662,7 +662,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/frayZV/FlClash/releases/download/v0.8.86_special_3/FlClash-0.8.86-macos-arm64.dmg",
+                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-macos-arm64.dmg",
                         "buttonText": {
                             "en": "macOS (Apple Silicon)",
                             "fa": "مک (Apple Silicon)",
@@ -670,7 +670,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/frayZV/FlClash/releases/latest",
+                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/latest",
                         "buttonText": {
                             "en": "Linux",
                             "fa": "لینوکس",
