@@ -308,7 +308,7 @@
             "installationStep": {
                 "buttons": [
                     {
-                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/download/v0.2.3/Clash.Verge.Rev.Lite_0.2.3_x64-setup.exe",
+                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_x64-setup.exe",
                         "buttonText": {
                             "en": "Windows",
                             "fa": "ویندوز",
@@ -316,7 +316,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/download/v0.2.3/Clash.Verge.Rev.Lite_0.2.3_x64.dmg",
+                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_x64.dmg",
                         "buttonText": {
                             "en": "macOS (Intel)",
                             "fa": "مک (اینتل)",
@@ -324,7 +324,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/download/v0.2.3/Clash.Verge.Rev.Lite_0.2.3_aarch64.dmg",
+                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_aarch64.dmg",
                         "buttonText": {
                             "en": "macOS (Apple Silicon)",
                             "fa": "مک (Apple Silicon)",
@@ -332,7 +332,7 @@
                         }
                     },
                     {
-                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases",
+                        "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/",
                         "buttonText": {
                             "en": "Linux",
                             "fa": "لینوکس",
