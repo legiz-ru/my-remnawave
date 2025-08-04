@@ -1,1016 +1,2004 @@
 {
-    "ios": [
-        {
-            "id": "sing-box",
-            "name": "sing-box",
-            "isFeatured": true,
-            "urlScheme": "sing-box://import-remote-profile/?url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://apps.apple.com/app/sing-box-vt/id6673731168",
-                        "buttonText": {
-                            "en": "Open in App Store",
-                            "fa": "باز کردن در App Store",
-                            "ru": "Открыть в App Store"
+    "config": {
+        "additionalLocales": [
+            "fa",
+            "ru",
+            "zh"
+        ]
+    },
+    "platforms": {
+        "ios": [
+            {
+                "id": "sing-box",
+                "name": "sing-box",
+                "isFeatured": true,
+                "urlScheme": "sing-box://import-remote-profile/?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/app/sing-box-vt/id6673731168",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开"
+                            }
                         }
-                    }
-                ],
-                "description": {
-                    "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
-                    "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
-                    "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below — the app will open and the subscription will be added automatically",
-                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
-                    "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
-                    "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN."
-                }
-            }
-        },
-        {
-            "id": "happ",
-            "name": "Happ",
-            "isFeatured": true,
-            "urlScheme": "happ://add/",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
-                        "buttonText": {
-                            "en": "RU App Store",
-                            "fa": "اپ استور روسیه",
-                            "ru": "RU App Store"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
-                        "buttonText": {
-                            "en": "Global App Store",
-                            "fa": "اپ استور جهانی",
-                            "ru": "Глобальный App Store"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
-                    "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
-                    "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below — the app will open and the subscription will be added automatically",
-                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
-                    "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
-                    "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
-                }
-            }
-        },
-        {
-            "id": "streisand",
-            "name": "Streisand",
-            "isFeatured": false,
-            "urlScheme": "streisand://import/",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://apps.apple.com/ru/app/streisand/id6450534064",
-                        "buttonText": {
-                            "en": "Open in App Store",
-                            "fa": "باز کردن در App Store",
-                            "ru": "Открыть в App Store"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
-                    "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
-                    "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below — the app will open and the subscription will be added automatically",
-                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "streisand://aW1wb3J0L3JvdXRlOi8vWW5Cc2FYTjBNRERWQVFJREJBVUdEQlVXRjFWeWRXeGxjMTFrYjIxaGFXNU5ZWFJqYUdWeVZHNWhiV1ZlWkc5dFlXbHVVM1J5WVhSbFozbFVkWFZwWktJSEVkUUlDUW9MREEwT0VGMWtiMjFoYVc1TllYUmphR1Z5Vm1SdmJXRnBibEpwY0Z0dmRYUmliM1Z1WkZSaFoxWnNhVzVsWVhLZ29ROVlaMlZ2YVhBNmNuVldaR2x5WldOMDBoSUpFQk5iYjNWMFltOTFibVJVWVdlaEZGNXlaV2RsZUhBNkxpcGNMbkoxSkcwQVVnQlZBQzBBUkFCcEFISUFaUUJqQUhUWVBOMzMyRHpkK2xwSlVFOXVSR1Z0WVc1a1h4QWtOVU5CUmpGRU5rWXRPRVV3TWkwME5EUTFMVUkxTWpjdE5rVkVRVGN3TVRZNE1UVkRDQk1aSnl3N1FFTk1XbUZrY0hkNGVvT0tqNXVkck1mU0FBQUFBQUFBQVFFQUFBQUFBQUFBR0FBQUFBQUFBQUFBQUFBQUFBQUFBUGs9",
-                        "buttonText": {
-                            "en": "Add rules for Russia",
-                            "fa": "قوانین روسیه را اضافه کنید",
-                            "ru": "Добавить правила для России"
-                        }
-                    },
-                    {
-                        "buttonLink": "streisand://aW1wb3J0L3JvdXRlOi8vWW5Cc2FYTjBNRERWQVFJREJBVUdEaU1rSlZWeWRXeGxjMTFrYjIxaGFXNU5ZWFJqYUdWeVZHNWhiV1ZlWkc5dFlXbHVVM1J5WVhSbFozbFVkWFZwWktJSEZ0VUlDUW9MREEwT0R4SVZXMjkxZEdKdmRXNWtWR0ZuWFdSdmJXRnBiazFoZEdOb1pYSldaRzl0WVdsdVVtbHdWMjVsZEhkdmNtdFdaR2x5WldOMFZtaDVZbkpwWktJUUVWOFFFMmRsYjNOcGRHVTZZMkYwWldkdmNua3RhWEpmRUE5eVpXZGxlSEE2TGlwY1hDNXBjaVNpRXhSWVoyVnZhWEE2YVhKZFoyVnZhWEE2Y0hKcGRtRjBaVjhRUkZSRFVDd2dWVVJRTENCSVZGUlFMQ0JJVkZSUVV5d2dVMU5JTENCVFRWUlFMQ0JUVGsxUUxDQk9WRkFzSUVaVVVDd2dVRTlRTXl3Z1NVMUJVQ3dnVkdWc2JtVjAxQmNZQ2d3WkRob1ZXMjkxZEdKdmRXNWtWR0ZuWFdSdmJXRnBiazFoZEdOb1pYSlZZbXh2WTJ1b0d4d2RIaDhnSVNKZkVCaG5aVzl6YVhSbE9tTmhkR1ZuYjNKNUxXRmtjeTFoYkd4ZkVCUm5aVzl6YVhSbE9tTmhkR1ZuYjNKNUxXRmtjMThRRVdkbGIzTnBkR1U2ZVdGb2IyOHRZV1J6WHhBVFoyVnZjMmwwWlRwemNHOTBhV1o1TFdGa2MxOFFFbWRsYjNOcGRHVTZaMjl2WjJ4bExXRmtjMThRRVdkbGIzTnBkR1U2WVhCd2JHVXRZV1J6WHhBU1oyVnZjMmwwWlRwaGJXRjZiMjR0WVdSelh4QVJaMlZ2YzJsMFpUcGhaRzlpWlMxaFpITnVBRWtBVWdBdEFFUUFhUUJ5QUdVQVl3QjBBQ0RZUE4zdTJEemQ5MXhKVUVsbVRtOXVUV0YwWTJoZkVDUTNNamt5T1RCRlJDMUdSVFpCTFRReE9VVXRPVE15TmkxRE1rVkJOREl3UmpWQk0wTUFDQUFUQUJrQUp3QXNBRHNBUUFCREFFNEFXZ0JvQUc4QWNnQjZBSUVBaUFDTEFLRUFzd0MyQUw4QXpRRVVBUjBCS1FFM0FUMEJSZ0ZoQVhnQmpBR2lBYmNCeXdIZ0FmUUNFUUllQUFBQUFBQUFBZ0VBQUFBQUFBQUFKZ0FBQUFBQUFBQUFBQUFBQUFBQUFrVT0=",
-                        "buttonText": {
-                            "en": "Add rules for Iran",
-                            "fa": "قوانین ایران را اضافه کنید",
-                            "ru": "Добавить правила для Ирана"
-                        }
-                    }
-                ],
-                "title": {
-                    "en": "Add routing rules",
-                    "fa": "قوانین مسیریابی را اضافه کنید",
-                    "ru": "Добавить правила маршрутизации"
-                },
-                "description": {
-                    "en": "By adding routing, internal websites and applications are not passed through the VPN",
-                    "fa": "با اضافه کردن مسیریابی, وب سایت ها و برنامه های داخلی از VPN عبور داده نمیشود",
-                    "ru": "При добавлении роутинга, сайты внутри страны будут открываться без VPN"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
-                    "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
-                    "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
-                }
-            }
-        },
-        {
-            "id": "shadowrocket",
-            "name": "Shadowrocket",
-            "isFeatured": false,
-            "urlScheme": "sub://",
-            "isNeedBase64Encoding": true,
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://apps.apple.com/ru/app/shadowrocket/id932747118",
-                        "buttonText": {
-                            "en": "Open in App Store",
-                            "fa": "باز کردن در App Store",
-                            "ru": "Открыть в App Store"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
-                    "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
-                    "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below — the app will open and the subscription will be added automatically",
-                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://cdn.sm1ky.pl/s/eB4eYAxSNGk8gja/download",
-                        "buttonText": {
-                            "en": "Add rules for Russia",
-                            "fa": "قوانین روسیه را اضافه کنید",
-                            "ru": "Добавить правила для России"
-                        }
-                    }
-                ],
-                "title": {
-                    "en": "Add routing rules",
-                    "fa": "قوانین مسیریابی را اضافه کنید",
-                    "ru": "Добавить правила маршрутизации"
-                },
-                "description": {
-                    "en": "By adding routing, internal websites and applications are not passed through the VPN",
-                    "fa": "با اضافه کردن مسیریابی, وب سایت ها و برنامه های داخلی از VPN عبور داده نمیشود",
-                    "ru": "При добавлении роутинга, сайты внутри страны будут открываться без VPN"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
-                    "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
-                    "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
-                }
-            }
-        },
-        {
-            "id": "clash-mi",
-            "name": "Clash Mi",
-            "isFeatured": false,
-            "urlScheme": "clash://install-config?overwrite=no&name=Remnawave&url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://apps.apple.com/us/app/clash-mi/id6744321968",
-                        "buttonText": {
-                            "en": "Open in App Store",
-                            "fa": "باز کردن در App Store",
-                            "ru": "Открыть в App Store"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Open the App Store page and install the app.",
-                    "fa": "صفحه App Store را باز کرده و برنامه را نصب کنید.",
-                    "ru": "Откройте страницу в App Store и установите приложение."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Tap the button below — the app will open and the subscription will be added automatically.",
-                    "fa": "روی دکمه زیر ضربه بزنید — برنامه باز می‌شود و اشتراک به‌صورت خودکار اضافه می‌گردد.",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "On the main screen, tap the Disconnected button, then in the VPN configuration prompt tap Allow and enter your password to connect.",
-                    "fa": "در صفحه اصلی روی دکمه Disconnected بزنید، سپس در پنجره مجوز پیکربندی VPN روی Allow ضربه بزنید و برای اتصال، رمز عبور خود را وارد کنید.",
-                    "ru": "На главной странице нажми кнопку Disconnected,  в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN."
-                }
-            }
-        }
-    ],
-    "android": [
-        {
-            "id": "clash-meta",
-            "name": "Clash Meta",
-            "isFeatured": true,
-            "urlScheme": "clash://install-config?name=Remnawave&url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.15/cmfa-2.11.15-meta-universal-release.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://f-droid.org/packages/com.github.metacubex.clash.meta/",
-                        "buttonText": {
-                            "en": "Open in F-Droid",
-                            "fa": "در F-Droid باز کنید",
-                            "ru": "Открыть в F-Droid"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Download and install Clash Meta APK",
-                    "fa": "دانلود و نصب Clash Meta APK",
-                    "ru": "Скачайте и установите Clash Meta APK"
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to open the profile creation window. You will need to specify the auto-update period, for example, 720 minutes. Click the Save button in the top right corner.",
-                    "fa": "دکمه زیر را بزنید تا پنجره ایجاد پروفایل باز شود. شما باید دوره به‌روزرسانی خودکار را مشخص کنید، مثلاً ۷۲۰ دقیقه. دکمه ذخیره را در بالا سمت راست بزنید.",
-                    "ru": "Нажми кнопку ниже — откроется окно создания профиля. Тебе потребуется указать период автообновления, например, 720 минут. Справа вверху нажми на кнопку Сохранить."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Go to the Profiles section and select the created profile, then return to the main page. Now you can connect by clicking the Stopped button.",
-                    "fa": "به بخش پروفایل‌ها بروید و پروفایل ایجاد شده را انتخاب کنید، سپس به صفحه اصلی بازگردید. اکنون می‌توانید با زدن دکمه «متوقف شده» متصل شوید.",
-                    "ru": "Перейди в пункт Профили и выбери созданный профиль, затем вернись на главную страницу. Теперь ты можешь подключиться, нажав на кнопку Остановлен"
-                }
-            }
-        },
-        {
-            "id": "flclash",
-            "name": "FlClashX",
-            "isFeatured": true,
-            "urlScheme": "flclash://install-config?url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-arm64-v8a.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Download and install FlClash APK",
-                    "fa": "دانلود و نصب FlClash APK",
-                    "ru": "Скачайте и установите FlClash APK"
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку"
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [],
-                "title": {
-                    "en": "If the subscription is not added",
-                    "fa": "اگر اشتراک در برنامه نصب نشده است",
-                    "ru": "Если подписка не добавилась"
-                },
-                "description": {
-                    "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
-                    "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                    "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Select the added profile in the Profiles section. In the Control Panel, click the Enable button in the bottom right corner. Once it's running, you can change the server you're connected to in the Proxy section.",
-                    "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
-                    "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. "
-                }
-            }
-        },
-        {
-            "id": "happ",
-            "name": "Happ",
-            "isFeatured": true,
-            "urlScheme": "happ://add/",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://play.google.com/store/apps/details?id=com.happproxy",
-                        "buttonText": {
-                            "en": "Open in Google Play",
-                            "fa": "باز کردن در Google Play",
-                            "ru": "Открыть в Google Play"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
-                    "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
-                    "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Open the app and connect to the server",
-                    "fa": "برنامه را باز کنید و به سرور متصل شوید",
-                    "ru": "Откройте приложение и подключитесь к серверу"
-                }
-            }
-        },
-        {
-            "id": "sing-box",
-            "name": "sing-box",
-            "isFeatured": false,
-            "urlScheme": "sing-box://import-remote-profile/?url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://play.google.com/store/apps/details?id=io.nekohasekai.sfa",
-                        "buttonText": {
-                            "en": "Open in Google Play",
-                            "fa": "باز کردن در Google Play",
-                            "ru": "Открыть в Google Play"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.15/SFA-1.11.15-universal.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://f-droid.org/packages/io.nekohasekai.sfa/",
-                        "buttonText": {
-                            "en": "Open in F-Droid",
-                            "fa": "در F-Droid باز کنید",
-                            "ru": "Открыть в F-Droid"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
-                    "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
-                    "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below — the app will open and the subscription will be added automatically",
-                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "On the Dashboard page, select the added profile and click the Enable button in the bottom right corner to connect to the VPN.",
-                    "fa": "در صفحه اصلی داشبورد، پروفایل اضافه‌شده را انتخاب کنید و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید تا به VPN متصل شوید.",
-                    "ru": "На главной странице Dashboard выберите добавленный профиль и нажмите кнопку Включить в правом нижнем углу для подключения к VPN."
-                }
-            }
-        },
-        {
-            "id": "v2rayNG",
-            "name": "v2rayNG",
-            "isFeatured": false,
-            "urlScheme": "v2rayng://install-config?name=Remnawave&url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.11/v2rayNG_1.10.11_universal.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Download and install v2rayNG APK",
-                    "fa": "دانلود و نصب v2rayNG APK",
-                    "ru": "Скачайте и установите v2rayNG APK"
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below — the app will open and the subscription will be added automatically",
-                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [],
-                "title": {
-                    "en": "Update subscriptions",
-                    "fa": "به‌روزرسانی اشتراک‌ها",
-                    "ru": "Обновление подписки"
-                },
-                "description": {
-                    "en": "Tap the three dots in the top-right corner and select Update subscription. After that, the available servers will appear in the list.",
-                    "fa": "روی سه نقطه در گوشه بالا سمت راست کلیک کنید و گزینه به‌روزرسانی اشتراک را انتخاب کنید. سپس سرورهای موجود در لیست ظاهر می‌شوند.",
-                    "ru": "Нажмите на три точечки справа сверху и выберите Обновить подписку. После этого в списке появятся доступные серверы"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Select the required server and click the Enable button in the bottom right corner.",
-                    "fa": "سرور موردنظر را انتخاب کنید و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید.",
-                    "ru": "Выберите требуемый сервер и нажмите кнопку Включить в правом нижнем углу"
-                }
-            }
-        },
-        {
-            "id": "exclave",
-            "name": "Exclave",
-            "isFeatured": false,
-            "urlScheme": "exclave://subscription?url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.15.3/Exclave-0.15.3-arm64-v8a.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://f-droid.org/packages/com.github.dyhkwong.sagernet",
-                        "buttonText": {
-                            "en": "Open in F-Droid",
-                            "fa": "در F-Droid باز کنید",
-                            "ru": "Открыть в F-Droid"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Download and install Exclave APK",
-                    "fa": "دانلود و نصب Exclave APK",
-                    "ru": "Скачайте и установите Exclave APK"
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку"
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [],
-                "title": {
-                    "en": "Enable subscription auto-renewal",
-                    "fa": "تمدید خودکار اشتراک را فعال کنید",
-                    "ru": "Включите автообновление подписки"
-                },
-                "description": {
-                    "en": "In the Groups section, go to the editing mode of the added subscription and enable the toggle next to Auto-Renewal. You can also rename the subscription if needed.",
-                    "fa": "در بخش گروه‌ها، وارد حالت ویرایش اشتراک اضافه‌شده شوید و گزینه تمدید خودکار را فعال کنید. همچنین در صورت نیاز می‌توانید نام اشتراک را تغییر دهید.",
-                    "ru": "В разделе Группы перейдите в режим редактирования добавленной подписки, включите переключатель у пункта Автоматическое обновление. Так же вы можете переименовать подписку, если требуется."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Select the desired server in the Configuration section and click the Enable button in the bottom right corner.",
-                    "fa": "در بخش پیکربندی، سرور مورد نظر را انتخاب کرده و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید.",
-                    "ru": "Выберите требуемый сервер в разделе Конфигурация и нажмите кнопку Включить в правом нижнем углу"
-                }
-            }
-        }
-    ],
-    "pc": [
-        {
-            "id": "clash-verge",
-            "name": "Clash Verge",
-            "isFeatured": true,
-            "urlScheme": "clash://install-config?url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_x64-setup.exe",
-                        "buttonText": {
-                            "en": "Windows",
-                            "fa": "ویندوز",
-                            "ru": "Windows"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_x64.dmg",
-                        "buttonText": {
-                            "en": "macOS (Intel)",
-                            "fa": "مک (اینتل)",
-                            "ru": "macOS (Intel)"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_aarch64.dmg",
-                        "buttonText": {
-                            "en": "macOS (Apple Silicon)",
-                            "fa": "مک (Apple Silicon)",
-                            "ru": "macOS (Apple Silicon)"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases",
-                        "buttonText": {
-                            "en": "Linux",
-                            "fa": "لینوکس",
-                            "ru": "Linux"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Choose the version for your device, click the button below and install the app.",
-                    "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
-                    "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
-                }
-            },
-            "additionalBeforeAddSubscriptionStep": {
-                "buttons": [],
-                "description": {
-                    "en": "After launching the app, you can change the language in settings. In the left panel, find the gear icon, then navigate to Verge 设置 and select 语言设置.",
-                    "fa": "پس از راه‌اندازی برنامه، می‌توانید زبان را در تنظیمات تغییر دهید. در پنل سمت چپ، نماد چرخ دنده را پیدا کنید، سپس به Verge 设置 بروید و 语言设置 را انتخاب کنید.",
-                    "ru": "После запуска приложения вы можете сменить язык в настройках. В левой панели найдите иконку шестеренки, далее ориентируйтесь на Verge 设置 и выберите пункт 语言设置."
-                },
-                "title": {
-                    "en": "Change language",
-                    "fa": "تغییر زبان",
-                    "ru": "Смена языка"
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку"
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [],
-                "title": {
-                    "en": "If the subscription is not added",
-                    "fa": "اگر اشتراک در برنامه نصب نشده است",
-                    "ru": "Если подписка не добавилась"
-                },
-                "description": {
-                    "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Clash Verge, go to the Profiles section and paste the link in the text field, then click the Import button.",
-                    "fa": "اگر پس از کلیک روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در گوشه بالا سمت راست این صفحه روی دکمه دریافت لینک کلیک کنید، لینک را کپی کنید. در Clash Verge به بخش پروفایل‌ها بروید و لینک را در فیلد متنی وارد کنید، سپس روی دکمه وارد کردن کلیک کنید.",
-                    "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Clash Verge перейдите в раздел Профили и вставьте ссылку в текстовое поле, затем нажмите на кнопку Импорт."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "You can select a server in the Proxy section, and enable VPN in the Settings section. Set the TUN Mode switch to ON.",
-                    "fa": "می‌توانید در بخش پروکسی سرور را انتخاب کنید و در بخش تنظیمات VPN را فعال کنید. کلید TUN Mode را در حالت روشن قرار دهید.",
-                    "ru": "Выбрать сервер можно в разделе Прокси, включить VPN можно в разделе Настройки. Установите переключатель TUN Mode в положение ВКЛ."
-                }
-            }
-        },
-        {
-            "id": "flclash",
-            "name": "FlClashX",
-            "isFeatured": true,
-            "urlScheme": "flclash://install-config?url=",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-windows-amd64-setup.exe",
-                        "buttonText": {
-                            "en": "Windows",
-                            "fa": "ویندوز",
-                            "ru": "Windows"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-macos-amd64.dmg",
-                        "buttonText": {
-                            "en": "macOS (Intel)",
-                            "fa": "مک (اینتل)",
-                            "ru": "macOS (Intel)"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-macos-arm64.dmg",
-                        "buttonText": {
-                            "en": "macOS (Apple Silicon)",
-                            "fa": "مک (Apple Silicon)",
-                            "ru": "macOS (Apple Silicon)"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/pluralplay/FlClashX/releases/latest",
-                        "buttonText": {
-                            "en": "Linux",
-                            "fa": "لینوکس",
-                            "ru": "Linux"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Choose the version for your device, click the button below and install the app.",
-                    "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
-                    "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку"
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [],
-                "title": {
-                    "en": "If the subscription is not added",
-                    "fa": "اگر اشتراک در برنامه نصب نشده است",
-                    "ru": "Если подписка не добавилась"
-                },
-                "description": {
-                    "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
-                    "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                    "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
-                    "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
-                    "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. "
-                }
-            }
-        },
-        {
-            "id": "happ",
-            "name": "Happ (alpha)",
-            "isFeatured": false,
-            "urlScheme": "happ://add/",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
-                        "buttonText": {
-                            "en": "Windows",
-                            "fa": "ویندوز",
-                            "ru": "Windows"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.macOS.x86_64.app.tar.gz",
-                        "buttonText": {
-                            "en": "macOS (Intel)",
-                            "fa": "مک (اینتل)",
-                            "ru": "macOS (Intel)"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.macOS.arm64.app.tar.gz",
-                        "buttonText": {
-                            "en": "macOS (Apple Silicon)",
-                            "fa": "مک (Apple Silicon)",
-                            "ru": "macOS (Apple Silicon)"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x86.AppImage",
-                        "buttonText": {
-                            "en": "Linux",
-                            "fa": "لینوکس",
-                            "ru": "Linux"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Choose the version for your device, click the button below and install the app.",
-                    "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
-                    "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below — the app will open and the subscription will be added automatically",
-                    "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
-                    "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически."
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
-                    "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
-                    "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
-                }
-            }
-        }
-    ],
-    "TV": [
-        {
-            "id": "happ",
-            "name": "Happ",
-            "isFeatured": true,
-            "urlScheme": "happ://add/",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://play.google.com/store/apps/details?id=com.happproxy",
-                        "buttonText": {
-                            "en": "Open in Google Play",
-                            "fa": "باز کردن در Google Play",
-                            "ru": "Открыть в Google Play"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
-                    "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
-                    "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
-                }
-            },
-            "additionalBeforeAddSubscriptionStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://www.happ.su/main/ru/faq/android-tv",
-                        "buttonText": {
-                            "en": "In Russian",
-                            "fa": "به زبان روسی",
-                            "ru": "На русском"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://www.happ.su/main/faq/android-tv",
-                        "buttonText": {
-                            "en": "In English",
-                            "fa": "به زبان انگلیسی",
-                            "ru": "На английском"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Detailed instructions to help you set up Happ on your device.",
-                    "fa": "راهنمای دقیق برای کمک به تنظیم Happ روی دستگاه شما.",
-                    "ru": "Подробные инструкции, чтобы помочь вам настроить Happ на вашем устройстве."
-                },
-                "title": {
-                    "en": "Installation instructions",
-                    "fa": "دستورالعمل نصب",
-                    "ru": "Инструкции по установке"
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription, if you opened the subscription page on your TV",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید، اگر صفحه اشتراک را روی تلویزیون باز کرده‌اید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку, если вы открыли страницу подписки на телевизоре"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Open the app and connect to the server",
-                    "fa": "برنامه را باز کنید و به سرور متصل شوید",
-                    "ru": "Откройте приложение и подключитесь к серверу"
-                }
-            }
-        },
-        {
-            "id": "flclash",
-            "name": "FlClashX",
-            "isFeatured": true,
-            "urlScheme": "flclash://install-config?url=",
-            "installationStep": {
-            "buttons": [
-                {
-                    "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-arm64-v8a.apk",
-                    "buttonText": {
-                        "en": "Download APK (ARMv8)",
-                        "fa": "دانلود APK (ARMv8)",
-                        "ru": "Скачать APK (ARMv8)"
+                    ],
+                    "description": {
+                        "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                        "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль.",
+                        "zh": "在 App Store 打开页面并安装应用。启动应用后，在 VPN 配置权限窗口点击“允许”，并输入您的密码。"
                     }
                 },
-                {
-                    "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-armeabi-v7a.apk",
-                    "buttonText": {
-                        "en": "Download APK (ARMv7)",
-                        "fa": "دانلود APK (ARMv7)",
-                        "ru": "Скачать APK (ARMv7)"
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
                     }
                 },
-                {
-                    "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-x86_64.apk",
-                    "buttonText": {
-                        "en": "Download APK (x86_64)",
-                        "fa": "دانلود APK (x86_64)",
-                        "ru": "Скачать APK (x86_64)"
-                    }
-                },
-                {
-                    "buttonLink": "https://club.dns-shop.ru/blog/t-132-televizoryi/43999-failyi-apk-dlya-umnyih-televizorov-na-android/?utm_referrer=https%3A%2F%2Fwww.google.com%2F",
-                    "buttonText": {
-                        "en": "How to install APK on TV",
-                        "fa": "نحوه نصب APK روی تلویزیون",
-                        "ru": "Как установить APK на телевизор"
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
+                        "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
+                        "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN.",
+                        "zh": "在主面板页面，点击“已启用”按钮连接 VPN。"
                     }
                 }
-            ],
-            "description": {
-                "en": "Download and install FlClash APK on your TV. Most modern TVs use ARMv8 (64-bit). If installation fails, try ARMv7 (32-bit). x86_64 is for TVs or boxes with Intel or AMD processors (rare).",
-                "fa": "دانلود و نصب FlClash APK روی تلویزیون شما. اکثر تلویزیون‌های جدید از ARMv8 (64 بیتی) استفاده می‌کنند. اگر نصب انجام نشد، ARMv7 (32 بیتی) را امتحان کنید. نسخه x86_64 مخصوص تلویزیون‌ها یا باکس‌هایی با پردازنده‌های اینتل یا AMD است (نادر).",
-                "ru": "Скачайте и установите FlClash APK на ваш телевизор. Большинство современных телевизоров используют ARMv8 (64-бит). Если установка не удалась, попробуйте ARMv7 (32-бит). x86_64 предназначен для ТВ или приставок с процессорами Intel или AMD (редко)."
-            }
             },
-            "additionalBeforeAddSubscriptionStep": {
-                "buttons": [],
-                "description": {
-                    "en": "In the TV app, click the Add Profile button in the Profiles section, select Add from phone. On your phone, in the Profiles section, tap the three-dot menu and choose Send to TV.",
-                    "fa": "در برنامه تلویزیون، روی دکمه افزودن پروفایل در بخش پروفایل‌ها کلیک کنید، گزینه افزودن از تلفن را انتخاب کنید. در تلفن، در بخش پروفایل‌ها روی منوی سه نقطه بزنید و گزینه ارسال به تلویزیون را انتخاب کنید.",
-                    "ru": "В приложении на телевизоре нажмите кнопку Добавить профиль в разделе Профили, выберите пункт Добавить с телефона. На телефоне в разделе Профили нажмите кнопку с тремя точками и выберите пункт Отправить на ТВ."
-                },
-                "title": {
-                    "en": "How to add a subscription on TV",
-                    "fa": "نحوه افزودن اشتراک در تلویزیون",
-                    "ru": "Как добавить подписку на телевизоре"
-                }
-            },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription, if you opened the subscription page on your TV",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید، اگر صفحه اشتراک را روی تلویزیون باز کرده‌اید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку, если вы открыли страницу подписки на телевизоре"
-                }
-            },
-            "additionalAfterAddSubscriptionStep": {
-                "buttons": [],
-                "title": {
-                    "en": "If the subscription is not added",
-                    "fa": "اگر اشتراک در برنامه نصب نشده است",
-                    "ru": "Если подписка не добавилась"
-                },
-                "description": {
-                    "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
-                    "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
-                    "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить"
-                }
-            },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Select the added profile in the Profiles section. In the Control Panel, click the Enable button in the bottom right corner. Once it's running, you can change the server you're connected to in the Proxy section.",
-                    "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
-                    "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. "
-                }
-            }
-        },
-        {
-            "id": "hiddify",
-            "name": "vpn4tv",
-            "isFeatured": false,
-            "urlScheme": "hiddify://import/",
-            "installationStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://play.google.com/store/apps/details?id=com.vpn4tv.hiddify",
-                        "buttonText": {
-                            "en": "Open in Google Play",
-                            "fa": "باز کردن در Google Play",
-                            "ru": "Открыть в Google Play"
+            {
+                "id": "happ",
+                "name": "Happ",
+                "isFeatured": true,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
+                            "buttonText": {
+                                "en": "RU App Store",
+                                "fa": "اپ استور روسیه",
+                                "ru": "RU App Store",
+                                "zh": "俄罗斯区 App Store"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
+                            "buttonText": {
+                                "en": "Global App Store",
+                                "fa": "اپ استور جهانی",
+                                "ru": "Глобальный App Store",
+                                "zh": "全球 App Store"
+                            }
                         }
+                    ],
+                    "description": {
+                        "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                        "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль.",
+                        "zh": "在 App Store 打开页面并安装应用。启动应用后，在 VPN 配置权限窗口点击“允许”，并输入您的密码。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。"
+                    }
+                }
+            },
+            {
+                "id": "streisand",
+                "name": "Streisand",
+                "isFeatured": false,
+                "urlScheme": "streisand://import/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/ru/app/streisand/id6450534064",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                        "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль.",
+                        "zh": "在 App Store 打开页面并安装应用。启动应用后，在 VPN 配置权限窗口点击“允许”，并输入您的密码。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "streisand://aW1wb3J0L3JvdXRlOi8vWW5Cc2FYTjBNRERWQVFJREJBVUdEQlVXRjFWeWRXeGxjMTFrYjIxaGFXNU5ZWFJqYUdWeVZHNWhiV1ZlWkc5dFlXbHVVM1J5WVhSbFozbFVkWFZwWktJSEVkUUlDUW9MREEwT0VGMWtiMjFoYVc1TllYUmphR1Z5Vm1SdmJXRnBibEpwY0Z0dmRYUmliM1Z1WkZSaFoxWnNhVzVsWVhLZ29ROVlaMlZ2YVhBNmNuVldaR2x5WldOMDBoSUpFQk5iYjNWMFltOTFibVJVWVdlaEZGNXlaV2RsZUhBNkxpcGNMbkoxSkcwQVVnQlZBQzBBUkFCcEFISUFaUUJqQUhUWVBOMzMyRHpkK2xwSlVFOXVSR1Z0WVc1a1h4QWtOVU5CUmpGRU5rWXRPRVV3TWkwME5EUTFMVUkxTWpjdE5rVkVRVGN3TVRZNE1UVkRDQk1aSnl3N1FFTk1XbUZrY0hkNGVvT0tqNXVkck1mU0FBQUFBQUFBQVFFQUFBQUFBQUFBR0FBQUFBQUFBQUFBQUFBQUFBQUFBBUGs9",
+                            "buttonText": {
+                                "en": "Add rules for Russia",
+                                "fa": "قوانین روسیه را اضافه کنید",
+                                "ru": "Добавить правила для России",
+                                "zh": "添加俄罗斯规则"
+                            }
+                        },
+                        {
+                            "buttonLink": "streisand://aW1wb3J0L3JvdXRlOi8vWW5Cc2FYTjBNRERWQVFJREJBVUdEaU1rSlZWeWRXeGxjMTFrYjIxaGFXNU5ZWFJqYUdWeVZHNWhiV1ZlWkc5dFlXbHVVM1J5WVhSbFozbFVkWFZwWktJSEZ0VUlDUW9MREEwT0R4SVZXMjkxZEdKdmRXNWtWR0ZuWFdSdmJXRnBiazFoZEdOb1pYSldaRzl0WVdsdVVtbHdWMjVsZEhkdmNtdFdaR2x5WldOMFZtaDVZbkpwWktJUUVWOFFFMmRsYjNOcGRHVTZZMkYwWldkdmNua3RhWEpmRUE5eVpXZGxlSEE2TGlwY1hDNXBjaVNpRXhSWVoyVnZhWEE2YVhKZFoyVnZhWEE2Y0hKcGRtRjBaVjhRUkZSRFVDd2dWVVJRTENCSVZGUlFMQ0JJVkZSUVV5d2dVMU5JTENCVFRWUlFMQ0JUVGsxUUxDQk9WRkFzSUVaVVVDd2dVRTlRTXl3Z1NVMUJVQ3dnVkdWc2JtVjAxQmNZQ2d3WkRob1ZXMjkxZEdKdmRXNWtWR0ZuWFdSdmJXRnBiazFoZEdOb1pYSlZZbXh2WTJ1b0d4d2RIaDhnSVNKZkVCaG5aVzl6YVhSbE9tTmhkR1ZuYjNKNUxXRmtjeTFoYkd4ZkVCUm5aVzl6YVhSbE9tTmhkR1ZuYjNKNUxXRmtjMThRRVdkbGIzTnBkR1U2ZVdGb2IyOHRZV1J6WHhBVFoyVnZjMmwwWlRwemNHOTBhV1o1TFdGa2MxOFFFbWRsYjNOcGRHVTZaMjl2WjJ4bExXRmtjMThRRVdkbGIzTnBkR1U2WVhCd2JHVXRZV1J6WHhBU1oyVnZjMmwwWlRwaGJXRjZiMjR0WVdSelh4QVJaMlZ2YzJsMFpUcGhaRzlpWlMxaFpITnVBRWtBVWdBdEFFUUFhUUJ5QUdVQVl3QjBBQ0RZUE4zdTJEemQ5MXhKVUVsbVRtOXVUV0YwWTJoZkVDUTNNamt5T1RCRlJDMUdSVFpCTFRReE9VVXRPVE15TmkxRE1rVkJOREl3UmpWQk0wTUFDQUFUQUJrQUp3QXNBRHNBUUFCREFFNEFXZ0JvQUc4QWNnQjZBSUVBaUFDTEFLRUFzd0MyQUw4QXpRRVVBUjBCS1FFM0FUMEJSZ0ZoQVhnQmpBR2lBYmNCeXdIZ0FmUUNFUUllQUFBQUFBQUFBZ0VBQUFBQUFBQUFKZ0FBQUFBQUFBQUFBQUFBQUFBQUFrVT0=",
+                            "buttonText": {
+                                "en": "Add rules for Iran",
+                                "fa": "قوانین ایران را اضافه کنید",
+                                "ru": "Добавить правила для Ирана",
+                                "zh": "添加伊朗规则"
+                            }
+                        }
+                    ],
+                    "title": {
+                        "en": "Add routing rules",
+                        "fa": "قوانین مسیریابی را اضافه کنید",
+                        "ru": "Добавить правила маршрутизации",
+                        "zh": "添加路由规则"
                     },
-                    {
-                        "buttonLink": "https://vpn4tv.com/download/vpn4tv.apk",
-                        "buttonText": {
-                            "en": "Download APK",
-                            "fa": "دانلود APK",
-                            "ru": "Скачать APK"
-                        }
+                    "description": {
+                        "en": "By adding routing, internal websites and applications are not passed through the VPN",
+                        "fa": "با اضافه کردن مسیریابی, وب سایت ها و برنامه های داخلی از VPN عبور داده نمیشود",
+                        "ru": "При добавлении роутинга, сайты внутри страны будут открываться без VPN",
+                        "zh": "添加路由后，国内网站和应用将不会通过 VPN 访问"
                     }
-                ],
-                "description": {
-                    "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
-                    "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
-                    "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
-                }
-            },
-            "additionalBeforeAddSubscriptionStep": {
-                "buttons": [
-                    {
-                        "buttonLink": "https://vpn4tv.com/quick-guide.html",
-                        "buttonText": {
-                            "en": "Quick Guide",
-                            "fa": "راهنمای سریع",
-                            "ru": "Краткое руководство"
-                        }
-                    },
-                    {
-                        "buttonLink": "https://vpn4tv.com/sber.html",
-                        "buttonText": {
-                            "en": "Sber Box Guide",
-                            "fa": "راهنمای Sber Box",
-                            "ru": "Инструкция для Sber Box"
-                        }
-                    }
-                ],
-                "description": {
-                    "en": "Detailed instructions to help you set up VPN4TV on your device.",
-                    "fa": "راهنمای دقیق برای کمک به تنظیم VPN4TV روی دستگاه شما.",
-                    "ru": "Подробные инструкции, чтобы помочь вам настроить VPN4TV на вашем устройстве."
                 },
-                "title": {
-                    "en": "Installation instructions",
-                    "fa": "دستورالعمل نصب",
-                    "ru": "Инструкции по установке"
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。"
+                    }
                 }
             },
-            "addSubscriptionStep": {
-                "description": {
-                    "en": "Click the button below to add subscription, if you opened the subscription page on your TV",
-                    "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید، اگر صفحه اشتراک را روی تلویزیون باز کرده‌اید",
-                    "ru": "Нажмите кнопку ниже, чтобы добавить подписку, если вы открыли страницу подписки на телевизоре"
+            {
+                "id": "shadowrocket",
+                "name": "Shadowrocket",
+                "isFeatured": false,
+                "urlScheme": "sub://",
+                "isNeedBase64Encoding": true,
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/ru/app/shadowrocket/id932747118",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                        "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль.",
+                        "zh": "在 App Store 打开页面并安装应用。启动应用后，在 VPN 配置权限窗口点击“允许”，并输入您的密码。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://cdn.sm1ky.pl/s/eB4eYAxSNGk8gja/download",
+                            "buttonText": {
+                                "en": "Add rules for Russia",
+                                "fa": "قوانین روسیه را اضافه کنید",
+                                "ru": "Добавить правила для России",
+                                "zh": "添加俄罗斯规则"
+                            }
+                        }
+                    ],
+                    "title": {
+                        "en": "Add routing rules",
+                        "fa": "قوانین مسیریابی را اضافه کنید",
+                        "ru": "Добавить правила маршрутизации",
+                        "zh": "添加路由规则"
+                    },
+                    "description": {
+                        "en": "By adding routing, internal websites and applications are not passed through the VPN",
+                        "fa": "با اضافه کردن مسیریابی, وب سایت ها و برنامه های داخلی از VPN عبور داده نمیشود",
+                        "ru": "При добавлении роутинга, сайты внутри страны будут открываться без VPN",
+                        "zh": "添加路由后，国内网站和应用将不会通过 VPN 访问"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。"
+                    }
                 }
             },
-            "connectAndUseStep": {
-                "description": {
-                    "en": "Open the app and connect to the server",
-                    "fa": "برنامه را باز کنید و به سرور متصل شوید",
-                    "ru": "Откройте приложение и подключитесь к серверу"
+            {
+                "id": "clash-mi",
+                "name": "Clash Mi",
+                "isFeatured": false,
+                "urlScheme": "clash://install-config?overwrite=no&name=Remnawave&url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/us/app/clash-mi/id6744321968",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the App Store page and install the app.",
+                        "fa": "صفحه App Store را باز کرده و برنامه را نصب کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение.",
+                        "zh": "打开 App Store 页面并安装应用。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Tap the button below — the app will open and the subscription will be added automatically.",
+                        "fa": "روی دکمه زیر ضربه بزنید — برنامه باز می‌شود و اشتراک به‌صورت خودکار اضافه می‌گردد.",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "On the main screen, tap the Disconnected button, then in the VPN configuration prompt tap Allow and enter your password to connect.",
+                        "fa": "در صفحه اصلی روی دکمه Disconnected بزنید، سپس در پنجره مجوز پیکربندی VPN روی Allow ضربه بزنید و برای اتصال، رمز عبور خود را وارد کنید.",
+                        "ru": "На главной странице нажми кнопку Disconnected,  в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN.",
+                        "zh": "在主屏幕点击 Disconnected 按钮，然后在 VPN 配置提示中点击允许并输入您的密码以连接。"
+                    }
                 }
             }
-        }
-    ]
+        ],
+        "android": [
+            {
+                "id": "clash-meta",
+                "name": "Clash Meta",
+                "isFeatured": true,
+                "urlScheme": "clash://install-config?name=Remnawave&url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.15/cmfa-2.11.15-meta-universal-release.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://f-droid.org/packages/com.github.metacubex.clash.meta/",
+                            "buttonText": {
+                                "en": "Open in F-Droid",
+                                "fa": "در F-Droid باز کنید",
+                                "ru": "Открыть в F-Droid",
+                                "zh": "在 F-Droid 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Download and install Clash Meta APK",
+                        "fa": "دانلود و نصب Clash Meta APK",
+                        "ru": "Скачайте и установите Clash Meta APK",
+                        "zh": "下载并安装 Clash Meta APK"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to open the profile creation window. You will need to specify the auto-update period, for example, 720 minutes. Click the Save button in the top right corner.",
+                        "fa": "دکمه زیر را بزنید تا پنجره ایجاد پروفایل باز شود. شما باید دوره به‌روزرسانی خودکار را مشخص کنید، مثلاً ۷۲۰ دقیقه. دکمه ذخیره را در بالا سمت راست بزنید.",
+                        "ru": "Нажми кнопку ниже — откроется окно создания профиля. Тебе потребуется указать период автообновления, например, 720 минут. Справа вверху нажми на кнопку Сохранить.",
+                        "zh": "点击下方按钮打开配置文件创建窗口。你需要指定自动更新周期，例如 720 分钟。点击右上角的保存按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Go to the Profiles section and select the created profile, then return to the main page. Now you can connect by clicking the Stopped button.",
+                        "fa": "به بخش پروفایل‌ها بروید و پروفایل ایجاد شده را انتخاب کنید، سپس به صفحه اصلی بازگردید. اکنون می‌توانید با زدن دکمه «متوقف شده» متصل شوید.",
+                        "ru": "Перейди в пункт Профили и выбери созданный профиль, затем вернись на главную страницу. Теперь ты можешь подключиться, нажав на кнопку Остановлен",
+                        "zh": "进入“配置文件”部分并选择已创建的配置文件，然后返回主页面。现在你可以点击“已停止”按钮连接。"
+                    }
+                }
+            },
+            {
+                "id": "flclash",
+                "name": "FlClashX",
+                "isFeatured": true,
+                "urlScheme": "flclash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-arm64-v8a.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Download and install FlClash APK",
+                        "fa": "دانلود و نصب FlClash APK",
+                        "ru": "Скачайте и установите FlClash APK",
+                        "zh": "下载并安装 FlClash APK"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
+                        "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在本页右上角点击获取链接按钮，复制链接。在 FlClash 的 Profiles 部分点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added profile in the Profiles section. In the Control Panel, click the Enable button in the bottom right corner. Once it's running, you can change the server you're connected to in the Proxy section.",
+                        "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
+                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "zh": "在 Profiles 部分选择已添加的配置文件。在控制面板右下角点击启用按钮。启动后，你可以在 Proxy 部分更换连接的服务器。"
+                    }
+                }
+            },
+            {
+                "id": "happ",
+                "name": "Happ",
+                "isFeatured": true,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://play.google.com/store/apps/details?id=com.happproxy",
+                            "buttonText": {
+                                "en": "Open in Google Play",
+                                "fa": "باز کردن در Google Play",
+                                "ru": "Открыть в Google Play",
+                                "zh": "在 Google Play 打开"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
+                        "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
+                        "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает.",
+                        "zh": "在 Google Play 打开页面并安装应用。如果 Google Play 无法使用，也可以直接通过 APK 文件安装此应用。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Open the app and connect to the server",
+                        "fa": "برنامه را باز کنید و به سرور متصل شوید",
+                        "ru": "Откройте приложение и подключитесь к серверу",
+                        "zh": "打开应用并连接到服务器"
+                    }
+                }
+            },
+            {
+                "id": "sing-box",
+                "name": "sing-box",
+                "isFeatured": false,
+                "urlScheme": "sing-box://import-remote-profile/?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://play.google.com/store/apps/details?id=io.nekohasekai.sfa",
+                            "buttonText": {
+                                "en": "Open in Google Play",
+                                "fa": "باز کردن در Google Play",
+                                "ru": "Открыть в Google Play",
+                                "zh": "在 Google Play 打开"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/SagerNet/sing-box/releases/download/v1.11.15/SFA-1.11.15-universal.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://f-droid.org/packages/io.nekohasekai.sfa/",
+                            "buttonText": {
+                                "en": "Open in F-Droid",
+                                "fa": "در F-Droid باز کنید",
+                                "ru": "Открыть в F-Droid",
+                                "zh": "在 F-Droid 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
+                        "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
+                        "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает.",
+                        "zh": "在 Google Play 打开页面并安装应用。如果 Google Play 无法使用，也可以直接通过 APK 文件安装此应用。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "On the Dashboard page, select the added profile and click the Enable button in the bottom right corner to connect to the VPN.",
+                        "fa": "در صفحه اصلی داشبورد، پروفایل اضافه‌شده را انتخاب کنید و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید تا به VPN متصل شوید.",
+                        "ru": "На главной странице Dashboard выберите добавленный профиль и нажмите кнопку Включить в правом нижнем углу для подключения к VPN.",
+                        "zh": "在主面板页面，选择已添加的配置文件并点击右下角的启用按钮以连接 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "v2rayNG",
+                "name": "v2rayNG",
+                "isFeatured": false,
+                "urlScheme": "v2rayng://install-config?name=Remnawave&url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.11/v2rayNG_1.10.11_universal.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Download and install v2rayNG APK",
+                        "fa": "دانلود و نصب v2rayNG APK",
+                        "ru": "Скачайте и установите v2rayNG APK",
+                        "zh": "下载并安装 v2rayNG APK"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "Update subscriptions",
+                        "fa": "به‌روزرسانی اشتراک‌ها",
+                        "ru": "Обновление подписки",
+                        "zh": "更新订阅"
+                    },
+                    "description": {
+                        "en": "Tap the three dots in the top-right corner and select Update subscription. After that, the available servers will appear in the list.",
+                        "fa": "روی سه نقطه در گوشه بالا سمت راست کلیک کنید و گزینه به‌روزرسانی اشتراک را انتخاب کنید. سپس سرورهای موجود در لیست ظاهر می‌شوند.",
+                        "ru": "Нажмите на три точечки справа сверху и выберите Обновить подписку. После этого в списке появятся доступные серверы",
+                        "zh": "点击右上角的三个点，选择“更新订阅”。之后，列表中会显示可用服务器。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the required server and click the Enable button in the bottom right corner.",
+                        "fa": "سرور موردنظر را انتخاب کنید و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید.",
+                        "ru": "Выберите требуемый сервер и нажмите кнопку Включить в правом нижнем углу",
+                        "zh": "选择所需服务器并点击右下角的启用按钮。"
+                    }
+                }
+            },
+            {
+                "id": "exclave",
+                "name": "Exclave",
+                "isFeatured": false,
+                "urlScheme": "exclave://subscription?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.15.3/Exclave-0.15.3-arm64-v8a.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://f-droid.org/packages/com.github.dyhkwong.sagernet",
+                            "buttonText": {
+                                "en": "Open in F-Droid",
+                                "fa": "در F-Droid باز کنید",
+                                "ru": "Открыть в F-Droid",
+                                "zh": "在 F-Droid 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Download and install Exclave APK",
+                        "fa": "دانلود و نصب Exclave APK",
+                        "ru": "Скачайте и установите Exclave APK",
+                        "zh": "下载并安装 Exclave APK"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "Enable subscription auto-renewal",
+                        "fa": "تمدید خودکار اشتراک را فعال کنید",
+                        "ru": "Включите автообновление подписки",
+                        "zh": "启用订阅自动续期"
+                    },
+                    "description": {
+                        "en": "In the Groups section, go to the editing mode of the added subscription and enable the toggle next to Auto-Renewal. You can also rename the subscription if needed.",
+                        "fa": "در بخش گروه‌ها، وارد حالت ویرایش اشتراک اضافه‌شده شوید و گزینه تمدید خودکار را فعال کنید. همچنین در صورت نیاز می‌توانید نام اشتراک را تغییر دهید.",
+                        "ru": "В разделе Группы перейдите в режим редактирования добавленной подписки, включите переключатель у пункта Автоматическое обновление. Так же вы можете переименовать подписку, если требуется.",
+                        "zh": "在 Groups 部分进入已添加订阅的编辑模式，启用“自动续期”开关。如果需要，你还可以重命名订阅。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the desired server in the Configuration section and click the Enable button in the bottom right corner.",
+                        "fa": "در بخش پیکربندی، سرور مورد نظر را انتخاب کرده و روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید.",
+                        "ru": "Выберите требуемый сервер в разделе Конфигурация и нажмите кнопку Включить в правом нижнем углу",
+                        "zh": "在配置部分选择所需服务器并点击右下角的启用按钮。"
+                    }
+                }
+            }
+        ],
+        "linux": [
+            {
+                "id": "flclash",
+                "name": "FlClashX",
+                "isFeatured": true,
+                "urlScheme": "flclash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-amd64.deb",
+                            "buttonText": {
+                                "en": "amd64 (.deb)",
+                                "fa": "amd64 (.deb)",
+                                "ru": "amd64 (.deb)",
+                                "zh": "amd64 (.deb)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-amd64.AppImage",
+                            "buttonText": {
+                                "en": "amd64 (AppImage)",
+                                "fa": "amd64 (AppImage)",
+                                "ru": "amd64 (AppImage)",
+                                "zh": "amd64 (AppImage)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-amd64.rpm",
+                            "buttonText": {
+                                "en": "amd64 (.rpm)",
+                                "fa": "amd64 (.rpm)",
+                                "ru": "amd64 (.rpm)",
+                                "zh": "amd64 (.rpm)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-arm64.deb",
+                            "buttonText": {
+                                "en": "arm64 (.deb)",
+                                "fa": "arm64 (.deb)",
+                                "ru": "arm64 (.deb)",
+                                "zh": "arm64 (.deb)"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
+                        "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
+                        "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
+                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮，然后打开 TUN 项旁边的开关。启动后，在代理部分可以更改所连接的服务器。"
+                    }
+                }
+            },
+            {
+                "id": "koala-clash",
+                "name": "Koala Clash",
+                "isFeatured": true,
+                "urlScheme": "clash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_amd64.deb",
+                            "buttonText": {
+                                "en": "amd64 (.deb)",
+                                "fa": "amd64 (.deb)",
+                                "ru": "amd64 (.deb)",
+                                "zh": "amd64 (.deb)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash.x86_64.rpm",
+                            "buttonText": {
+                                "en": "amd64 (.rpm)",
+                                "fa": "amd64 (.rpm)",
+                                "ru": "amd64 (.rpm)",
+                                "zh": "amd64 (.rpm)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_arm64.deb",
+                            "buttonText": {
+                                "en": "arm64 (.deb)",
+                                "fa": "arm64 (.deb)",
+                                "ru": "arm64 (.deb)",
+                                "zh": "arm64 (.deb)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash.aarch64.rpm",
+                            "buttonText": {
+                                "en": "arm64 (.rpm)",
+                                "fa": "arm64 (.rpm)",
+                                "ru": "arm64 (.rpm)",
+                                "zh": "arm64 (.rpm)"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "description": {
+                        "en": "If you have previously used Clash Verge Rev, you need to uninstall it before installing Koala Clash.",
+                        "fa": "اگر قبلاً از Clash Verge Rev استفاده کرده‌اید، باید قبل از نصب Koala Clash آن را حذف کنید.",
+                        "ru": "Если вы ранее использовали Clash Verge Rev, то его требуется удалить перед установкой Koala Clash.",
+                        "zh": "如果您之前用过 Clash Verge Rev，请在安装 Koala Clash 前先卸载它。"
+                    },
+                    "title": {
+                        "en": "Warning",
+                        "fa": "هشدار",
+                        "ru": "Предупреждение",
+                        "zh": "警告"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک اضافه نشد",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Koala Clash, go to the main page, click the Add Profile button, paste the link into the text field, and then click the Import button.",
+                        "fa": "اگر پس از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در گوشه بالا سمت راست این صفحه کلیک کنید و لینک را کپی کنید. در برنامه Koala Clash به صفحه اصلی بروید، روی دکمه افزودن پروفایل کلیک کنید، لینک را در فیلد متنی قرار دهید و سپس روی دکمه وارد کردن کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой странице кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Koala Clash перейдите на главную страницу, нажмите кнопку Добавить профиль и вставьте ссылку в текстовое поле, затем нажмите на кнопку Импорт.",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 Koala Clash 主页面点击“添加配置文件”按钮，将链接粘贴到文本框中，然后点击“导入”按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "You can select a server at the bottom of the main page, and enable VPN by clicking on the large button in the center of the main page.",
+                        "fa": "می‌توانید سرور را در پایین صفحه اصلی انتخاب کنید و با کلیک روی دکمه بزرگ در مرکز صفحه اصلی، VPN را فعال کنید.",
+                        "ru": "Выбрать сервер можно внизу на главной странице, включить VPN можно нажав на главной странице на большую кнопку по центру.",
+                        "zh": "您可以在主页面底部选择服务器，并通过点击主页面中央的大按钮来启用 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "happ",
+                "name": "Happ (alpha)",
+                "isFeatured": false,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x86.AppImage",
+                            "buttonText": {
+                                "en": "Linux",
+                                "fa": "لینوکس",
+                                "ru": "Linux",
+                                "zh": "Linux"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮——应用将会打开，订阅会自动添加。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。"
+                    }
+                }
+            },
+            {
+                "id": "clash-verge",
+                "name": "Clash Verge",
+                "isFeatured": false,
+                "urlScheme": "clash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_amd64.deb",
+                            "buttonText": {
+                                "en": "Linux (amd64 .deb)",
+                                "fa": "لینوکس (amd64 .deb)",
+                                "ru": "Linux (amd64 .deb)",
+                                "zh": "Linux（amd64 .deb）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge-2.3.2-1.x86_64.rpm",
+                            "buttonText": {
+                                "en": "Linux (x86_64 .rpm)",
+                                "fa": "لینوکس (x86_64 .rpm)",
+                                "ru": "Linux (x86_64 .rpm)",
+                                "zh": "Linux（x86_64 .rpm）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_arm64.deb",
+                            "buttonText": {
+                                "en": "Linux (ARM64 .deb)",
+                                "fa": "لینوکس (ARM64 .deb)",
+                                "ru": "Linux (ARM64 .deb)",
+                                "zh": "Linux（ARM64 .deb）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge-2.3.2-1.aarch64.rpm",
+                            "buttonText": {
+                                "en": "Linux (aarch64 .rpm)",
+                                "fa": "لینوکس (aarch64 .rpm)",
+                                "ru": "Linux (aarch64 .rpm)",
+                                "zh": "Linux（aarch64 .rpm）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "description": {
+                        "en": "After launching the app, you can change the language in settings. In the left panel, find the gear icon, then navigate to Verge 设置 and select 语言设置.",
+                        "fa": "پس از راه‌اندازی برنامه، می‌توانید زبان را در تنظیمات تغییر دهید. در پنل سمت چپ، نماد چرخ دنده را پیدا کنید، سپس به Verge 设置 بروید و 语言设置 را انتخاب کنید.",
+                        "ru": "После запуска приложения вы можете сменить язык в настройках. В левой панели найдите иконку шестеренки, далее ориентируйтесь на Verge 设置 и выберите пункт 语言设置.",
+                        "zh": "启动应用后，可以在设置中更改语言。在左侧面板找到齿轮图标，进入 Verge 设置，然后选择 语言设置。"
+                    },
+                    "title": {
+                        "en": "Change language",
+                        "fa": "تغییر زبان",
+                        "ru": "Смена языка",
+                        "zh": "更改语言"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Clash Verge, go to the Profiles section and paste the link in the text field, then click the Import button.",
+                        "fa": "اگر پس از کلیک روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در گوشه بالا سمت راست این صفحه روی دکمه دریافت لینک کلیک کنید، لینک را کپی کنید. در Clash Verge به بخش پروفایل‌ها بروید و لینک را در فیلد متنی وارد کنید، سپس روی دکمه وارد کردن کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Clash Verge перейдите в раздел Профили и вставьте ссылку в текстовое поле, затем нажмите на кнопку Импорт.",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在本页右上角点击获取链接按钮，复制链接。在 Clash Verge 的 Profiles 部分粘贴链接到文本框，然后点击导入按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "You can select a server in the Proxy section, and enable VPN in the Settings section. Set the TUN Mode switch to ON.",
+                        "fa": "می‌توانید در بخش پروکسی سرور را انتخاب کنید و در بخش تنظیمات VPN را فعال کنید. کلید TUN Mode را در حالت روشن قرار دهید.",
+                        "ru": "Выбрать сервер можно в разделе Прокси, включить VPN можно в разделе Настройки. Установите переключатель TUN Mode в положение ВКЛ.",
+                        "zh": "您可以在代理部分选择服务器，在设置中启用 VPN。将 TUN 模式开关设置为开启。"
+                    }
+                }
+            }
+        ],
+        "macos": [
+            {
+                "id": "koala-clash",
+                "name": "Koala Clash",
+                "isFeatured": true,
+                "urlScheme": "clash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_aarch64.dmg",
+                            "buttonText": {
+                                "en": "macOS (Apple Silicon)",
+                                "fa": "مک (Apple Silicon)",
+                                "ru": "macOS (Apple Silicon)",
+                                "zh": "macOS（Apple Silicon）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_x64.dmg",
+                            "buttonText": {
+                                "en": "macOS (Intel)",
+                                "fa": "مک (اینتل)",
+                                "ru": "macOS (Intel)",
+                                "zh": "macOS（Intel）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "description": {
+                        "en": "If you have previously used Clash Verge Rev, you need to uninstall it before installing Koala Clash. ⚠️ Warning: If you get a notification that the application is corrupted when you run it on macOS, run this command in Terminal: sudo xattr -r -c /Applications/Clash\\ Verge\\ Rev\\ Lite.app",
+                        "fa": "اگر قبلاً از Clash Verge Rev استفاده کرده‌اید، باید قبل از نصب Koala Clash آن را حذف کنید. ⚠️ هشدار: اگر هنگام اجرای برنامه در macOS پیامی مبنی بر خراب بودن برنامه دریافت کردید، این دستور را در ترمینال اجرا کنید: sudo xattr -r -c /Applications/Clash\\ Verge\\ Rev\\ Lite.app",
+                        "ru": "Если вы ранее использовали Clash Verge Rev, то его требуется удалить перед установкой Koala Clash. ⚠️ Предупреждение: Если при запуске приложения на macOS появляется уведомление, что приложение повреждено, выполните эту команду в терминале: sudo xattr -r -c /Applications/Clash\\ Verge\\ Rev\\ Lite.app",
+                        "zh": "如果您之前用过 Clash Verge Rev，请在安装 Koala Clash 前先卸载它。⚠️ 警告：如果在 macOS 上运行应用时收到应用已损坏的提示，请在终端运行以下命令：sudo xattr -r -c /Applications/Clash\\ Verge\\ Rev\\ Lite.app"
+                    },
+                    "title": {
+                        "en": "Warning",
+                        "fa": "هشدار",
+                        "ru": "Предупреждение",
+                        "zh": "警告"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک اضافه نشد",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Koala Clash, go to the main page, click the Add Profile button, paste the link into the text field, and then click the Import button.",
+                        "fa": "اگر پس از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در گوشه بالا سمت راست این صفحه کلیک کنید و لینک را کپی کنید. در برنامه Koala Clash به صفحه اصلی بروید، روی دکمه افزودن پروفایل کلیک کنید، لینک را در فیلد متنی قرار دهید و سپس روی دکمه وارد کردن کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой странице кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Koala Clash перейдите на главную страницу, нажмите кнопку Добавить профиль и вставьте ссылку в текстовое поле, затем нажмите на кнопку Импорт.",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 Koala Clash 主页面点击“添加配置文件”按钮，将链接粘贴到文本框中，然后点击“导入”按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "You can select a server at the bottom of the main page, and enable VPN by clicking on the large button in the center of the main page.",
+                        "fa": "می‌توانید سرور را در پایین صفحه اصلی انتخاب کنید و با کلیک روی دکمه بزرگ در مرکز صفحه اصلی، VPN را فعال کنید.",
+                        "ru": "Выбрать сервер можно внизу на главной странице, включить VPN можно нажав на главной странице на большую кнопку по центру.",
+                        "zh": "您可以在主页面底部选择服务器，并通过点击主页面中央的大按钮来启用 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "happ",
+                "name": "Happ (alpha)",
+                "isFeatured": false,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
+                            "buttonText": {
+                                "en": "RU App Store",
+                                "fa": "اپ استور روسیه",
+                                "ru": "RU App Store",
+                                "zh": "俄罗斯 App Store"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
+                            "buttonText": {
+                                "en": "Global App Store",
+                                "fa": "اپ استور جهانی",
+                                "ru": "Глобальный App Store",
+                                "zh": "全球 App Store"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮——应用将会打开，订阅会自动添加。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。"
+                    }
+                }
+            },
+            {
+                "id": "flclash",
+                "name": "FlClashX",
+                "isFeatured": true,
+                "urlScheme": "flclash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-macos-arm64.dmg",
+                            "buttonText": {
+                                "en": "macOS (Apple Silicon)",
+                                "fa": "مک (Apple Silicon)",
+                                "ru": "macOS (Apple Silicon)",
+                                "zh": "macOS（Apple Silicon）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-macos-amd64.dmg",
+                            "buttonText": {
+                                "en": "macOS (Intel)",
+                                "fa": "مک (اینتل)",
+                                "ru": "macOS (Intel)",
+                                "zh": "macOS（Intel）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
+                        "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
+                        "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
+                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮，然后打开 TUN 项旁边的开关。启动后，在代理部分可以更改所连接的服务器。"
+                    }
+                }
+            },
+            {
+                "id": "sing-box",
+                "name": "sing-box",
+                "isFeatured": false,
+                "urlScheme": "sing-box://import-remote-profile/?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/app/sing-box-vt/id6673731168",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                        "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль.",
+                        "zh": "在 App Store 打开页面并安装应用。启动应用后，在 VPN 配置权限窗口点击“允许”，并输入您的密码。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
+                        "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
+                        "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN.",
+                        "zh": "在主面板页面，点击“已启用”按钮连接 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "clash-verge",
+                "name": "Clash Verge",
+                "isFeatured": false,
+                "urlScheme": "clash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_x64.dmg",
+                            "buttonText": {
+                                "en": "macOS (Intel)",
+                                "fa": "مک (اینتل)",
+                                "ru": "macOS (Intel)",
+                                "zh": "macOS（Intel）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_aarch64.dmg",
+                            "buttonText": {
+                                "en": "macOS (Apple Silicon)",
+                                "fa": "مک (Apple Silicon)",
+                                "ru": "macOS (Apple Silicon)",
+                                "zh": "macOS（Apple Silicon）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "description": {
+                        "en": "After launching the app, you can change the language in settings. In the left panel, find the gear icon, then navigate to Verge 设置 and select 语言设置.",
+                        "fa": "پس از راه‌اندازی برنامه، می‌توانید زبان را در تنظیمات تغییر دهید. در پنل سمت چپ، نماد چرخ دنده را پیدا کنید، سپس به Verge 设置 بروید و 语言设置 را انتخاب کنید.",
+                        "ru": "После запуска приложения вы можете сменить язык в настройках. В левой панели найдите иконку шестеренки, далее ориентируйтесь на Verge 设置 и выберите пункт 语言设置.",
+                        "zh": "启动应用后，可以在设置中更改语言。在左侧面板找到齿轮图标，进入 Verge 设置，然后选择 语言设置。"
+                    },
+                    "title": {
+                        "en": "Change language",
+                        "fa": "تغییر زبان",
+                        "ru": "Смена языка",
+                        "zh": "更改语言"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Clash Verge, go to the Profiles section and paste the link in the text field, then click the Import button.",
+                        "fa": "اگر پس از کلیک روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در گوشه بالا سمت راست این صفحه روی دکمه دریافت لینک کلیک کنید، لینک را کپی کنید. در Clash Verge به بخش پروفایل‌ها بروید و لینک را در فیلد متنی وارد کنید، سپس روی دکمه وارد کردن کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Clash Verge перейдите в раздел Профили и вставьте ссылку в текстовое поле, затем нажмите на кнопку Импорт.",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在本页右上角点击获取链接按钮，复制链接。在 Clash Verge 的 Profiles 部分粘贴链接到文本框，然后点击导入按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "You can select a server in the Proxy section, and enable VPN in the Settings section. Set the TUN Mode switch to ON.",
+                        "fa": "می‌توانید در بخش پروکسی سرور را انتخاب کنید و در بخش تنظیمات VPN را فعال کنید. کلید TUN Mode را در حالت روشن قرار دهید.",
+                        "ru": "Выбрать сервер можно в разделе Прокси, включить VPN можно в разделе Настройки. Установите переключатель TUN Mode в положение ВКЛ.",
+                        "zh": "您可以在代理部分选择服务器，在设置中启用 VPN。将 TUN 模式开关设置为开启。"
+                    }
+                }
+            }
+        ],
+        "windows": [
+            {
+                "id": "flclash",
+                "name": "FlClashX",
+                "isFeatured": true,
+                "urlScheme": "flclash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-amd64-setup.exe",
+                            "buttonText": {
+                                "en": "Windows (Setup)",
+                                "fa": "ویندوز (نصب)",
+                                "ru": "Windows (Установщик)",
+                                "zh": "Windows（安装程序）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-amd64.zip",
+                            "buttonText": {
+                                "en": "Windows (Portable)",
+                                "fa": "ویندوز (قابل حمل)",
+                                "ru": "Windows (Портативная)",
+                                "zh": "Windows（便携版）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-arm64-setup.exe",
+                            "buttonText": {
+                                "en": "Windows on ARM (Setup)",
+                                "fa": "ویندوز ARM (نصب)",
+                                "ru": "Windows на ARM (Установщик)",
+                                "zh": "Windows on ARM（安装程序）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-arm64.zip",
+                            "buttonText": {
+                                "en": "Windows on ARM (Portable)",
+                                "fa": "ویندوز ARM (قابل حمل)",
+                                "ru": "Windows на ARM (Портативная)",
+                                "zh": "Windows on ARM（便携版）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
+                        "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added profile in the Profiles section. In the Dashboard, click the enable button in the lower right corner, and then turn on the switch next to the TUN item. After launching, in the Proxy section, you can change the choice of the server to which you will be connected.",
+                        "fa": "نمایه اضافه شده را در قسمت پروفایل ها انتخاب کنید. در داشبورد، روی دکمه فعال کردن در گوشه پایین سمت راست کلیک کنید و سپس سوئیچ کنار مورد TUN را روشن کنید. پس از راه اندازی در قسمت Proxy می توانید انتخاب سروری که به آن متصل خواهید شد را تغییر دهید.",
+                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу, а затем включите переключатель у пункта TUN. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮，然后打开 TUN 项旁边的开关。启动后，在代理部分可以更改所连接的服务器。"
+                    }
+                }
+            },
+            {
+                "id": "koala-clash",
+                "name": "Koala Clash",
+                "isFeatured": true,
+                "urlScheme": "clash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_x64-setup.exe",
+                            "buttonText": {
+                                "en": "Windows (Setup)",
+                                "fa": "ویندوز (نصب)",
+                                "ru": "Windows (Установщик)",
+                                "zh": "Windows（安装程序）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/coolcoala/clash-verge-rev-lite/releases/latest/download/Koala.Clash_arm64-setup.exe",
+                            "buttonText": {
+                                "en": "Windows on ARM (Setup)",
+                                "fa": "ویندوز ARM (نصب)",
+                                "ru": "Windows на ARM (Установщик)",
+                                "zh": "Windows on ARM（安装程序）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "description": {
+                        "en": "If you have previously used Clash Verge Rev, you need to uninstall it before installing Koala Clash.",
+                        "fa": "اگر قبلاً از Clash Verge Rev استفاده کرده‌اید، باید قبل از نصب Koala Clash آن را حذف کنید.",
+                        "ru": "Если вы ранее использовали Clash Verge Rev, то его требуется удалить перед установкой Koala Clash.",
+                        "zh": "如果您之前用过 Clash Verge Rev，请在安装 Koala Clash 前先卸载它。"
+                    },
+                    "title": {
+                        "en": "Warning",
+                        "fa": "هشدار",
+                        "ru": "Предупреждение",
+                        "zh": "警告"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک اضافه نشد",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Koala Clash, go to the main page, click the Add Profile button, paste the link into the text field, and then click the Import button.",
+                        "fa": "اگر پس از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در گوشه بالا سمت راست این صفحه کلیک کنید و لینک را کپی کنید. در برنامه Koala Clash به صفحه اصلی بروید، روی دکمه افزودن پروفایل کلیک کنید، لینک را در فیلد متنی قرار دهید و سپس روی دکمه وارد کردن کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой странице кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Koala Clash перейдите на главную страницу, нажмите кнопку Добавить профиль и вставьте ссылку в текстовое поле, затем нажмите на кнопку Импорт.",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 Koala Clash 主页面点击“添加配置文件”按钮，将链接粘贴到文本框中，然后点击“导入”按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "You can select a server at the bottom of the main page, and enable VPN by clicking on the large button in the center of the main page.",
+                        "fa": "می‌توانید سرور را در پایین صفحه اصلی انتخاب کنید و با کلیک روی دکمه بزرگ در مرکز صفحه اصلی، VPN را فعال کنید.",
+                        "ru": "Выбрать сервер можно внизу на главной странице, включить VPN можно нажав на главной странице на большую кнопку по центру.",
+                        "zh": "您可以在主页面底部选择服务器，并通过点击主页面中央的大按钮来启用 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "happ",
+                "name": "Happ (alpha)",
+                "isFeatured": false,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
+                            "buttonText": {
+                                "en": "Windows",
+                                "fa": "ویندوز",
+                                "ru": "Windows",
+                                "zh": "Windows"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮——应用将会打开，订阅会自动添加。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。"
+                    }
+                }
+            },
+            {
+                "id": "clash-verge",
+                "name": "Clash Verge",
+                "isFeatured": false,
+                "urlScheme": "clash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_x64-setup.exe",
+                            "buttonText": {
+                                "en": "Windows (Setup)",
+                                "fa": "ویندوز (نصب)",
+                                "ru": "Windows (Установщик)",
+                                "zh": "Windows（安装程序）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_arm64-setup.exe",
+                            "buttonText": {
+                                "en": "Windows on ARM (Setup)",
+                                "fa": "ویندوز ARM (نصب)",
+                                "ru": "Windows на ARM (Установщик)",
+                                "zh": "Windows on ARM（安装包）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the version for your device, click the button below and install the app.",
+                        "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+                        "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение.",
+                        "zh": "选择适合您设备的版本，点击下方按钮并安装应用程序。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "description": {
+                        "en": "After launching the app, you can change the language in settings. In the left panel, find the gear icon, then navigate to Verge 设置 and select 语言设置.",
+                        "fa": "پس از راه‌اندازی برنامه، می‌توانید زبان را در تنظیمات تغییر دهید. در پنل سمت چپ، نماد چرخ دنده را پیدا کنید، سپس به Verge 设置 بروید و 语言设置 را انتخاب کنید.",
+                        "ru": "После запуска приложения вы можете сменить язык в настройках. В левой панели найдите иконку шестеренки, далее ориентируйтесь на Verge 设置 и выберите пункт 语言设置.",
+                        "zh": "启动应用后，可以在设置中更改语言。在左侧面板找到齿轮图标，进入 Verge 设置，然后选择 语言设置。"
+                    },
+                    "title": {
+                        "en": "Change language",
+                        "fa": "تغییر زبان",
+                        "ru": "Смена языка",
+                        "zh": "更改语言"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку",
+                        "zh": "点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Clash Verge, go to the Profiles section and paste the link in the text field, then click the Import button.",
+                        "fa": "اگر پس از کلیک روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در گوشه بالا سمت راست این صفحه روی دکمه دریافت لینک کلیک کنید، لینک را کپی کنید. در Clash Verge به بخش پروفایل‌ها بروید و لینک را در فیلد متنی وارد کنید، سپس روی دکمه وارد کردن کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Clash Verge перейдите в раздел Профили и вставьте ссылку в текстовое поле, затем нажмите на кнопку Импорт.",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在本页右上角点击获取链接按钮，复制链接。在 Clash Verge 的 Profiles 部分粘贴链接到文本框，然后点击导入按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "You can select a server in the Proxy section, and enable VPN in the Settings section. Set the TUN Mode switch to ON.",
+                        "fa": "می‌توانید در بخش پروکسی سرور را انتخاب کنید و در بخش تنظیمات VPN را فعال کنید. کلید TUN Mode را در حالت روشن قرار دهید.",
+                        "ru": "Выбрать сервер можно в разделе Прокси, включить VPN можно в разделе Настройки. Установите переключатель TUN Mode в положение ВКЛ.",
+                        "zh": "您可以在代理部分选择服务器，在设置中启用 VPN。将 TUN 模式开关设置为开启。"
+                    }
+                }
+            }
+        ],
+        "androidTV": [
+            {
+                "id": "happ",
+                "name": "Happ",
+                "isFeatured": true,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://play.google.com/store/apps/details?id=com.happproxy",
+                            "buttonText": {
+                                "en": "Open in Google Play",
+                                "fa": "باز کردن در Google Play",
+                                "ru": "Открыть в Google Play",
+                                "zh": "在 Google Play 打开"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
+                        "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
+                        "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает.",
+                        "zh": "在 Google Play 打开页面并安装应用。如果 Google Play 无法使用，可直接通过 APK 文件安装应用。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://www.happ.su/main/ru/faq/android-tv",
+                            "buttonText": {
+                                "en": "In Russian",
+                                "fa": "به زبان روسی",
+                                "ru": "На русском",
+                                "zh": "俄语"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://www.happ.su/main/faq/android-tv",
+                            "buttonText": {
+                                "en": "In English",
+                                "fa": "به زبان انگلیسی",
+                                "ru": "На английском",
+                                "zh": "英语"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Detailed instructions to help you set up Happ on your device.",
+                        "fa": "راهنمای دقیق برای کمک به تنظیم Happ روی دستگاه شما.",
+                        "ru": "Подробные инструкции, чтобы помочь вам настроить Happ на вашем устройстве.",
+                        "zh": "详细说明，帮助您在设备上设置 Happ。"
+                    },
+                    "title": {
+                        "en": "Installation instructions",
+                        "fa": "دستورالعمل نصب",
+                        "ru": "Инструкции по установке",
+                        "zh": "安装说明"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription, if you opened the subscription page on your TV",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید، اگر صفحه اشتراک را روی تلویزیون باز کرده‌اید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку, если вы открыли страницу подписки на телевизоре",
+                        "zh": "如果你已在电视上打开订阅页面，点击下方按钮以添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Open the app and connect to the server",
+                        "fa": "برنامه را باز کنید و به سرور متصل شوید",
+                        "ru": "Откройте приложение и подключитесь к серверу",
+                        "zh": "打开应用并连接到服务器"
+                    }
+                }
+            },
+            {
+                "id": "flclash",
+                "name": "FlClashX",
+                "isFeatured": true,
+                "urlScheme": "flclash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-arm64-v8a.apk",
+                            "buttonText": {
+                                "en": "Download APK (ARMv8)",
+                                "fa": "دانلود APK (ARMv8)",
+                                "ru": "Скачать APK (ARMv8)",
+                                "zh": "下载 APK (ARMv8)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-armeabi-v7a.apk",
+                            "buttonText": {
+                                "en": "Download APK (ARMv7)",
+                                "fa": "دانلود APK (ARMv7)",
+                                "ru": "Скачать APK (ARMv7)",
+                                "zh": "下载 APK (ARMv7)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-x86_64.apk",
+                            "buttonText": {
+                                "en": "Download APK (x86_64)",
+                                "fa": "دانلود APK (x86_64)",
+                                "ru": "Скачать APK (x86_64)",
+                                "zh": "下载 APK (x86_64)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://club.dns-shop.ru/blog/t-132-televizoryi/43999-failyi-apk-dlya-umnyih-televizorov-na-android/?utm_referrer=https%3A%2F%2Fwww.google.com%2F",
+                            "buttonText": {
+                                "en": "How to install APK on TV",
+                                "fa": "نحوه نصب APK روی تلویزیون",
+                                "ru": "Как установить APK на телевизор",
+                                "zh": "如何在电视上安装 APK"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Download and install FlClash APK on your TV. Most modern TVs use ARMv8 (64-bit). If installation fails, try ARMv7 (32-bit). x86_64 is for TVs or boxes with Intel or AMD processors (rare).",
+                        "fa": "دانلود و نصب FlClash APK روی تلویزیون شما. اکثر تلویزیون‌های جدید از ARMv8 (64 بیتی) استفاده می‌کنند. اگر نصب انجام نشد، ARMv7 (32 بیتی) را امتحان کنید. نسخه x86_64 مخصوص تلویزیون‌ها یا باکس‌هایی با پردازنده‌های اینتل یا AMD است (نادر).",
+                        "ru": "Скачайте и установите FlClash APK на ваш телевизор. Большинство современных телевизоров используют ARMv8 (64-бит). Если установка не удалась, попробуйте ARMv7 (32-бит). x86_64 предназначен для ТВ или приставок с процессорами Intel или AMD (редко).",
+                        "zh": "在电视上下载并安装 FlClash APK。大多数现代电视使用 ARMv8（64 位）。如果安装失败，请尝试 ARMv7（32 位）。x86_64 适用于带有 Intel 或 AMD 处理器的电视或盒子（较少见）。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "description": {
+                        "en": "In the TV app, click the Add Profile button in the Profiles section, select Add from phone. On your phone, in the Profiles section, tap the three-dot menu and choose Send to TV.",
+                        "fa": "در برنامه تلویزیون، روی دکمه افزودن پروفایل در بخش پروفایل‌ها کلیک کنید، گزینه افزودن از تلفن را انتخاب کنید. در تلفن، در بخش پروفایل‌ها روی منوی سه نقطه بزنید و گزینه ارسال به تلویزیون را انتخاب کنید.",
+                        "ru": "В приложении на телевизоре нажмите кнопку Добавить профиль в разделе Профили, выберите пункт Добавить с телефона. На телефоне в разделе Профили нажмите кнопку с тремя точками и выберите пункт Отправить на ТВ.",
+                        "zh": "在电视应用中，在“配置文件”部分点击“添加配置文件”按钮，选择“从手机添加”。在手机的“配置文件”部分，点击三点菜单并选择“发送到电视”。"
+                    },
+                    "title": {
+                        "en": "How to add a subscription on TV",
+                        "fa": "نحوه افزودن اشتراک در تلویزیون",
+                        "ru": "Как добавить подписку на телевизоре",
+                        "zh": "如何在电视上添加订阅"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription, if you opened the subscription page on your TV",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید، اگر صفحه اشتراک را روی تلویزیون باز کرده‌اید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку, если вы открыли страницу подписки на телевизоре",
+                        "zh": "如果你已在电视上打开订阅页面，点击下方按钮以添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
+                        "fa": "اگر بعد از کلیک روی دکمه هیچ اتفاقی نیفتاد، اشتراکی را به صورت دستی اضافه کنید. روی دکمه دریافت لینک در این صفحه در گوشه سمت راست بالا کلیک کنید، لینک را کپی کنید. در FlClash به بخش Profiles بروید، دکمه + را کلیک کنید، URL را انتخاب کنید، پیوند کپی شده خود را جایگذاری کنید و روی ارسال کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В FlClash перейдите в раздел Профили, нажмите кнопку +, выберите URL, вставьте вашу скопированную ссылку и нажмите Отправить",
+                        "zh": "如果点击按钮后没有反应，请手动添加订阅。在此页面右上角点击“获取链接”按钮，复制链接。在 FlClash 的“配置文件”部分，点击 + 按钮，选择 URL，粘贴你复制的链接并点击发送。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added profile in the Profiles section. In the Control Panel, click the Enable button in the bottom right corner. Once it's running, you can change the server you're connected to in the Proxy section.",
+                        "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
+                        "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
+                        "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮。运行后，你可以在“代理”部分更改所连接的服务器。"
+                    }
+                }
+            },
+            {
+                "id": "hiddify",
+                "name": "vpn4tv",
+                "isFeatured": false,
+                "urlScheme": "hiddify://import/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://play.google.com/store/apps/details?id=com.vpn4tv.hiddify",
+                            "buttonText": {
+                                "en": "Open in Google Play",
+                                "fa": "باز کردن در Google Play",
+                                "ru": "Открыть в Google Play",
+                                "zh": "在 Google Play 打开"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://vpn4tv.com/download/vpn4tv.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
+                        "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
+                        "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает.",
+                        "zh": "在 Google Play 打开页面并安装应用。如果 Google Play 无法使用，也可以直接通过 APK 文件安装此应用。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://vpn4tv.com/quick-guide.html",
+                            "buttonText": {
+                                "en": "Quick Guide",
+                                "fa": "راهنمای سریع",
+                                "ru": "Краткое руководство",
+                                "zh": "快速指南"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://vpn4tv.com/sber.html",
+                            "buttonText": {
+                                "en": "Sber Box Guide",
+                                "fa": "راهنمای Sber Box",
+                                "ru": "Инструкция для Sber Box",
+                                "zh": "Sber Box 指南"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Detailed instructions to help you set up VPN4TV on your device.",
+                        "fa": "راهنمای دقیق برای کمک به تنظیم VPN4TV روی دستگاه شما.",
+                        "ru": "Подробные инструкции, чтобы помочь вам настроить VPN4TV на вашем устройстве.",
+                        "zh": "详细说明，帮助您在设备上设置 VPN4TV。"
+                    },
+                    "title": {
+                        "en": "Installation instructions",
+                        "fa": "دستورالعمل نصب",
+                        "ru": "Инструкции по установке",
+                        "zh": "安装说明"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription, if you opened the subscription page on your TV",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید، اگر صفحه اشتراک را روی تلویزیون باز کرده‌اید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку, если вы открыли страницу подписки на телевизоре",
+                        "zh": "如果你已在电视上打开订阅页面，点击下方按钮以添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Open the app and connect to the server",
+                        "fa": "برنامه را باز کنید و به سرور متصل شوید",
+                        "ru": "Откройте приложение и подключитесь к серверу",
+                        "zh": "打开应用并连接到服务器"
+                    }
+                }
+            }
+        ],
+        "appleTV": [
+            {
+                "id": "happ",
+                "name": "Happ",
+                "isFeatured": true,
+                "urlScheme": "happ://add/",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274",
+                            "buttonText": {
+                                "en": "App Store",
+                                "fa": "App Store",
+                                "ru": "App Store",
+                                "zh": "App Store"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in the App Store on your Apple TV and install the app. Launch it, allow VPN configuration if prompted, and enter your passcode if required.",
+                        "fa": "صفحه را در App Store بر روی Apple TV باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در صورت درخواست مجوز پیکربندی VPN را بدهید و در صورت نیاز رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store на Apple TV и установите приложение. Запустите его, предоставьте разрешение на VPN-конфигурацию, если потребуется, и введите свой пароль.",
+                        "zh": "在 Apple TV 的 App Store 打开页面并安装应用。启动后，如有提示请允许 VPN 配置，并在需要时输入您的密码。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://www.happ.su/main/ru/faq/android-tv",
+                            "buttonText": {
+                                "en": "In Russian",
+                                "fa": "به زبان روسی",
+                                "ru": "На русском",
+                                "zh": "俄语"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://www.happ.su/main/faq/android-tv",
+                            "buttonText": {
+                                "en": "In English",
+                                "fa": "به زبان انگلیسی",
+                                "ru": "На английском",
+                                "zh": "英语"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Detailed instructions to help you set up Happ on your device.",
+                        "fa": "راهنمای دقیق برای کمک به تنظیم Happ روی دستگاه شما.",
+                        "ru": "Подробные инструкции, чтобы помочь вам настроить Happ на вашем устройстве.",
+                        "zh": "详细说明，帮助您在设备上设置 Happ。"
+                    },
+                    "title": {
+                        "en": "Installation instructions",
+                        "fa": "دستورالعمل نصب",
+                        "ru": "Инструкции по установке",
+                        "zh": "安装说明"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add subscription, if you opened the subscription page on your TV",
+                        "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید، اگر صفحه اشتراک را روی تلویزیون باز کرده‌اید",
+                        "ru": "Нажмите кнопку ниже, чтобы добавить подписку, если вы открыли страницу подписки на телевизоре",
+                        "zh": "如果你已在电视上打开订阅页面，点击下方按钮以添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Open the app and connect to the server",
+                        "fa": "برنامه را باز کنید و به سرور متصل شوید",
+                        "ru": "Откройте приложение и подключитесь к серверу",
+                        "zh": "打开应用并连接到服务器"
+                    }
+                }
+            },
+            {
+                "id": "sing-box",
+                "name": "sing-box",
+                "isFeatured": true,
+                "urlScheme": "sing-box://import-remote-profile/?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/app/sing-box-vt/id6673731168",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                        "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль.",
+                        "zh": "在 App Store 打开页面并安装应用。启动应用后，在 VPN 配置权限窗口点击“允许”，并输入您的密码。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
+                        "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
+                        "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN.",
+                        "zh": "在主面板页面，点击“已启用”按钮连接 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "shadowrocket",
+                "name": "Shadowrocket",
+                "isFeatured": false,
+                "urlScheme": "sub://",
+                "isNeedBase64Encoding": true,
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/ru/app/shadowrocket/id932747118",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+                        "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение. Запустите его, в окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль.",
+                        "zh": "在 App Store 打开页面并安装应用。启动应用后，在 VPN 配置权限窗口点击“允许”，并输入您的密码。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below — the app will open and the subscription will be added automatically",
+                        "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                        "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                        "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://cdn.sm1ky.pl/s/eB4eYAxSNGk8gja/download",
+                            "buttonText": {
+                                "en": "Add rules for Russia",
+                                "fa": "قوانین روسیه را اضافه کنید",
+                                "ru": "Добавить правила для России",
+                                "zh": "添加俄罗斯规则"
+                            }
+                        }
+                    ],
+                    "title": {
+                        "en": "Add routing rules",
+                        "fa": "قوانین مسیریابی را اضافه کنید",
+                        "ru": "Добавить правила маршрутизации",
+                        "zh": "添加路由规则"
+                    },
+                    "description": {
+                        "en": "By adding routing, internal websites and applications are not passed through the VPN",
+                        "fa": "با اضافه کردن مسیریابی, وب سایت ها و برنامه های داخلی از VPN عبور داده نمیشود",
+                        "ru": "При добавлении роутинга, сайты внутри страны будут открываться без VPN",
+                        "zh": "添加路由后，国内网站和应用将不会通过 VPN 访问"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+                        "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+                        "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
+                        "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。"
+                    }
+                }
+            }
+        ]
+    }
 }
