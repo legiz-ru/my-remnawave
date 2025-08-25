@@ -68,6 +68,7 @@ included apps:
   - - [xray-json template with ru-bundle](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/other/marzban-v2ray-ru-bundle.json)
   - happ routing:
   - - [simple-ru-routing by frayZV](https://github.com/frayZV/simple-ru-routing/blob/master/README.md#happ-routing) (fullproxy with category-ban-ru without RU)
+  - - [allow-domains-happ-routing by KazZzeL](https://github.com/KazZzeL/allow-domains-happ-routing/blob/master/README.md)
   - - re-filter:
 ```shell
 happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI6ICJmYWxzZSIsCiAgICAiUmVtb3RlRG5zIjogIjEuMS4xLjEiLAogICAgIkRvbWVzdGljRG5zIjogIjc3Ljg4LjguOCIsCiAgICAiR2VvaXB1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tLzFhbmRyZXZpY2gvUmUtZmlsdGVyLWxpc3RzL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9pcC5kYXQiLAogICAgIkdlb3NpdGV1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tLzFhbmRyZXZpY2gvUmUtZmlsdGVyLWxpc3RzL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9zaXRlLmRhdCIsCiAgICAiRG5zSG9zdHMiOiB7fSwKICAgICJEaXJlY3RTaXRlcyI6IFtdLAogICAgIkRpcmVjdElwIjogWwogICAgICAgICIxMC4wLjAuMC84IiwKICAgICAgICAiMTcyLjE2LjAuMC8xMiIsCiAgICAgICAgIjE5Mi4xNjguMC4wLzE2IiwKICAgICAgICAiMTY5LjI1NC4wLjAvMTYiLAogICAgICAgICIyMjQuMC4wLjAvNCIsCiAgICAgICAgIjI1NS4yNTUuMjU1LjI1NSIKICAgIF0sCiAgICAiUHJveHlTaXRlcyI6IFsKICAgICAgICAiZ2Vvc2l0ZTpyZWZpbHRlciIKICAgIF0sCiAgICAiUHJveHlJcCI6IFsKICAgICAgICAiZ2VvaXA6cmVmaWx0ZXIiCiAgICBdLAogICAgIkJsb2NrU2l0ZXMiOiBbXSwKICAgICJCbG9ja0lwIjogW10sCiAgICAiRG9tYWluU3RyYXRlZ3kiOiAiSVBPbkRlbWFuZCIKfQ==

@@ -347,11 +347,11 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-arm64-v8a.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-arm64-v8a.apk",
                             "buttonText": {
                                 "en": "Download APK",
                                 "fa": "دانلود APK",
@@ -525,7 +525,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.11/v2rayNG_1.10.11_universal.apk",
+                            "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.19/v2rayNG_1.10.19_universal.apk",
                             "buttonText": {
                                 "en": "Download APK",
                                 "fa": "دانلود APK",
@@ -590,7 +590,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.15.3/Exclave-0.15.3-arm64-v8a.apk",
+                            "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.16.0/Exclave-0.16.0-arm64-v8a.apk",
                             "buttonText": {
                                 "en": "Download APK",
                                 "fa": "دانلود APK",
@@ -662,11 +662,11 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-amd64.deb",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-amd64.deb",
                             "buttonText": {
                                 "en": "amd64 (.deb)",
                                 "fa": "amd64 (.deb)",
@@ -675,7 +675,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-amd64.AppImage",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-amd64.AppImage",
                             "buttonText": {
                                 "en": "amd64 (AppImage)",
                                 "fa": "amd64 (AppImage)",
@@ -684,7 +684,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-amd64.rpm",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-amd64.rpm",
                             "buttonText": {
                                 "en": "amd64 (.rpm)",
                                 "fa": "amd64 (.rpm)",
@@ -693,7 +693,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-linux-arm64.deb",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-arm64.deb",
                             "buttonText": {
                                 "en": "arm64 (.deb)",
                                 "fa": "arm64 (.deb)",
@@ -745,7 +745,7 @@
                 "id": "koala-clash",
                 "name": "Koala Clash",
                 "isFeatured": true,
-                "urlScheme": "clash://install-config?url=",
+                "urlScheme": "koala-clash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
@@ -888,7 +888,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_amd64.deb",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_amd64.deb",
                             "buttonText": {
                                 "en": "Linux (amd64 .deb)",
                                 "fa": "لینوکس (amd64 .deb)",
@@ -897,7 +897,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge-2.3.2-1.x86_64.rpm",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge-2.4.0-1.x86_64.rpm",
                             "buttonText": {
                                 "en": "Linux (x86_64 .rpm)",
                                 "fa": "لینوکس (x86_64 .rpm)",
@@ -906,7 +906,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_arm64.deb",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_arm64.deb",
                             "buttonText": {
                                 "en": "Linux (ARM64 .deb)",
                                 "fa": "لینوکس (ARM64 .deb)",
@@ -915,7 +915,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge-2.3.2-1.aarch64.rpm",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge-2.4.0-1.aarch64.rpm",
                             "buttonText": {
                                 "en": "Linux (aarch64 .rpm)",
                                 "fa": "لینوکس (aarch64 .rpm)",
@@ -984,7 +984,7 @@
                 "id": "koala-clash",
                 "name": "Koala Clash",
                 "isFeatured": true,
-                "urlScheme": "clash://install-config?url=",
+                "urlScheme": "koala-clash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
@@ -1114,11 +1114,11 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-macos-arm64.dmg",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-macos-arm64.dmg",
                             "buttonText": {
                                 "en": "macOS (Apple Silicon)",
                                 "fa": "مک (Apple Silicon)",
@@ -1127,7 +1127,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-macos-amd64.dmg",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-macos-amd64.dmg",
                             "buttonText": {
                                 "en": "macOS (Intel)",
                                 "fa": "مک (اینتل)",
@@ -1224,7 +1224,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_x64.dmg",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_x64.dmg",
                             "buttonText": {
                                 "en": "macOS (Intel)",
                                 "fa": "مک (اینتل)",
@@ -1233,7 +1233,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_aarch64.dmg",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_aarch64.dmg",
                             "buttonText": {
                                 "en": "macOS (Apple Silicon)",
                                 "fa": "مک (Apple Silicon)",
@@ -1302,11 +1302,11 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-amd64-setup.exe",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-amd64-setup.exe",
                             "buttonText": {
                                 "en": "Windows (Setup)",
                                 "fa": "ویندوز (نصب)",
@@ -1315,7 +1315,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-amd64.zip",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-amd64.zip",
                             "buttonText": {
                                 "en": "Windows (Portable)",
                                 "fa": "ویندوز (قابل حمل)",
@@ -1324,7 +1324,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-arm64-setup.exe",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-arm64-setup.exe",
                             "buttonText": {
                                 "en": "Windows on ARM (Setup)",
                                 "fa": "ویندوز ARM (نصب)",
@@ -1333,7 +1333,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.1.0/FlClashX-0.1.0-windows-arm64.zip",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-arm64.zip",
                             "buttonText": {
                                 "en": "Windows on ARM (Portable)",
                                 "fa": "ویندوز ARM (قابل حمل)",
@@ -1385,7 +1385,7 @@
                 "id": "koala-clash",
                 "name": "Koala Clash",
                 "isFeatured": true,
-                "urlScheme": "clash://install-config?url=",
+                "urlScheme": "koala-clash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
@@ -1510,7 +1510,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_x64-setup.exe",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_x64-setup.exe",
                             "buttonText": {
                                 "en": "Windows (Setup)",
                                 "fa": "ویندوز (نصب)",
@@ -1519,7 +1519,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.3.2/Clash.Verge_2.3.2_arm64-setup.exe",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_arm64-setup.exe",
                             "buttonText": {
                                 "en": "Windows on ARM (Setup)",
                                 "fa": "ویندوز ARM (نصب)",
@@ -1672,11 +1672,11 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-arm64-v8a.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-arm64-v8a.apk",
                             "buttonText": {
                                 "en": "Download APK (ARMv8)",
                                 "fa": "دانلود APK (ARMv8)",
@@ -1685,7 +1685,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-armeabi-v7a.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-armeabi-v7a.apk",
                             "buttonText": {
                                 "en": "Download APK (ARMv7)",
                                 "fa": "دانلود APK (ARMv7)",
@@ -1694,7 +1694,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.0.7/FlClashX-0.0.7-android-x86_64.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-x86_64.apk",
                             "buttonText": {
                                 "en": "Download APK (x86_64)",
                                 "fa": "دانلود APK (x86_64)",
