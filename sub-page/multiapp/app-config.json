@@ -347,7 +347,7 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclashx://install-config?url=",
+                "urlScheme": "flclash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
@@ -662,7 +662,7 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclashx://install-config?url=",
+                "urlScheme": "flclash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
@@ -1114,7 +1114,7 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclashx://install-config?url=",
+                "urlScheme": "flclash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
@@ -1302,7 +1302,7 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclashx://install-config?url=",
+                "urlScheme": "flclash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
@@ -1672,7 +1672,7 @@
                 "id": "flclash",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclashx://install-config?url=",
+                "urlScheme": "flclash://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
