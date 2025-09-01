@@ -285,66 +285,7 @@
         ],
         "android": [
             {
-                "id": "clash-meta",
-                "name": "Clash Meta",
-                "isFeatured": true,
-                "urlScheme": "clash://install-config?name=Remnawave&url=",
-                "installationStep": {
-                    "buttons": [
-                        {
-                            "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.15/cmfa-2.11.15-meta-universal-release.apk",
-                            "buttonText": {
-                                "en": "Download APK",
-                                "fa": "دانلود APK",
-                                "ru": "Скачать APK",
-                                "zh": "下载 APK"
-                            }
-                        },
-                        {
-                            "buttonLink": "https://f-droid.org/packages/com.github.metacubex.clash.meta/",
-                            "buttonText": {
-                                "en": "Open in F-Droid",
-                                "fa": "در F-Droid باز کنید",
-                                "ru": "Открыть в F-Droid",
-                                "zh": "在 F-Droid 打开"
-                            }
-                        },
-                        {
-                            "buttonLink": "https://legiz-ru.github.io/Orion/redirect-page/?redirect_to=obtainium://app/%7B%22id%22%3A%22com.github.metacubex.clash.meta%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FMetaCubeX%2FClashMetaForAndroid%22%2C%22author%22%3A%22MetaCubeX%22%2C%22name%22%3A%22Clash%20Meta%20for%20Android%22%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22sortMethodChoice%5C%22%3A%5C%22date%5C%22%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22releaseTitleAsVersion%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Afalse%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22universal%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Afalse%2C%5C%22dontSortReleasesList%5C%22%3Afalse%7D%22%2C%22overrideSource%22%3Anull%7D",
-                            "buttonText": {
-                                "en": "Add to Obtainium",
-                                "fa": "افزودن به Obtainium",
-                                "ru": "Добавить в Obtainium",
-                                "zh": "添加到 Obtainium"
-                            }
-                        }
-                    ],
-                    "description": {
-                        "en": "Download and install Clash Meta APK",
-                        "fa": "دانلود و نصب Clash Meta APK",
-                        "ru": "Скачайте и установите Clash Meta APK",
-                        "zh": "下载并安装 Clash Meta APK"
-                    }
-                },
-                "addSubscriptionStep": {
-                    "description": {
-                        "en": "Click the button below to open the profile creation window. You will need to specify the auto-update period, for example, 720 minutes. Click the Save button in the top right corner.",
-                        "fa": "دکمه زیر را بزنید تا پنجره ایجاد پروفایل باز شود. شما باید دوره به‌روزرسانی خودکار را مشخص کنید، مثلاً ۷۲۰ دقیقه. دکمه ذخیره را در بالا سمت راست بزنید.",
-                        "ru": "Нажми кнопку ниже — откроется окно создания профиля. Тебе потребуется указать период автообновления, например, 720 минут. Справа вверху нажми на кнопку Сохранить.",
-                        "zh": "点击下方按钮打开配置文件创建窗口。你需要指定自动更新周期，例如 720 分钟。点击右上角的保存按钮。"
-                    }
-                },
-                "connectAndUseStep": {
-                    "description": {
-                        "en": "Go to the Profiles section and select the created profile, then return to the main page. Now you can connect by clicking the Stopped button.",
-                        "fa": "به بخش پروفایل‌ها بروید و پروفایل ایجاد شده را انتخاب کنید، سپس به صفحه اصلی بازگردید. اکنون می‌توانید با زدن دکمه «متوقف شده» متصل شوید.",
-                        "ru": "Перейди в пункт Профили и выбери созданный профиль, затем вернись на главную страницу. Теперь ты можешь подключиться, нажав на кнопку Остановлен",
-                        "zh": "进入“配置文件”部分并选择已创建的配置文件，然后返回主页面。现在你可以点击“已停止”按钮连接。"
-                    }
-                }
-            },
-            {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -405,6 +346,65 @@
                         "fa": "پروفایل افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. در پنل کنترل، روی دکمه فعال‌سازی در گوشه پایین سمت راست کلیک کنید. پس از اجرا، می‌توانید در بخش پروکسی، سروری را که به آن متصل می‌شوید تغییر دهید.",
                         "ru": "Выберите добавленный профиль в разделе Профили. В Панели управления нажмите кнопку включить в правом нижнем углу. После запуска в разделе Прокси вы можете изменить выбор сервера к которому вас подключит. ",
                         "zh": "在 Profiles 部分选择已添加的配置文件。在控制面板右下角点击启用按钮。启动后，你可以在 Proxy 部分更换连接的服务器。"
+                    }
+                }
+            },
+            {
+                "id": "clash-meta",
+                "name": "Clash Meta",
+                "isFeatured": true,
+                "urlScheme": "clashmeta://install-config?name=Remnawave&url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.15/cmfa-2.11.15-meta-universal-release.apk",
+                            "buttonText": {
+                                "en": "Download APK",
+                                "fa": "دانلود APK",
+                                "ru": "Скачать APK",
+                                "zh": "下载 APK"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://f-droid.org/packages/com.github.metacubex.clash.meta/",
+                            "buttonText": {
+                                "en": "Open in F-Droid",
+                                "fa": "در F-Droid باز کنید",
+                                "ru": "Открыть в F-Droid",
+                                "zh": "在 F-Droid 打开"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://legiz-ru.github.io/Orion/redirect-page/?redirect_to=obtainium://app/%7B%22id%22%3A%22com.github.metacubex.clash.meta%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FMetaCubeX%2FClashMetaForAndroid%22%2C%22author%22%3A%22MetaCubeX%22%2C%22name%22%3A%22Clash%20Meta%20for%20Android%22%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Afalse%2C%5C%22sortMethodChoice%5C%22%3A%5C%22date%5C%22%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22releaseTitleAsVersion%5C%22%3Afalse%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Afalse%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22universal%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Afalse%2C%5C%22dontSortReleasesList%5C%22%3Afalse%7D%22%2C%22overrideSource%22%3Anull%7D",
+                            "buttonText": {
+                                "en": "Add to Obtainium",
+                                "fa": "افزودن به Obtainium",
+                                "ru": "Добавить в Obtainium",
+                                "zh": "添加到 Obtainium"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Download and install Clash Meta APK",
+                        "fa": "دانلود و نصب Clash Meta APK",
+                        "ru": "Скачайте и установите Clash Meta APK",
+                        "zh": "下载并安装 Clash Meta APK"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to open the profile creation window. You will need to specify the auto-update period, for example, 720 minutes. Click the Save button in the top right corner.",
+                        "fa": "دکمه زیر را بزنید تا پنجره ایجاد پروفایل باز شود. شما باید دوره به‌روزرسانی خودکار را مشخص کنید، مثلاً ۷۲۰ دقیقه. دکمه ذخیره را در بالا سمت راست بزنید.",
+                        "ru": "Нажми кнопку ниже — откроется окно создания профиля. Тебе потребуется указать период автообновления, например, 720 минут. Справа вверху нажми на кнопку Сохранить.",
+                        "zh": "点击下方按钮打开配置文件创建窗口。你需要指定自动更新周期，例如 720 分钟。点击右上角的保存按钮。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Go to the Profiles section and select the created profile, then return to the main page. Now you can connect by clicking the Stopped button.",
+                        "fa": "به بخش پروفایل‌ها بروید و پروفایل ایجاد شده را انتخاب کنید، سپس به صفحه اصلی بازگردید. اکنون می‌توانید با زدن دکمه «متوقف شده» متصل شوید.",
+                        "ru": "Перейди в пункт Профили и выбери созданный профиль, затем вернись на главную страницу. Теперь ты можешь подключиться, нажав на кнопку Остановлен",
+                        "zh": "进入“配置文件”部分并选择已创建的配置文件，然后返回主页面。现在你可以点击“已停止”按钮连接。"
                     }
                 }
             },
@@ -659,7 +659,7 @@
         ],
         "linux": [
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -1111,7 +1111,7 @@
                 }
             },
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -1299,7 +1299,7 @@
         ],
         "windows": [
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -1669,7 +1669,7 @@
                 }
             },
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",

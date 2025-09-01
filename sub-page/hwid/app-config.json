@@ -102,7 +102,7 @@
         ],
         "android": [
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -269,7 +269,7 @@
         ],
         "linux": [
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -623,7 +623,7 @@
                 }
             },
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -690,7 +690,7 @@
         ],
         "windows": [
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
@@ -980,7 +980,7 @@
                 }
             },
             {
-                "id": "flclash",
+                "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
                 "urlScheme": "flclash://install-config?url=",
