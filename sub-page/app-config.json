@@ -206,7 +206,7 @@
             {
                 "id": "sing-box",
                 "name": "sing-box",
-                "isFeatured": false,
+                "isFeatured": true,
                 "urlScheme": "sing-box://import-remote-profile/?url=",
                 "installationStep": {
                     "buttons": [

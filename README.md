@@ -8,27 +8,72 @@
 [link to multiapp app-config.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/multiapp/app-config.json)
 
 included apps:
-  - iOS:
-  - - sing-box ⭐
-  - - Happ ⭐
-  - - Streisand
-  - - ShadowRocket
-  - - Clash Mi
-  - Android:
-  - - Clash Meta for Android ⭐
-  - - Happ ⭐
-  - - FlClashX ⭐
-  - - sing-box
-  - - v2rayNG
-  - - Exclave
-  - PC:
-  - - Clash Verge Rev ⭐
-  - - FlClashX
-  - - Happ (alpha)
-  - TV only support in [Orion sub page](https://github.com/legiz-ru/Orion) & [material sub page](https://github.com/legiz-ru/material-remnawave-subscription-page):
-  - - Happ ⭐
-  - - FlClashX ⭐
-  - - vpn4tv
+
+### iOS
+
+- sing-box ⭐
+- Happ ⭐
+- Streisand
+- Shadowrocket
+- Clash Mi
+
+***
+
+### Android
+
+- FlClashX ⭐
+- Clash Meta ⭐
+- Happ ⭐
+- sing-box
+- v2rayNG
+- Exclave
+
+***
+
+### Linux
+
+- FlClashX ⭐
+- Koala Clash ⭐
+- Prizrak-Box ⭐
+- Happ (alpha)
+- Clash Verge
+
+***
+
+### macOS
+
+- Koala Clash ⭐
+- Happ (alpha)
+- FlClashX
+- Prizrak-Box
+- sing-box
+- Clash Verge
+
+***
+
+### Windows
+
+- FlClashX ⭐
+- Koala Clash ⭐
+- Prizrak-Box
+- Happ (alpha)
+- Clash Verge
+
+***
+
+### Android TV
+
+- Happ ⭐
+- FlClashX ⭐
+- vpn4tv
+
+***
+
+### Apple TV
+
+- Happ ⭐
+- sing-box ⭐
+- Shadowrocket
 
 </details>
 
@@ -38,21 +83,63 @@ included apps:
 [link to hwid app-config.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/hwid/app-config.json)
 
 included apps:
-  - iOS:
-  - - Happ ⭐
-  - - v2rayTun
-  - Android:
-  - - Happ ⭐
-  - - FlClashX ⭐
-  - - v2rayTun
-  - PC:
-  - - FlClashX ⭐
-  - - Koala Clash ⭐
-  - - Happ (alpha)
-  - TV only support in [Orion sub page](https://github.com/legiz-ru/Orion) & [material sub page](https://github.com/legiz-ru/material-remnawave-subscription-page):
-  - - Happ ⭐
-  - - FlClashX ⭐
 
+***
+
+### iOS
+
+- Happ ⭐
+- v2RayTun
+
+***
+
+### Android
+
+- FlClashX ⭐
+- Happ ⭐
+- v2RayTun
+
+***
+
+### Linux
+
+- FlClashX ⭐
+- Koala Clash ⭐
+- Prizrak-Box ⭐
+- Happ (alpha)
+
+***
+
+### macOS
+
+- Koala Clash ⭐
+- Happ (alpha)
+- FlClashX ⭐
+- Prizrak-Box
+
+***
+
+### Windows
+
+- FlClashX ⭐
+- Koala Clash ⭐
+- Prizrak-Box ⭐
+- Happ (alpha)
+
+***
+
+### Android TV
+
+- Happ ⭐
+- FlClashX ⭐
+
+***
+
+### Apple TV
+
+- Happ ⭐
+
+***
 </details>
 
 ## remnawave-subscription-page [custom web template](https://remna.st/docs/install/remnawave-subscription-page#mounting-custom-template)
