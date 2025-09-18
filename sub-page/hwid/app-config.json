@@ -105,11 +105,11 @@
                 "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-arm64-v8a.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-arm64-v8a.apk",
                             "buttonText": {
                                 "en": "Download APK",
                                 "fa": "دانلود APK",
@@ -272,11 +272,11 @@
                 "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-amd64.deb",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-amd64.deb",
                             "buttonText": {
                                 "en": "amd64 (.deb)",
                                 "fa": "amd64 (.deb)",
@@ -285,7 +285,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-amd64.AppImage",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-amd64.AppImage",
                             "buttonText": {
                                 "en": "amd64 (AppImage)",
                                 "fa": "amd64 (AppImage)",
@@ -294,7 +294,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-amd64.rpm",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-amd64.rpm",
                             "buttonText": {
                                 "en": "amd64 (.rpm)",
                                 "fa": "amd64 (.rpm)",
@@ -303,7 +303,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-linux-arm64.deb",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-arm64.deb",
                             "buttonText": {
                                 "en": "arm64 (.deb)",
                                 "fa": "arm64 (.deb)",
@@ -446,6 +446,104 @@
                         "fa": "می‌توانید سرور را در پایین صفحه اصلی انتخاب کنید و با کلیک روی دکمه بزرگ در مرکز صفحه اصلی، VPN را فعال کنید.",
                         "ru": "Выбрать сервер можно внизу на главной странице, включить VPN можно нажав на главной странице на большую кнопку по центру.",
                         "zh": "您可以在主页面底部选择服务器，并通过点击主页面中央的大按钮来启用 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "prizrak-box",
+                "name": "Prizrak-Box",
+                "isFeatured": true,
+                "urlScheme": "prizrak-box://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/linux-amd64.deb",
+                            "buttonText": {
+                                "en": "amd64 (.deb)",
+                                "fa": "amd64 (.deb)",
+                                "ru": "amd64 (.deb)",
+                                "zh": "amd64 (.deb)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/linux-amd64.rpm",
+                            "buttonText": {
+                                "en": "amd64 (.rpm)",
+                                "fa": "amd64 (.rpm)",
+                                "ru": "amd64 (.rpm)",
+                                "zh": "amd64 (.rpm)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/linux-arm64.deb",
+                            "buttonText": {
+                                "en": "arm64 (.deb)",
+                                "fa": "arm64 (.deb)",
+                                "ru": "arm64 (.deb)",
+                                "zh": "arm64 (.deb)"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/linux-arm64.rpm",
+                            "buttonText": {
+                                "en": "arm64 (.rpm)",
+                                "fa": "arm64 (.rpm)",
+                                "ru": "arm64 (.rpm)",
+                                "zh": "arm64 (.rpm)"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose the package matching your architecture and install Prizrak-Box.",
+                        "fa": "بسته مناسب معماری خود را انتخاب کرده و Prizrak-Box را نصب کنید.",
+                        "ru": "Выберите пакет под вашу архитектуру и установите Prizrak-Box.",
+                        "zh": "选择适合您架构的安装包并安装 Prizrak-Box。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "Warning",
+                        "fa": "هشدار",
+                        "ru": "Предупреждение",
+                        "zh": "警告"
+                    },
+                    "description": {
+                        "en": "Run the program.",
+                        "fa": "برنامه را اجرا کنید.",
+                        "ru": "Запустите программу.",
+                        "zh": "运行程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add the subscription automatically.",
+                        "fa": "روی دکمه زیر کلیک کنید تا اشتراک به صورت خودکار افزوده شود.",
+                        "ru": "Нажмите кнопку ниже, чтобы автоматически добавить подписку.",
+                        "zh": "点击下方按钮即可自动添加订阅。"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. On this page, click the Get Link button in the upper right corner, copy the link. In Prizrak-Box, go to the Profiles section, click the + button, paste your copied link, and click Confirm.",
+                        "fa": "اگر پس از کلیک بر روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در این صفحه، روی دکمه «دریافت پیوند» در گوشه بالا سمت راست کلیک کنید، پیوند را کپی کنید. در Prizrak-Box، به بخش «پروفایل‌ها» بروید، روی دکمه + کلیک کنید، پیوند کپی شده خود را جای‌گذاری کنید و روی «تأیید» کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой странице кнопку «Получить ссылку» в правом верхнем углу, скопируйте ссылку. В Prizrak-Box перейдите в раздел «Профили», нажмите кнопку «+», вставьте скопированную ссылку и нажмите «Подтвердить».",
+                        "zh": "如果点击按钮后没有任何反应，请手动添加订阅。在此页面上，点击右上角的“获取链接”按钮，复制链接。在 Prizrak-Box 中，转到“配置文件”部分，点击 + 按钮，粘贴您复制的链接，然后点击“确认”。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added subscription in the Profiles section. You can choose the server country in the Proxy (🚀) section. Set the TUN switch to ON.",
+                        "fa": "اشتراک افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. می‌توانید کشور سرور را در بخش Proxy (🚀) انتخاب کنید. سوئیچ TUN را روی حالت روشن قرار دهید.",
+                        "ru": "Выберите добавленную подписку в разделе Профили. Выбрать страну сервера можно в разделе Прокси (🚀). Установите переключатель TUN в положение ВКЛ.",
+                        "zh": "在“配置文件”部分选择已添加的订阅。可在“代理 (🚀)”部分选择服务器国家。将 TUN 开关切换到开启。"
                     }
                 }
             },
@@ -626,11 +724,11 @@
                 "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-macos-arm64.dmg",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-macos-arm64.dmg",
                             "buttonText": {
                                 "en": "macOS (Apple Silicon)",
                                 "fa": "مک (Apple Silicon)",
@@ -639,7 +737,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-macos-amd64.dmg",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-macos-amd64.dmg",
                             "buttonText": {
                                 "en": "macOS (Intel)",
                                 "fa": "مک (اینتل)",
@@ -686,6 +784,96 @@
                         "zh": "在“配置文件”部分选择已添加的配置文件。在控制面板右下角点击启用按钮，然后打开 TUN 项旁边的开关。启动后，在代理部分可以更改所连接的服务器。"
                     }
                 }
+            },
+            {
+                "id": "prizrak-box",
+                "name": "Prizrak-Box",
+                "isFeatured": false,
+                "urlScheme": "prizrak-box://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/macos-arm64-dmg.zip",
+                            "buttonText": {
+                                "en": "macOS (Apple Silicon)",
+                                "fa": "macOS (Apple Silicon)",
+                                "ru": "macOS (Apple Silicon)",
+                                "zh": "macOS（Apple Silicon）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/macos-amd64-dmg.zip",
+                            "buttonText": {
+                                "en": "macOS (Intel)",
+                                "fa": "macOS (Intel)",
+                                "ru": "macOS (Intel)",
+                                "zh": "macOS（Intel）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Download the archive for your chip (Apple Silicon or Intel), unzip and move Prizrak-Box.app to Applications.",
+                        "fa": "فایل مناسب (Apple Silicon یا Intel) را دانلود کرده، از حالت فشرده خارج و برنامه را به Applications منتقل کنید.",
+                        "ru": "Скачайте архив под ваш чип (Apple Silicon или Intel), распакуйте и переместите Prizrak-Box.app в Applications.",
+                        "zh": "下载适合您芯片（Apple Silicon 或 Intel）的压缩包，解压后将 Prizrak-Box.app 移入 Applications。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/blob/v3/doc/mac/mac.md",
+                            "buttonText": {
+                                "en": "Mac Guide",
+                                "fa": "راهنمای مک",
+                                "ru": "Инструкция для Mac",
+                                "zh": "Mac 使用指南"
+                            }
+                        }
+                    ],
+                    "title": {
+                        "en": "Read before first launch",
+                        "fa": "قبل از اولین اجرا بخوانید",
+                        "ru": "Прочти перед первым запуском",
+                        "zh": "首次启动前阅读"
+                    },
+                    "description": {
+                        "en": "If macOS shows security warnings, follow this guide.",
+                        "fa": "اگر macOS هشدار امنیتی نشان داد، این راهنما را دنبال کنید.",
+                        "ru": "Если macOS показывает предупреждения безопасности — следуйте инструкции.",
+                        "zh": "若 macOS 显示安全警告，请按指南操作。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add the subscription automatically.",
+                        "fa": "روی دکمه زیر کلیک کنید تا اشتراک به صورت خودکار افزوده شود.",
+                        "ru": "Нажмите кнопку ниже, чтобы автоматически добавить подписку.",
+                        "zh": "点击下方按钮即可自动添加订阅。"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. On this page, click the Get Link button in the upper right corner, copy the link. In Prizrak-Box, go to the Profiles section, click the + button, paste your copied link, and click Confirm.",
+                        "fa": "اگر پس از کلیک بر روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در این صفحه، روی دکمه «دریافت پیوند» در گوشه بالا سمت راست کلیک کنید، پیوند را کپی کنید. در Prizrak-Box، به بخش «پروفایل‌ها» بروید، روی دکمه + کلیک کنید، پیوند کپی شده خود را جای‌گذاری کنید و روی «تأیید» کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой странице кнопку «Получить ссылку» в правом верхнем углу, скопируйте ссылку. В Prizrak-Box перейдите в раздел «Профили», нажмите кнопку «+», вставьте скопированную ссылку и нажмите «Подтвердить».",
+                        "zh": "如果点击按钮后没有任何反应，请手动添加订阅。在此页面上，点击右上角的“获取链接”按钮，复制链接。在 Prizrak-Box 中，转到“配置文件”部分，点击 + 按钮，粘贴您复制的链接，然后点击“确认”。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added subscription in the Profiles section. You can choose the server country in the Proxy (🚀) section. Set the TUN switch to ON.",
+                        "fa": "اشتراک افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. می‌توانید کشور سرور را در بخش Proxy (🚀) انتخاب کنید. سوئیچ TUN را روی حالت روشن قرار دهید.",
+                        "ru": "Выберите добавленную подписку в разделе Профили. Выбрать страну сервера можно в разделе Прокси (🚀). Установите переключатель TUN в положение ВКЛ.",
+                        "zh": "在“配置文件”部分选择已添加的订阅。可在“代理 (🚀)”部分选择服务器国家。将 TUN 开关切换到开启。"
+                    }
+                }
             }
         ],
         "windows": [
@@ -693,11 +881,11 @@
                 "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-amd64-setup.exe",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-windows-amd64-setup.exe",
                             "buttonText": {
                                 "en": "Windows (Setup)",
                                 "fa": "ویندوز (نصب)",
@@ -706,7 +894,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-amd64.zip",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-windows-amd64.zip",
                             "buttonText": {
                                 "en": "Windows (Portable)",
                                 "fa": "ویندوز (قابل حمل)",
@@ -715,7 +903,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-arm64-setup.exe",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-windows-arm64-setup.exe",
                             "buttonText": {
                                 "en": "Windows on ARM (Setup)",
                                 "fa": "ویندوز ARM (نصب)",
@@ -724,7 +912,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-windows-arm64.zip",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-windows-arm64.zip",
                             "buttonText": {
                                 "en": "Windows on ARM (Portable)",
                                 "fa": "ویندوز ARM (قابل حمل)",
@@ -849,6 +1037,104 @@
                         "fa": "می‌توانید سرور را در پایین صفحه اصلی انتخاب کنید و با کلیک روی دکمه بزرگ در مرکز صفحه اصلی، VPN را فعال کنید.",
                         "ru": "Выбрать сервер можно внизу на главной странице, включить VPN можно нажав на главной странице на большую кнопку по центру.",
                         "zh": "您可以在主页面底部选择服务器，并通过点击主页面中央的大按钮来启用 VPN。"
+                    }
+                }
+            },
+            {
+                "id": "prizrak-box",
+                "name": "Prizrak-Box",
+                "isFeatured": true,
+                "urlScheme": "prizrak-box://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/windows-amd64.msi",
+                            "buttonText": {
+                                "en": "Windows (Setup)",
+                                "fa": "ویندوز (نصب)",
+                                "ru": "Windows (Установщик)",
+                                "zh": "Windows（安装程序）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/windows-amd64.zip",
+                            "buttonText": {
+                                "en": "Windows (Portable)",
+                                "fa": "ویندوز (قابل حمل)",
+                                "ru": "Windows (Портативная)",
+                                "zh": "Windows（便携版）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/windows-arm64.msi",
+                            "buttonText": {
+                                "en": "Windows on ARM (Setup)",
+                                "fa": "ویندوز ARM (نصب)",
+                                "ru": "Windows на ARM (Установщик)",
+                                "zh": "Windows on ARM（安装程序）"
+                            }
+                        },
+                        {
+                            "buttonLink": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/windows-arm64.zip",
+                            "buttonText": {
+                                "en": "Windows on ARM (Portable)",
+                                "fa": "ویندوز ARM (قابل حمل)",
+                                "ru": "Windows на ARM (Портативная)",
+                                "zh": "Windows on ARM（便携版）"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Choose your architecture (installer preferred for automatic integration) and install or unzip Prizrak-Box.",
+                        "fa": "معماری مناسب را انتخاب کنید (نصب‌کننده ترجیح دارد) و Prizrak-Box را نصب یا از حالت فشرده خارج کنید.",
+                        "ru": "Выберите архитектуру (предпочтительно установщик) и установите или распакуйте Prizrak-Box.",
+                        "zh": "选择适合的架构（建议使用安装程序）并安装或解压 Prizrak-Box。"
+                    }
+                },
+                "additionalBeforeAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "Warning",
+                        "fa": "هشدار",
+                        "ru": "Предупреждение",
+                        "zh": "警告"
+                    },
+                    "description": {
+                        "en": "Run the program as an administrator.",
+                        "fa": "برنامه را به عنوان مدیر اجرا کنید.",
+                        "ru": "Запустите программу от имени администратора.",
+                        "zh": "以管理员身份运行程序。"
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Click the button below to add the subscription automatically.",
+                        "fa": "روی دکمه زیر کلیک کنید تا اشتراک به صورت خودکار افزوده شود.",
+                        "ru": "Нажмите кнопку ниже, чтобы автоматически добавить подписку.",
+                        "zh": "点击下方按钮即可自动添加订阅。"
+                    }
+                },
+                "additionalAfterAddSubscriptionStep": {
+                    "buttons": [],
+                    "title": {
+                        "en": "If the subscription is not added",
+                        "fa": "اگر اشتراک در برنامه نصب نشده است",
+                        "ru": "Если подписка не добавилась",
+                        "zh": "如果未添加订阅"
+                    },
+                    "description": {
+                        "en": "If nothing happens after clicking the button, add the subscription manually. On this page, click the Get Link button in the upper right corner, copy the link. In Prizrak-Box, go to the Profiles section, click the + button, paste your copied link, and click Confirm.",
+                        "fa": "اگر پس از کلیک بر روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در این صفحه، روی دکمه «دریافت پیوند» در گوشه بالا سمت راست کلیک کنید، پیوند را کپی کنید. در Prizrak-Box، به بخش «پروفایل‌ها» بروید، روی دکمه + کلیک کنید، پیوند کپی شده خود را جای‌گذاری کنید و روی «تأیید» کلیک کنید.",
+                        "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Нажмите на этой страницу кнопку Получить ссылку в правом верхнем углу, скопируйте ссылку. В Prizrak-Box перейдите в раздел Профили, нажмите кнопку +, вставьте вашу скопированную ссылку и нажмите Потдвердить.",
+                        "zh": "如果点击按钮后没有任何反应，请手动添加订阅。在此页面上，点击右上角的“获取链接”按钮，复制链接。在 Prizrak-Box 中，转到“配置文件”部分，点击 + 按钮，粘贴您复制的链接，然后点击“确认”。"
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "Select the added subscription in the Profiles section. You can choose the server country in the Proxy (🚀) section. Set the TUN switch to ON.",
+                        "fa": "اشتراک افزوده‌شده را در بخش پروفایل‌ها انتخاب کنید. می‌توانید کشور سرور را در بخش Proxy (🚀) انتخاب کنید. سوئیچ TUN را روی حالت روشن قرار دهید.",
+                        "ru": "Выберите добавленную подписку в разделе Профили. Выбрать страну сервера можно в разделе Прокси (🚀). Установите переключатель TUN в положение ВКЛ.",
+                        "zh": "在“配置文件”部分选择已添加的订阅。可在“代理 (🚀)”部分选择服务器国家。将 TUN 开关切换到开启。"
                     }
                 }
             },
@@ -983,11 +1269,11 @@
                 "id": "flclashx",
                 "name": "FlClashX",
                 "isFeatured": true,
-                "urlScheme": "flclash://install-config?url=",
+                "urlScheme": "flclashx://install-config?url=",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-arm64-v8a.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-arm64-v8a.apk",
                             "buttonText": {
                                 "en": "Download APK (ARMv8)",
                                 "fa": "دانلود APK (ARMv8)",
@@ -996,7 +1282,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-armeabi-v7a.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-armeabi-v7a.apk",
                             "buttonText": {
                                 "en": "Download APK (ARMv7)",
                                 "fa": "دانلود APK (ARMv7)",
@@ -1005,7 +1291,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.0/FlClashX-0.2.0-android-x86_64.apk",
+                            "buttonLink": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-x86_64.apk",
                             "buttonText": {
                                 "en": "Download APK (x86_64)",
                                 "fa": "دانلود APK (x86_64)",
