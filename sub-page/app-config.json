@@ -23,7 +23,7 @@
                                 "fa": "باز کردن در App Store",
                                 "ru": "Открыть в App Store",
                                 "zh": "在 App Store 打开",
-                                "fr": "Ouvre dans l’App Store."
+                                "fr": "Ouvre dans l’App Store"
                             }
                         }
                     ],
@@ -70,7 +70,7 @@
                                 "fa": "دانلود APK",
                                 "ru": "Скачать APK",
                                 "zh": "下载 APK",
-                                "fr": "Télécharge l’APK."
+                                "fr": "Télécharge l’APK"
                             }
                         },
                         {
@@ -80,7 +80,7 @@
                                 "fa": "افزودن به Obtainium",
                                 "ru": "Добавить в Obtainium",
                                 "zh": "添加到 Obtainium",
-                                "fr": "Ajoute à Obtainium."
+                                "fr": "Ajoute à Obtainium"
                             }
                         }
                     ],
@@ -108,7 +108,7 @@
                         "fa": "اگر اشتراک در برنامه نصب نشده است",
                         "ru": "Если подписка не добавилась",
                         "zh": "如果未添加订阅",
-                        "fr": "Si l’abonnement ne s’ajoute pas."
+                        "fr": "Si l’abonnement ne s’ajoute pas"
                     },
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
@@ -144,7 +144,7 @@
                                 "fa": "amd64 (.deb)",
                                 "ru": "amd64 (.deb)",
                                 "zh": "amd64 (.deb)",
-                                "fr": "amd64 (.deb)."
+                                "fr": "amd64 (.deb)"
                             }
                         },
                         {
@@ -154,7 +154,7 @@
                                 "fa": "amd64 (AppImage)",
                                 "ru": "amd64 (AppImage)",
                                 "zh": "amd64 (AppImage)",
-                                "fr": "amd64 (AppImage)."
+                                "fr": "amd64 (AppImage)"
                             }
                         },
                         {
@@ -164,7 +164,7 @@
                                 "fa": "amd64 (.rpm)",
                                 "ru": "amd64 (.rpm)",
                                 "zh": "amd64 (.rpm)",
-                                "fr": "amd64 (.rpm)."
+                                "fr": "amd64 (.rpm)"
                             }
                         },
                         {
@@ -174,7 +174,7 @@
                                 "fa": "arm64 (.deb)",
                                 "ru": "arm64 (.deb)",
                                 "zh": "arm64 (.deb)",
-                                "fr": "arm64 (.deb)."
+                                "fr": "arm64 (.deb)"
                             }
                         }
                     ],
@@ -202,7 +202,7 @@
                         "fa": "اگر اشتراک در برنامه نصب نشده است",
                         "ru": "Если подписка не добавилась",
                         "zh": "如果未添加订阅",
-                        "fr": "Si l’abonnement ne s’ajoute pas."
+                        "fr": "Si l’abonnement ne s’ajoute pas"
                     },
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
@@ -238,7 +238,7 @@
                                 "fa": "باز کردن در App Store",
                                 "ru": "Открыть в App Store",
                                 "zh": "在 App Store 打开",
-                                "fr": "Ouvre dans l’App Store."
+                                "fr": "Ouvre dans l’App Store"
                             }
                         }
                     ],
@@ -285,7 +285,7 @@
                                 "fa": "ویندوز (نصب)",
                                 "ru": "Windows (Установщик)",
                                 "zh": "Windows（安装程序）",
-                                "fr": "Windows (Setup)."
+                                "fr": "Windows (Setup)"
                             }
                         },
                         {
@@ -295,7 +295,7 @@
                                 "fa": "ویندوز (قابل حمل)",
                                 "ru": "Windows (Портативная)",
                                 "zh": "Windows（便携版）",
-                                "fr": "Windows (Portable)."
+                                "fr": "Windows (Portable)"
                             }
                         },
                         {
@@ -305,7 +305,7 @@
                                 "fa": "ویندوز ARM (نصب)",
                                 "ru": "Windows на ARM (Установщик)",
                                 "zh": "Windows on ARM（安装程序）",
-                                "fr": "Windows on ARM (Setup)."
+                                "fr": "Windows on ARM (Setup)"
                             }
                         },
                         {
@@ -315,7 +315,7 @@
                                 "fa": "ویندوز ARM (قابل حمل)",
                                 "ru": "Windows на ARM (Портативная)",
                                 "zh": "Windows on ARM（便携版）",
-                                "fr": "Windows on ARM (Portable)."
+                                "fr": "Windows on ARM (Portable)"
                             }
                         }
                     ],
@@ -343,7 +343,7 @@
                         "fa": "اگر اشتراک در برنامه نصب نشده است",
                         "ru": "Если подписка не добавилась",
                         "zh": "如果未添加订阅",
-                        "fr": "Si l’abonnement ne s’ajoute pas."
+                        "fr": "Si l’abonnement ne s’ajoute pas"
                     },
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
@@ -379,7 +379,7 @@
                                 "fa": "دانلود APK (ARMv8)",
                                 "ru": "Скачать APK (ARMv8)",
                                 "zh": "下载 APK (ARMv8)",
-                                "fr": "Télécharge l’APK (ARMv8)."
+                                "fr": "Télécharge l’APK (ARMv8)"
                             }
                         },
                         {
@@ -389,7 +389,7 @@
                                 "fa": "دانلود APK (ARMv7)",
                                 "ru": "Скачать APK (ARMv7)",
                                 "zh": "下载 APK (ARMv7)",
-                                "fr": "Télécharge l’APK (ARMv7)."
+                                "fr": "Télécharge l’APK (ARMv7)"
                             }
                         },
                         {
@@ -399,7 +399,7 @@
                                 "fa": "دانلود APK (x86_64)",
                                 "ru": "Скачать APK (x86_64)",
                                 "zh": "下载 APK (x86_64)",
-                                "fr": "Télécharge l’APK (x86_64)."
+                                "fr": "Télécharge l’APK (x86_64)"
                             }
                         },
                         {
@@ -409,7 +409,7 @@
                                 "fa": "نحوه نصب APK روی تلویزیون",
                                 "ru": "Как установить APK на телевизор",
                                 "zh": "如何在电视上安装 APK",
-                                "fr": "Comment installer un APK sur une TV."
+                                "fr": "Comment installer un APK sur une TV"
                             }
                         }
                     ],
@@ -435,7 +435,7 @@
                         "fa": "نحوه افزودن اشتراک در تلویزیون",
                         "ru": "Как добавить подписку на телевизоре",
                         "zh": "如何在电视上添加订阅",
-                        "fr": "Comment ajouter un abonnement sur une TV."
+                        "fr": "Comment ajouter un abonnement sur une TV"
                     }
                 },
                 "addSubscriptionStep": {
@@ -454,7 +454,7 @@
                         "fa": "اگر اشتراک در برنامه نصب نشده است",
                         "ru": "Если подписка не добавилась",
                         "zh": "如果未添加订阅",
-                        "fr": "Si l’abonnement ne s’ajoute pas."
+                        "fr": "Si l’abonnement ne s’ajoute pas"
                     },
                     "description": {
                         "en": "If nothing happens after clicking the button, add a subscription manually. Click the Get link button on this page in the upper right corner, copy the link. In FlClash, go to the Profiles section, click the + button, select the URL, paste your copied link and click Send",
@@ -490,7 +490,7 @@
                                 "fa": "باز کردن در App Store",
                                 "ru": "Открыть в App Store",
                                 "zh": "在 App Store 打开",
-                                "fr": "Ouvre dans l’App Store."
+                                "fr": "Ouvre dans l’App Store"
                             }
                         }
                     ],
