@@ -166,7 +166,6 @@ happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI
 If you like this project and want to support its development, you can make a donation:
 
 *   [Tribute on Telegram](https://t.me/tribute/app?startapp=drzu)
-*   TON USDT: `UQAGQTQZYCx5TWj5cmTLpo7164PFsXqZZJ6t6x88n7sHW9gU`
 
 ## remnawave xhttp inbound tls via nginx + stream separation
 <details>
@@ -292,3 +291,4 @@ services:
 ```
 
 </details>
+
