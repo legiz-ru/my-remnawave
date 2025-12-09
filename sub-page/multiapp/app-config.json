@@ -3,7 +3,9 @@
         "additionalLocales": [
             "fa",
             "ru",
-            "zh"
+            "zh",
+            "fr",
+            "tr"
         ]
     },
     "platforms": {
