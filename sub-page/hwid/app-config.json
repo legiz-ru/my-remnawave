@@ -1262,13 +1262,13 @@
             },
             {
                 "id": "happ",
-                "name": "Happ (alpha)",
+                "name": "Happ",
                 "isFeatured": false,
                 "urlScheme": "happ://add/",
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
+                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
                             "buttonText": {
                                 "en": "Windows",
                                 "fa": "ویندوز",

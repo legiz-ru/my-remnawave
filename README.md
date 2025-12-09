@@ -13,6 +13,7 @@ included apps:
 
 - sing-box ⭐
 - Happ ⭐
+- Stash
 - Streisand
 - Shadowrocket
 - Clash Mi

@@ -3,7 +3,8 @@
         "additionalLocales": [
             "fa",
             "ru",
-            "zh"
+            "zh",
+            "fr"
         ]
     },
     "platforms": {
@@ -105,6 +106,51 @@
                         "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
                         "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。",
                         "fr": "Dans la section principale, appuie sur le grand bouton central pour te connecter au VPN. N’oublie pas de choisir un serveur dans la liste ; si besoin, choisis‑en un autre."
+                    }
+                }
+            },
+            {
+                "id": "stash",
+                "name": "Stash",
+                "isFeatured": false,
+                "urlScheme": "stash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开",
+                                "fr": "Ouvre dans l’App Store"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the App Store page and install the app.",
+                        "fa": "صفحه App Store را باز کرده و برنامه را نصب کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение.",
+                        "zh": "打开 App Store 页面并安装应用。",
+                        "fr": "Ouvre la page de l’App Store et installe l’app."
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Tap the button below — Stash will open and the configuration will be added automatically.",
+                        "fa": "روی دکمه زیر ضربه بزنید — برنامه Stash باز می‌شود و پیکربندی به‌صورت خودکار اضافه خواهد شد.",
+                        "ru": "Нажмите кнопку ниже — приложение Stash откроется, и конфигурация будет добавлена автоматически.",
+                        "zh": "点击下方按钮，Stash 将会打开并自动添加配置。",
+                        "fr": "Appuie sur le bouton ci-dessous — Stash s’ouvrira et la configuration sera ajoutée automatiquement."
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "On the main screen, tap the Start button. When prompted, allow adding VPN configurations. After the profile is activated, open the Policy section and select the country you want to connect through.",
+                        "fa": "در صفحه اصلی روی دکمه Start بزنید. در صورت نمایش درخواست، مجوز افزودن پیکربندی VPN را تأیید کنید. پس از فعال شدن پروفایل، وارد بخش Policy شوید و کشور موردنظر برای اتصال را انتخاب کنید.",
+                        "ru": "На главном экране нажмите кнопку «Запуск». В появившемся окне разрешите добавление конфигураций VPN. После активации профиля перейдите в раздел «Политика» и выберите страну подключения.",
+                        "zh": "在主界面点击「Start」按钮。在提示时允许添加 VPN 配置。配置启用后，进入「Policy（策略）」部分并选择要连接的国家。",
+                        "fr": "Sur l’écran principal, appuie sur le bouton « Start ». Autorise ensuite l’ajout de la configuration VPN. Une fois le profil activé, ouvre la section « Policy » et choisis le pays de connexion."
                     }
                 }
             },
@@ -392,7 +438,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.15/cmfa-2.11.15-meta-universal-release.apk",
+                            "buttonLink": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.20/cmfa-2.11.20-meta-universal-release.apk",
                             "buttonText": {
                                 "en": "Download APK",
                                 "fa": "دانلود APK",
@@ -577,7 +623,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.19/v2rayNG_1.10.19_universal.apk",
+                            "buttonLink": "https://github.com/2dust/v2rayNG/releases/download/1.10.31/v2rayNG_1.10.31_universal.apk",
                             "buttonText": {
                                 "en": "Download APK",
                                 "fa": "دانلود APK",
@@ -649,7 +695,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.16.0/Exclave-0.16.0-arm64-v8a.apk",
+                            "buttonLink": "https://github.com/dyhkwong/Exclave/releases/download/0.17.4/Exclave-0.17.4-arm64-v8a.apk",
                             "buttonText": {
                                 "en": "Download APK",
                                 "fa": "دانلود APK",
@@ -1088,7 +1134,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_amd64.deb",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge_2.4.4-rc_amd64.deb",
                             "buttonText": {
                                 "en": "Linux (amd64 .deb)",
                                 "fa": "لینوکس (amd64 .deb)",
@@ -1098,7 +1144,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge-2.4.0-1.x86_64.rpm",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge-2.4.4-rc-1.x86_64.rpm",
                             "buttonText": {
                                 "en": "Linux (x86_64 .rpm)",
                                 "fa": "لینوکس (x86_64 .rpm)",
@@ -1108,7 +1154,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_arm64.deb",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge_2.4.4-rc_arm64.deb",
                             "buttonText": {
                                 "en": "Linux (ARM64 .deb)",
                                 "fa": "لینوکس (ARM64 .deb)",
@@ -1118,7 +1164,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge-2.4.0-1.aarch64.rpm",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge-2.4.4-rc-1.aarch64.rpm",
                             "buttonText": {
                                 "en": "Linux (aarch64 .rpm)",
                                 "fa": "لینوکس (aarch64 .rpm)",
@@ -1560,7 +1606,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_x64.dmg",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge_2.4.4-rc_x64.dmg",
                             "buttonText": {
                                 "en": "macOS (Intel)",
                                 "fa": "مک (اینتل)",
@@ -1570,7 +1616,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_aarch64.dmg",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge_2.4.4-rc_aarch64.dmg",
                             "buttonText": {
                                 "en": "macOS (Apple Silicon)",
                                 "fa": "مک (Apple Silicon)",
@@ -1941,7 +1987,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
+                            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
                             "buttonText": {
                                 "en": "Windows",
                                 "fa": "ویندوز",
@@ -1986,7 +2032,7 @@
                 "installationStep": {
                     "buttons": [
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_x64-setup.exe",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge_2.4.4-rc_x64-setup.exe",
                             "buttonText": {
                                 "en": "Windows (Setup)",
                                 "fa": "ویندوز (نصب)",
@@ -1996,7 +2042,7 @@
                             }
                         },
                         {
-                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.0/Clash.Verge_2.4.0_arm64-setup.exe",
+                            "buttonLink": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4-rc/Clash.Verge_2.4.4-rc_arm64-setup.exe",
                             "buttonText": {
                                 "en": "Windows on ARM (Setup)",
                                 "fa": "ویندوز ARM (نصب)",
@@ -2565,6 +2611,51 @@
                         "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов.",
                         "zh": "在主界面，点击中央的大电源按钮以连接 VPN。不要忘记从服务器列表中选择服务器。如有需要，可选择其它服务器。",
                         "fr": "Dans la section principale, appuie sur le grand bouton central pour te connecter au VPN. N’oublie pas de choisir un serveur dans la liste ; si besoin, choisis‑en un autre."
+                    }
+                }
+            },
+            {
+                "id": "stash",
+                "name": "Stash",
+                "isFeatured": false,
+                "urlScheme": "stash://install-config?url=",
+                "installationStep": {
+                    "buttons": [
+                        {
+                            "buttonLink": "https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349",
+                            "buttonText": {
+                                "en": "Open in App Store",
+                                "fa": "باز کردن در App Store",
+                                "ru": "Открыть в App Store",
+                                "zh": "在 App Store 打开",
+                                "fr": "Ouvre dans l’App Store"
+                            }
+                        }
+                    ],
+                    "description": {
+                        "en": "Open the App Store page and install the app.",
+                        "fa": "صفحه App Store را باز کرده و برنامه را نصب کنید.",
+                        "ru": "Откройте страницу в App Store и установите приложение.",
+                        "zh": "打开 App Store 页面并安装应用。",
+                        "fr": "Ouvre la page de l’App Store et installe l’app."
+                    }
+                },
+                "addSubscriptionStep": {
+                    "description": {
+                        "en": "Tap the button below — Stash will open and the configuration will be added automatically.",
+                        "fa": "روی دکمه زیر ضربه بزنید — برنامه Stash باز می‌شود و پیکربندی به‌صورت خودکار اضافه خواهد شد.",
+                        "ru": "Нажмите кнопку ниже — приложение Stash откроется, и конфигурация будет добавлена автоматически.",
+                        "zh": "点击下方按钮，Stash 将会打开并自动添加配置。",
+                        "fr": "Appuie sur le bouton ci-dessous — Stash s’ouvrira et la configuration sera ajoutée automatiquement."
+                    }
+                },
+                "connectAndUseStep": {
+                    "description": {
+                        "en": "On the main screen, tap the Start button. When prompted, allow adding VPN configurations. After the profile is activated, open the Policy section and select the country you want to connect through.",
+                        "fa": "در صفحه اصلی روی دکمه Start بزنید. در صورت نمایش درخواست، مجوز افزودن پیکربندی VPN را تأیید کنید. پس از فعال شدن پروفایل، وارد بخش Policy شوید و کشور موردنظر برای اتصال را انتخاب کنید.",
+                        "ru": "На главном экране нажмите кнопку «Запуск». В появившемся окне разрешите добавление конфигураций VPN. После активации профиля перейдите в раздел «Политика» и выберите страну подключения.",
+                        "zh": "在主界面点击「Start」按钮。在提示时允许添加 VPN 配置。配置启用后，进入「Policy（策略）」部分并选择要连接的国家。",
+                        "fr": "Sur l’écran principal, appuie sur le bouton « Start ». Autorise ensuite l’ajout de la configuration VPN. Une fois le profil activé, ouvre la section « Policy » et choisis le pays de connexion."
                     }
                 }
             }
