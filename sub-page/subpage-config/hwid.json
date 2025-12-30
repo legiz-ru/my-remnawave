@@ -929,6 +929,170 @@
               "buttons": []
             }
           ]
+        },
+        {
+          "name": "Throne",
+          "svgIconKey": "Throne",
+          "featured": false,
+          "blocks": [
+            {
+              "svgIconKey": "DownloadIcon",
+              "svgIconColor": "cyan",
+              "title": {
+                "en": "App Installation",
+                "fa": "نصب برنامه",
+                "fr": "Installation de l'application",
+                "ru": "Установка приложения",
+                "zh": "应用安装"
+              },
+              "description": {
+                "en": "Download and install Throne.",
+                "fa": "Throne را دانلود و نصب کنید.",
+                "fr": "Téléchargez et installez Throne.",
+                "ru": "Скачайте и установите Throne.",
+                "zh": "下载并安装 Throne。"
+              },
+              "buttons": [
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-debian-system-qt-x64.deb",
+                  "type": "external",
+                  "text": {
+                    "en": "Debian/Ubuntu (system Qt, x64)",
+                    "fa": "دبیان/اوبونتو (Qt سیستمی، x64)",
+                    "fr": "Debian/Ubuntu (Qt système, x64)",
+                    "ru": "Debian/Ubuntu (системный Qt, x64)",
+                    "zh": "Debian/Ubuntu（系统 Qt，x64）"
+                  },
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-debian-x64.deb",
+                  "type": "external",
+                  "text": {
+                    "en": "Debian/Ubuntu (x64)",
+                    "fa": "دبیان/اوبونتو (x64)",
+                    "fr": "Debian/Ubuntu (x64)",
+                    "ru": "Debian/Ubuntu (x64)",
+                    "zh": "Debian/Ubuntu (x64)"
+                  },
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-linux-amd64.zip",
+                  "type": "external",
+                  "text": {
+                    "en": "Linux (amd64, portable)",
+                    "fa": "لینوکس (amd64، قابل حمل)",
+                    "fr": "Linux (amd64, portable)",
+                    "ru": "Linux (amd64, портативная)",
+                    "zh": "Linux（amd64，便携版）"
+                  },
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-linux-arm64.zip",
+                  "type": "external",
+                  "text": {
+                    "en": "Linux (arm64, portable)",
+                    "fa": "لینوکس (arm64، قابل حمل)",
+                    "fr": "Linux (arm64, portable)",
+                    "ru": "Linux (arm64, портативная)",
+                    "zh": "Linux（arm64，便携版）"
+                  },
+                  "svgIconKey": "ExternalLink"
+                }
+              ]
+            },
+            {
+              "svgIconKey": "Gear",
+              "svgIconColor": "red",
+              "title": {
+                "en": "Enable HWID",
+                "fa": "فعال کردن HWID",
+                "fr": "Activer le HWID",
+                "ru": "Включите HWID",
+                "zh": "启用 HWID"
+              },
+              "description": {
+                "en": "On the main screen, enable TUN Mode. Click the settings button, select General Settings, go to the Subscription section and enable Send HWID option.",
+                "fa": "در صفحه اصلی، حالت TUN را فعال کنید. دکمه تنظیمات را کلیک کنید، تنظیمات عمومی را انتخاب کنید، به بخش اشتراک بروید و گزینه ارسال HWID را فعال کنید.",
+                "fr": "Sur l'écran principal, activez le mode TUN. Cliquez sur le bouton des paramètres, sélectionnez Paramètres généraux, allez dans la section Abonnement et activez l'option Envoyer HWID.",
+                "ru": "На главном экране включите Режим TUN. Нажмите кнопку настроек, выберите Основные настройки, перейдите в раздел Подписка и включите пункт Включить отправку HWID.",
+                "zh": "在主屏幕上启用 TUN 模式。点击设置按钮，选择常规设置，进入订阅部分并启用发送 HWID 选项。"
+              },
+              "buttons": []
+            },
+            {
+              "svgIconKey": "CloudDownload",
+              "svgIconColor": "cyan",
+              "title": {
+                "en": "Add Subscription",
+                "fa": "اضافه کردن اشتراک",
+                "fr": "Ajouter une souscription",
+                "ru": "Добавление подписки",
+                "zh": "添加订阅"
+              },
+              "description": {
+                "en": "Click the button to copy the link. In Throne, click the Profiles button on the main menu and select Add Profile from Clipboard. When asked how to update, select Create New Subscription Group.",
+                "fa": "روی دکمه کلیک کنید تا لینک کپی شود. در Throne، دکمه پروفایل‌ها را در منوی اصلی کلیک کنید و گزینه افزودن پروفایل از کلیپ‌بورد را انتخاب کنید. وقتی از شما پرسیده شد چگونه به‌روزرسانی کنید، گزینه ایجاد گروه اشتراک جدید را انتخاب کنید.",
+                "fr": "Cliquez sur le bouton pour copier le lien. Dans Throne, cliquez sur le bouton Profils dans le menu principal et sélectionnez Ajouter un profil depuis le presse-papiers. Lorsqu'on vous demande comment mettre à jour, sélectionnez Créer un nouveau groupe d'abonnement.",
+                "ru": "Нажмите на кнопку, чтобы скопировать ссылку. В Throne нажмите кнопку Профили в главном меню и выберите Добавить профиль из буфера обмена. При вопросе как обновить, выберите пункт Создать новую группу подписки.",
+                "zh": "点击按钮复制链接。在 Throne 中，点击主菜单上的配置文件按钮，然后选择从剪贴板添加配置文件。当询问如何更新时，选择创建新订阅组。"
+              },
+              "buttons": [
+                {
+                  "link": "{{SUBSCRIPTION_LINK}}",
+                  "type": "copyButton",
+                  "text": {
+                    "en": "Copy Link",
+                    "fa": "کپی لینک",
+                    "fr": "Copier le lien",
+                    "ru": "Скопировать ссылку",
+                    "zh": "复制链接"
+                  },
+                  "svgIconKey": "copyButton"
+                }
+              ]
+            },
+            {
+              "svgIconKey": "Gear",
+              "svgIconColor": "cyan",
+              "title": {
+                "en": "Add routing rules",
+                "fa": "افزودن قوانین مسیریابی",
+                "fr": "Ajouter des règles de routage",
+                "ru": "Добавить правила маршрутизации",
+                "zh": "添加路由规则"
+              },
+              "description": {
+                "en": "In Throne, click the Routing button on the main menu and select Download Profiles menu. Choose one of the required profiles. For Russia: ByPass_Russia, Proxy_Refilter, Proxy_Russia_Blocked. For Iran: Bypass_Iran. For China: Bypass_China or Proxy_China_Blocked.",
+                "fa": "در Throne، دکمه مسیریابی را در منوی اصلی کلیک کنید و منوی دانلود پروفایل‌ها را انتخاب کنید. یکی از پروفایل‌های مورد نیاز را انتخاب کنید. برای روسیه: ByPass_Russia، Proxy_Refilter، Proxy_Russia_Blocked. برای ایران: Bypass_Iran. برای چین: Bypass_China یا Proxy_China_Blocked.",
+                "fr": "Dans Throne, cliquez sur le bouton Routage dans le menu principal et sélectionnez le menu Télécharger les profils. Choisissez l'un des profils requis. Pour la Russie : ByPass_Russia, Proxy_Refilter, Proxy_Russia_Blocked. Pour l'Iran : Bypass_Iran. Pour la Chine : Bypass_China ou Proxy_China_Blocked.",
+                "ru": "В Throne нажмите кнопку Маршрутизация в главном меню и выберите меню Загрузка профилей. Выберите один из требуемых профилей. Для России: ByPass_Russia, Proxy_Refilter, Proxy_Russia_Blocked. Для Ирана: Bypass_Iran. Для Китая: Bypass_China или Proxy_China_Blocked.",
+                "zh": "在 Throne 中，点击主菜单上的路由按钮并选择下载配置文件菜单。选择所需的配置文件之一。对于俄罗斯：ByPass_Russia、Proxy_Refilter、Proxy_Russia_Blocked。对于伊朗：Bypass_Iran。对于中国：Bypass_China 或 Proxy_China_Blocked。"
+              },
+              "buttons": []
+            },
+            {
+              "svgIconKey": "Check",
+              "svgIconColor": "teal",
+              "title": {
+                "en": "Connect and use",
+                "fa": "متصل شوید و استفاده کنید",
+                "fr": "Se connecter et utiliser",
+                "ru": "Подключение и использование",
+                "zh": "连接并使用"
+              },
+              "description": {
+                "en": "In the added subscription group, select the required server, right-click and click Connect.",
+                "fa": "در گروه اشتراک اضافه شده، سرور مورد نیاز را انتخاب کنید، کلیک راست کنید و روی اتصال کلیک کنید.",
+                "fr": "Dans le groupe d'abonnement ajouté, sélectionnez le serveur requis, faites un clic droit et cliquez sur Connecter.",
+                "ru": "В добавленной группе подписки выберите требуемый сервер, нажмите ПКМ и нажмите Подключиться.",
+                "zh": "在添加的订阅组中，选择所需的服务器，右键单击并点击连接。"
+              },
+              "buttons": []
+            }
+          ]
         }
       ]
     },
@@ -2419,6 +2583,182 @@
               "buttons": []
             }
           ]
+        },
+        {
+          "name": "Throne",
+          "svgIconKey": "Throne",
+          "featured": false,
+          "blocks": [
+            {
+              "svgIconKey": "DownloadIcon",
+              "svgIconColor": "cyan",
+              "title": {
+                "en": "App Installation",
+                "fa": "نصب برنامه",
+                "fr": "Installation de l'application",
+                "ru": "Установка приложения",
+                "zh": "应用安装"
+              },
+              "description": {
+                "en": "Download and install Throne. Run the application with administrator rights.",
+                "fa": "Throne را دانلود و نصب کنید. برنامه را با دسترسی مدیر اجرا کنید.",
+                "fr": "Téléchargez et installez Throne. Lancez l'application avec les droits administrateur.",
+                "ru": "Скачайте и установите Throne. Запустите приложение с правами администратора.",
+                "zh": "下载并安装 Throne。以管理员权限运行应用程序。"
+              },
+              "buttons": [
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows64-installer.exe",
+                  "type": "external",
+                  "text": {
+                    "en": "Windows 64-bit (Installer)",
+                    "fa": "ویندوز 64 بیتی (نصب)",
+                    "fr": "Windows 64-bit (Installateur)",
+                    "ru": "Windows 64-бит (Установщик)",
+                    "zh": "Windows 64 位（安装程序）"
+                  },
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows64.zip",
+                  "type": "external",
+                  "text": {
+                    "en": "Windows 64-bit (Portable)",
+                    "fa": "ویندوز 64 بیتی (قابل حمل)",
+                    "fr": "Windows 64-bit (Portable)",
+                    "ru": "Windows 64-бит (Портативная)",
+                    "zh": "Windows 64 位（便携版）"
+                  },
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows32.zip",
+                  "type": "external",
+                  "text": {
+                    "en": "Windows 32-bit",
+                    "fa": "ویندوز 32 بیتی",
+                    "fr": "Windows 32-bit",
+                    "ru": "Windows 32-бит",
+                    "zh": "Windows 32 位"
+                  },
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows-arm64.zip",
+                  "type": "external",
+                  "text": {
+                    "en": "Windows ARM64",
+                    "fa": "ویندوز ARM64",
+                    "fr": "Windows ARM64",
+                    "ru": "Windows ARM64",
+                    "zh": "Windows ARM64"
+                  },
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windowslegacy64.zip",
+                  "type": "external",
+                  "text": {
+                    "en": "Windows Legacy 64-bit",
+                    "fa": "ویندوز قدیمی 64 بیتی",
+                    "fr": "Windows Legacy 64-bit",
+                    "ru": "Windows Legacy 64-бит",
+                    "zh": "Windows Legacy 64 位"
+                  },
+                  "svgIconKey": "ExternalLink"
+                }
+              ]
+            },
+            {
+              "svgIconKey": "Gear",
+              "svgIconColor": "red",
+              "title": {
+                "en": "Enable HWID",
+                "fa": "فعال کردن HWID",
+                "fr": "Activer le HWID",
+                "ru": "Включите HWID",
+                "zh": "启用 HWID"
+              },
+              "description": {
+                "en": "On the main screen, enable TUN Mode. Click the settings button, select General Settings, go to the Subscription section and enable Send HWID option.",
+                "fa": "در صفحه اصلی، حالت TUN را فعال کنید. دکمه تنظیمات را کلیک کنید، تنظیمات عمومی را انتخاب کنید، به بخش اشتراک بروید و گزینه ارسال HWID را فعال کنید.",
+                "fr": "Sur l'écran principal, activez le mode TUN. Cliquez sur le bouton des paramètres, sélectionnez Paramètres généraux, allez dans la section Abonnement et activez l'option Envoyer HWID.",
+                "ru": "На главном экране включите Режим TUN. Нажмите кнопку настроек, выберите Основные настройки, перейдите в раздел Подписка и включите пункт Включить отправку HWID.",
+                "zh": "在主屏幕上启用 TUN 模式。点击设置按钮，选择常规设置，进入订阅部分并启用发送 HWID 选项。"
+              },
+              "buttons": []
+            },
+            {
+              "svgIconKey": "CloudDownload",
+              "svgIconColor": "cyan",
+              "title": {
+                "en": "Add Subscription",
+                "fa": "اضافه کردن اشتراک",
+                "fr": "Ajouter une souscription",
+                "ru": "Добавление подписки",
+                "zh": "添加订阅"
+              },
+              "description": {
+                "en": "Click the button to copy the link. In Throne, click the Profiles button on the main menu and select Add Profile from Clipboard. When asked how to update, select Create New Subscription Group.",
+                "fa": "روی دکمه کلیک کنید تا لینک کپی شود. در Throne، دکمه پروفایل‌ها را در منوی اصلی کلیک کنید و گزینه افزودن پروفایل از کلیپ‌بورد را انتخاب کنید. وقتی از شما پرسیده شد چگونه به‌روزرسانی کنید، گزینه ایجاد گروه اشتراک جدید را انتخاب کنید.",
+                "fr": "Cliquez sur le bouton pour copier le lien. Dans Throne, cliquez sur le bouton Profils dans le menu principal et sélectionnez Ajouter un profil depuis le presse-papiers. Lorsqu'on vous demande comment mettre à jour, sélectionnez Créer un nouveau groupe d'abonnement.",
+                "ru": "Нажмите на кнопку, чтобы скопировать ссылку. В Throne нажмите кнопку Профили в главном меню и выберите Добавить профиль из буфера обмена. При вопросе как обновить, выберите пункт Создать новую группу подписки.",
+                "zh": "点击按钮复制链接。在 Throne 中，点击主菜单上的配置文件按钮，然后选择从剪贴板添加配置文件。当询问如何更新时，选择创建新订阅组。"
+              },
+              "buttons": [
+                {
+                  "link": "{{SUBSCRIPTION_LINK}}",
+                  "type": "copyButton",
+                  "text": {
+                    "en": "Copy Link",
+                    "fa": "کپی لینک",
+                    "fr": "Copier le lien",
+                    "ru": "Скопировать ссылку",
+                    "zh": "复制链接"
+                  },
+                  "svgIconKey": "copyButton"
+                }
+              ]
+            },
+            {
+              "svgIconKey": "Gear",
+              "svgIconColor": "cyan",
+              "title": {
+                "en": "Add routing rules",
+                "fa": "افزودن قوانین مسیریابی",
+                "fr": "Ajouter des règles de routage",
+                "ru": "Добавить правила маршрутизации",
+                "zh": "添加路由规则"
+              },
+              "description": {
+                "en": "In Throne, click the Routing button on the main menu and select Download Profiles menu. Choose one of the required profiles. For Russia: ByPass_Russia, Proxy_Refilter, Proxy_Russia_Blocked. For Iran: Bypass_Iran. For China: Bypass_China or Proxy_China_Blocked.",
+                "fa": "در Throne، دکمه مسیریابی را در منوی اصلی کلیک کنید و منوی دانلود پروفایل‌ها را انتخاب کنید. یکی از پروفایل‌های مورد نیاز را انتخاب کنید. برای روسیه: ByPass_Russia، Proxy_Refilter، Proxy_Russia_Blocked. برای ایران: Bypass_Iran. برای چین: Bypass_China یا Proxy_China_Blocked.",
+                "fr": "Dans Throne, cliquez sur le bouton Routage dans le menu principal et sélectionnez le menu Télécharger les profils. Choisissez l'un des profils requis. Pour la Russie : ByPass_Russia, Proxy_Refilter, Proxy_Russia_Blocked. Pour l'Iran : Bypass_Iran. Pour la Chine : Bypass_China ou Proxy_China_Blocked.",
+                "ru": "В Throne нажмите кнопку Маршрутизация в главном меню и выберите меню Загрузка профилей. Выберите один из требуемых профилей. Для России: ByPass_Russia, Proxy_Refilter, Proxy_Russia_Blocked. Для Ирана: Bypass_Iran. Для Китая: Bypass_China или Proxy_China_Blocked.",
+                "zh": "在 Throne 中，点击主菜单上的路由按钮并选择下载配置文件菜单。选择所需的配置文件之一。对于俄罗斯：ByPass_Russia、Proxy_Refilter、Proxy_Russia_Blocked。对于伊朗：Bypass_Iran。对于中国：Bypass_China 或 Proxy_China_Blocked。"
+              },
+              "buttons": []
+            },
+            {
+              "svgIconKey": "Check",
+              "svgIconColor": "teal",
+              "title": {
+                "en": "Connect and use",
+                "fa": "متصل شوید و استفاده کنید",
+                "fr": "Se connecter et utiliser",
+                "ru": "Подключение и использование",
+                "zh": "连接并使用"
+              },
+              "description": {
+                "en": "In the added subscription group, select the required server, right-click and click Connect.",
+                "fa": "در گروه اشتراک اضافه شده، سرور مورد نیاز را انتخاب کنید، کلیک راست کنید و روی اتصال کلیک کنید.",
+                "fr": "Dans le groupe d'abonnement ajouté, sélectionnez le serveur requis, faites un clic droit et cliquez sur Connecter.",
+                "ru": "В добавленной группе подписки выберите требуемый сервер, нажмите ПКМ и нажмите Подключиться.",
+                "zh": "在添加的订阅组中，选择所需的服务器，右键单击并点击连接。"
+              },
+              "buttons": []
+            }
+          ]
         }
       ]
     },
@@ -2803,7 +3143,8 @@
     "DownloadIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0\n          0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"><path\n          stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M4 17v2a2 2 0 0 0\n          2 2h12a2 2 0 0 0 2 -2v-2\" /><path d=\"M7 11l5 5l5 -5\" /><path d=\"M12 4l0\n          12\" /></svg>",
     "ExternalLink": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\"\n            viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\n            stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0\n            0h24v24H0z\" fill=\"none\"/><path d=\"M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0\n            2 2h10a2 2 0 0 0 2 -2v-6\" /><path d=\"M11 13l9 -9\" /><path d=\"M15 4h5v5\"\n            /></svg>",
     "Shadowrocket": "<svg width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.2394 36.832L16.5386 39.568C16.5386 39.568 13.7182 36.832 11.8379 33.184C9.95756 29.536 16.5386 23.152 16.5386 23.152M21.2394 36.832H28.7606M21.2394 36.832C21.2394 36.832 15.5985 24.064 17.4788 16.768C19.3591 9.472 25 4 25 4C25 4 30.6409 9.472 32.5212 16.768C34.4015 24.064 28.7606 36.832 28.7606 36.832M28.7606 36.832L33.4614 39.568C33.4614 39.568 36.2818 36.832 38.1621 33.184C40.0424 29.536 33.4614 23.152 33.4614 23.152M25 46L26.8803 40.528H23.1197L25 46ZM25.9402 17.68C26.4594 18.1837 26.4594 19.0003 25.9402 19.504C25.4209 20.0077 24.5791 20.0077 24.0598 19.504C23.5406 19.0003 23.5406 18.1837 24.0598 17.68C24.5791 17.1763 25.4209 17.1763 25.9402 17.68Z\" stroke=\"#FAFAFA\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
-    "CloudDownload": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0\n          0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"><path\n          stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M19 18a3.5 3.5 0 0\n          0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4\" /><path d=\"M12 13l0\n          9\" /><path d=\"M9 19l3 3l3 -3\" /></svg>"
+    "CloudDownload": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0\n          0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"\n          stroke-linejoin=\"round\"><path\n          stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M19 18a3.5 3.5 0 0\n          0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4\" /><path d=\"M12 13l0\n          9\" /><path d=\"M9 19l3 3l3 -3\" /></svg>",
+    "copyButton": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"icon icon-tabler icons-tabler-outline icon-tabler-copy\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z\" /><path d=\"M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1\" /></svg>"
   },
   "baseSettings": {
     "metaTitle": "Orion Subscription Page",
