@@ -1,11 +1,10 @@
 # my-remnawave
-## remnawave-subscription-page [сlient configuration](https://remna.st/docs/install/remnawave-subscription-page#configuring-subscription-page-optional)
-  - [simple (Clash Verge Rev for PC, Clash Meta for Android, sing-box for iOS)](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/app-config.json)
+## remnawave-subscription-page subpage config
 
 <details>
   <summary>multiapp ↓ </summary>
   
-[link to multiapp app-config.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/multiapp/app-config.json)
+[link to multiapp.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/subpage-config/multiapp.json)
 
 included apps:
 
@@ -81,7 +80,7 @@ included apps:
 <details>
   <summary>hwid ↓ </summary>
   
-[link to hwid app-config.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/hwid/app-config.json)
+[link to hwid.json](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/subpage-config/hwid.json)
 
 included apps:
 
@@ -144,10 +143,10 @@ included apps:
 </details>
 
 ## remnawave-subscription-page [custom web template](https://remna.st/docs/install/remnawave-subscription-page#mounting-custom-template)
-  - [⭐ Orion (with redirector-page & support app-config.json)](https://github.com/legiz-ru/Orion)
-  - [⭐ material sub page (with support app-config.json)](https://github.com/legiz-ru/material-remnawave-subscription-page)
-  - [marzbanify clash-sing](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/clash-sing/index.html)
-  - [simple happ only (example how to create custom web template)](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
+  - [⭐ Orion (with redirector-page & support subpage config)](https://github.com/legiz-ru/Orion)
+  - [⭐ material sub page (with support old app-config.json)](https://github.com/legiz-ru/material-remnawave-subscription-page)
+  - [marzbanify clash-sing old subpage](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/clash-sing/index.html)
+  - [simple happ only (example how to create custom web template) old subpage](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
 
 ## remnawave subscription  templates for clients
   - [mihomo](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/remnawave.yaml)
