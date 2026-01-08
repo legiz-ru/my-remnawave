@@ -8,7 +8,7 @@
   ],
   "version": "1",
   "uiConfig": {
-    "subscriptionInfoBlockType": "expanded",
+    "subscriptionInfoBlockType": "collapsed",
     "installationGuidesBlockType": "cards"
   },
   "platforms": {
@@ -4073,7 +4073,7 @@
     "metaTitle": "Orion Subscription Page",
     "metaDescription": "Orion Subscription Page",
     "hideGetLinkButton": false,
-    "showConnectionKeys": false
+    "showConnectionKeys": true
   },
   "baseTranslations": {
     "name": {

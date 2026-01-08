@@ -10,23 +10,21 @@ included apps:
 
 ### iOS
 
-- sing-box ⭐
 - Happ ⭐
+- Clash Mi ⭐
 - Stash
-- Streisand
 - Shadowrocket
-- Clash Mi
+- Streisand
+- sing-box
 
 ***
 
 ### Android
 
-- FlClashX ⭐
-- Clash Meta ⭐
 - Happ ⭐
-- sing-box
+- FlClashX ⭐
+- Clash Meta
 - v2rayNG
-- Exclave
 
 ***
 
@@ -34,19 +32,18 @@ included apps:
 
 - FlClashX ⭐
 - Koala Clash ⭐
-- Prizrak-Box ⭐
-- Happ (alpha)
+- Prizrak-Box
+- Happ
 - Clash Verge
 
 ***
 
 ### macOS
 
-- Koala Clash ⭐
-- Happ (alpha)
-- FlClashX
+- Happ ⭐
+- FlClashX ⭐
+- Koala Clash
 - Prizrak-Box
-- sing-box
 - Clash Verge
 
 ***
@@ -55,8 +52,8 @@ included apps:
 
 - FlClashX ⭐
 - Koala Clash ⭐
-- Prizrak-Box
-- Happ (alpha)
+- Prizrak-Box ⭐
+- Happ
 - Clash Verge
 
 ***
@@ -72,8 +69,9 @@ included apps:
 ### Apple TV
 
 - Happ ⭐
-- sing-box ⭐
+- Stash
 - Shadowrocket
+- sing-box
 
 </details>
 
@@ -84,19 +82,18 @@ included apps:
 
 included apps:
 
-***
-
 ### iOS
 
 - Happ ⭐
 - v2RayTun
+- Shadowrocket
 
 ***
 
 ### Android
 
-- FlClashX ⭐
 - Happ ⭐
+- FlClashX ⭐
 - v2RayTun
 
 ***
@@ -105,16 +102,17 @@ included apps:
 
 - FlClashX ⭐
 - Koala Clash ⭐
-- Prizrak-Box ⭐
-- Happ (alpha)
+- Prizrak-Box
+- Happ
+- Throne
 
 ***
 
 ### macOS
 
-- Koala Clash ⭐
-- Happ (alpha)
+- Happ ⭐
 - FlClashX ⭐
+- Koala Clash
 - Prizrak-Box
 
 ***
@@ -124,7 +122,8 @@ included apps:
 - FlClashX ⭐
 - Koala Clash ⭐
 - Prizrak-Box ⭐
-- Happ (alpha)
+- Happ
+- Throne
 
 ***
 
@@ -148,8 +147,9 @@ included apps:
   - [marzbanify clash-sing old subpage](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/clash-sing/index.html)
   - [simple happ only (example how to create custom web template) old subpage](https://github.com/legiz-ru/my-remnawave/blob/main/sub-page/customweb/happ-only/index.html)
 
-## remnawave subscription  templates for clients
+## remnawave subscription templates for clients
   - [mihomo](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/remnawave.yaml)
+  - [stash](https://github.com/legiz-ru/mihomo-rule-sets/tree/main/examples/stash)
   - [sing-box (1.11 sing-box, 1.10 sing-box legacy)](https://github.com/legiz-ru/sb-rule-sets/tree/main/.github/sub2sing-box)
   - [simple xray-json template](https://github.com/legiz-ru/marz-sub/blob/main/v2ray/default.json)
   - - [xray-json template with ru-bundle](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/other/marzban-v2ray-ru-bundle.json)
