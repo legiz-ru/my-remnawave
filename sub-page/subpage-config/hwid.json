@@ -391,7 +391,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-amd64.deb",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-linux-amd64.deb",
                   "type": "external",
                   "text": {
                     "en": "amd64 (.deb)",
@@ -403,7 +403,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-amd64.AppImage",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-linux-amd64.AppImage",
                   "type": "external",
                   "text": {
                     "en": "amd64 (AppImage)",
@@ -415,7 +415,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-amd64.rpm",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-linux-amd64.rpm",
                   "type": "external",
                   "text": {
                     "en": "amd64 (.rpm)",
@@ -427,7 +427,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-linux-arm64.deb",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-linux-arm64.deb",
                   "type": "external",
                   "text": {
                     "en": "arm64 (.deb)",
@@ -1232,7 +1232,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-macos-arm64.dmg",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-macos-arm64.dmg",
                   "type": "external",
                   "text": {
                     "en": "macOS (Apple Silicon)",
@@ -1244,7 +1244,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-macos-amd64.dmg",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-macos-amd64.dmg",
                   "type": "external",
                   "text": {
                     "en": "macOS (Intel)",
@@ -1760,7 +1760,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-arm64-v8a.apk",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-android-universal.apk",
                   "type": "external",
                   "text": {
                     "en": "Download APK",
@@ -2129,7 +2129,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-windows-amd64-setup.exe",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-windows-amd64-setup.exe",
                   "type": "external",
                   "text": {
                     "en": "Windows (Setup)",
@@ -2141,7 +2141,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-windows-arm64-setup.exe",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-windows-arm64-setup.exe",
                   "type": "external",
                   "text": {
                     "en": "Windows on ARM (Setup)",
@@ -2942,7 +2942,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-arm64-v8a.apk",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-android-arm64-v8a.apk",
                   "type": "external",
                   "text": {
                     "en": "Download APK (ARMv8)",
@@ -2954,7 +2954,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-armeabi-v7a.apk",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-android-armeabi-v7a.apk",
                   "type": "external",
                   "text": {
                     "en": "Download APK (ARMv7)",
@@ -2966,7 +2966,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/pluralplay/FlClashX/releases/download/v0.2.1/FlClashX-0.2.1-android-x86_64.apk",
+                  "link": "https://github.com/pluralplay/FlClashX/releases/latest/download/FlClashX-android-x86_64.apk",
                   "type": "external",
                   "text": {
                     "en": "Download APK (x86_64)",
