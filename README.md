@@ -85,6 +85,7 @@ included apps:
 ### iOS
 
 - Happ ⭐
+- Clash Mi ⭐
 - v2RayTun
 - Shadowrocket
 

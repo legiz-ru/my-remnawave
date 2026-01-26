@@ -125,6 +125,96 @@
           ]
         },
         {
+          "name": "Clash Mi",
+          "blocks": [
+            {
+              "title": {
+                "en": "App Installation",
+                "fa": "نصب برنامه",
+                "fr": "Installation de l'application",
+                "ru": "Установка приложения",
+                "zh": "应用安装"
+              },
+              "buttons": [
+                {
+                  "link": "https://apps.apple.com/us/app/clash-mi/id6744321968",
+                  "text": {
+                    "en": "Open in App Store",
+                    "fa": "باز کردن در App Store",
+                    "fr": "Ouvre dans l’App Store",
+                    "ru": "Открыть в App Store",
+                    "zh": "在 App Store 打开"
+                  },
+                  "type": "external",
+                  "svgIconKey": "ExternalLink"
+                }
+              ],
+              "svgIconKey": "DownloadIcon",
+              "description": {
+                "en": "Open the App Store page and install the app.",
+                "fa": "صفحه App Store را باز کرده و برنامه را نصب کنید.",
+                "fr": "Ouvre la page de l’App Store et installe l’app.",
+                "ru": "Откройте страницу в App Store и установите приложение.",
+                "zh": "打开 App Store 页面并安装应用。"
+              },
+              "svgIconColor": "blue"
+            },
+            {
+              "title": {
+                "en": "Add Subscription",
+                "fa": "اضافه کردن اشتراک",
+                "fr": "Ajouter une souscription",
+                "ru": "Добавление подписки",
+                "zh": "添加订阅"
+              },
+              "buttons": [
+                {
+                  "link": "clash://install-config?xhwid=true&overwrite=no&name={{USERNAME}}&url={{SUBSCRIPTION_LINK}}",
+                  "text": {
+                    "en": "Add Subscription",
+                    "fa": "اضافه کردن اشتراک",
+                    "fr": "Ajouter une souscription",
+                    "ru": "Добавить подписку",
+                    "zh": "添加订阅"
+                  },
+                  "type": "subscriptionLink",
+                  "svgIconKey": "Plus"
+                }
+              ],
+              "svgIconKey": "CloudDownload",
+              "description": {
+                "en": "Click the button below — the app will open and the subscription will be added automatically",
+                "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+                "fr": "Clique sur le bouton ci‑dessous — l’app s’ouvrira et l’abonnement sera ajouté automatiquement.",
+                "ru": "Нажмите кнопку ниже — приложение откроется, и подписка добавится автоматически.",
+                "zh": "点击下方按钮，应用将会打开，并自动添加订阅"
+              },
+              "svgIconColor": "cyan"
+            },
+            {
+              "title": {
+                "en": "Connect and use",
+                "fa": "متصل شوید و استفاده کنید",
+                "fr": "Se connecter et utiliser",
+                "ru": "Подключение и использование",
+                "zh": "连接并使用"
+              },
+              "buttons": [],
+              "svgIconKey": "Check",
+              "description": {
+                "en": "On the main screen, tap the Disconnected button, then in the VPN configuration prompt tap Allow and enter your password to connect.",
+                "fa": "در صفحه اصلی روی دکمه Disconnected بزنید، سپس در پنجره مجوز پیکربندی VPN روی Allow ضربه بزنید و برای اتصال، رمز عبور خود را وارد کنید.",
+                "fr": "Sur l’écran principal, appuie sur « Disconnected », puis, dans la demande de configuration VPN, appuie sur « Allow » et entre ton mot de passe pour te connecter.",
+                "ru": "На главной странице нажми кнопку Disconnected,  в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN.",
+                "zh": "在主屏幕点击 Disconnected 按钮，然后在 VPN 配置提示中点击允许并输入您的密码以连接。"
+              },
+              "svgIconColor": "teal"
+            }
+          ],
+          "featured": true,
+          "svgIconKey": "ClashMi"
+        },
+        {
           "name": "v2RayTun",
           "svgIconKey": "vrayTUN",
           "featured": false,
