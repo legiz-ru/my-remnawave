@@ -169,7 +169,7 @@
               },
               "buttons": [
                 {
-                  "link": "clash://install-config?xhwid=true&overwrite=no&name={{USERNAME}}&url={{SUBSCRIPTION_LINK}}",
+                  "link": "clashmi://install-config?xhwid=true&overwrite=no&name={{USERNAME}}&url={{SUBSCRIPTION_LINK}}",
                   "text": {
                     "en": "Add Subscription",
                     "fa": "اضافه کردن اشتراک",
