@@ -1230,7 +1230,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge_2.4.4_amd64.deb",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge_2.4.5_amd64.deb",
                   "text": {
                     "en": "Linux (amd64 .deb)",
                     "fa": "لینوکس (amd64 .deb)",
@@ -1242,7 +1242,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge-2.4.4-1.x86_64.rpm",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge-2.4.5-1.x86_64.rpm",
                   "text": {
                     "en": "Linux (x86_64 .rpm)",
                     "fa": "لینوکس (x86_64 .rpm)",
@@ -1254,7 +1254,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge_2.4.4_arm64.deb",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge_2.4.5_arm64.deb",
                   "text": {
                     "en": "Linux (ARM64 .deb)",
                     "fa": "لینوکس (ARM64 .deb)",
@@ -1266,7 +1266,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge-2.4.4-1.aarch64.rpm",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge-2.4.5-1.aarch64.rpm",
                   "text": {
                     "en": "Linux (aarch64 .rpm)",
                     "fa": "لینوکس (aarch64 .rpm)",
@@ -1922,7 +1922,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge_2.4.4_x64.dmg",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge_2.4.5_x64.dmg",
                   "text": {
                     "en": "macOS (Intel)",
                     "fa": "مک (اینتل)",
@@ -1934,7 +1934,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge_2.4.4_aarch64.dmg",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge_2.4.5_aarch64.dmg",
                   "text": {
                     "en": "macOS (Apple Silicon)",
                     "fa": "مک (Apple Silicon)",
@@ -2285,7 +2285,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.20/cmfa-2.11.20-meta-universal-release.apk",
+                  "link": "https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.23/cmfa-2.11.23-meta-universal-release.apk",
                   "text": {
                     "en": "Download APK",
                     "fa": "دانلود APK",
@@ -2387,7 +2387,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/2dust/v2rayNG/releases/download/1.10.31/v2rayNG_1.10.31_universal.apk",
+                  "link": "https://github.com/2dust/v2rayNG/releases/download/2.0.9/v2rayNG_2.0.9_universal.apk",
                   "text": {
                     "en": "Download APK",
                     "fa": "دانلود APK",
@@ -3403,7 +3403,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge_2.4.4_x64-setup.exe",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge_2.4.5_x64-setup.exe",
                   "text": {
                     "en": "Windows (Setup)",
                     "fa": "ویندوز (نصب)",
@@ -3415,7 +3415,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.4/Clash.Verge_2.4.4_arm64-setup.exe",
+                  "link": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.5/Clash.Verge_2.4.5_arm64-setup.exe",
                   "text": {
                     "en": "Windows on ARM (Setup)",
                     "fa": "ویندوز ARM (نصب)",
