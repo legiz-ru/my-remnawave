@@ -293,3 +293,149 @@ services:
 
 </details>
 
+
+## How to use XHTTP from Remnawave in Prizrak-Box
+
+<details>
+  <summary>faq</summary>
+
+# How to use XHTTP from Remnawave in Prizrak-Box
+
+## Overview
+
+Remnawave's subscription engine allows you to deliver preconfigured Mihomo YAML profiles to Prizrak-Box on Android using response rules and custom HTTP headers. XRAY BASE64 will be converted via mihomo core fork in Prizrak-Box and placed to preconfigured Mihomo YAML profiles. This guide explains how to set it up and what options you have.
+
+---
+
+## Step 1: Add a Response Rule for Prizrak-Box in Your Panel
+
+In Remnawave, go to **Subscription → Response Rules** and add the following rule at the **top of the list** (highest priority):
+
+```json
+{
+  "name": "Prizrak-Box ",
+  "description": "Prizrak-Box for Desktop & Android use base64 sub with template from px(a|d)-template",
+  "enabled": true,
+  "operator": "AND",
+  "conditions": [
+    {
+      "headerName": "user-agent",
+      "operator": "CONTAINS",
+      "value": "Clash-Meta/Prizrak-Box (",
+      "caseSensitive": false
+    }
+  ],
+  "responseType": "XRAY_BASE64",
+  "responseModifications": {
+    "headers": [
+      {
+        "key": "pxa-template",
+        "value": "https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/px/payload/ultimate-mihomo-ru-payload-smart.yaml"
+      },
+      {
+        "key": "pxa-template-scheme",
+        "value": "payload"
+      },
+      {
+        "key": "pxd-template",
+        "value": "https://github.com/legiz-ru/mihomo-rule-sets/raw/main/examples/px/proxy-providers/ultimate-mihomo-ru-proxy-providers-smart.yaml"
+      },
+      {
+        "key": "pxd-template-scheme",
+        "value": "proxy-providers"
+      }
+    ]
+  }
+}
+```
+
+Replace `pxa-template` or  `pxd-template` value with the URL of your actual Mihomo YAML template.
+
+---
+
+## Step 2: Understanding `px(a|d)-template` and `px(a|d)-template-scheme`
+
+### `pxa-template` or `pxd-template`
+
+Specifies the URL of a remote YAML template that Prizrak-Box will download and use when processing the subscription. When this header is present, the **Select Template** button in the profile editor is hidden — the template is managed entirely by the server.
+
+---
+
+### `pxa-template-scheme` or `pxd-template-scheme`
+
+Controls how the downloaded template and the subscription content are combined. Three modes are available:
+
+---
+
+#### Mode 1: `px(a|d)-template-scheme: proxies` (or omitted)
+
+The subscription content (base64-encoded xray links) is converted by the built-in Mihomo converter and merged into the `proxies:` section of your template. The template is used as a full Clash YAML skeleton.
+
+> **Important caveat:** When using `px(a|d)-template-scheme: proxies`, the proxies will be **sorted alphabetically by name** in the resulting config if use include-all in proxy-groups — not in the order they are defined in your panel's host list. 
+
+**Template requirements:** Converted proxies must be added manually to proxy groups or managed using the filtering capabilities of the Mihomo core (for instance, by adding include-all: true to automatically include all converted proxies into a specific group). Example structure:
+
+```yaml
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - auto
+      - Russia
+      - Finland
+  - name: auto
+    type: url-test
+    include-all: true
+```
+
+No special placeholders are needed in the template for this mode.
+
+---
+
+#### Mode 2: `px(a|d)-template-scheme: payload`
+
+The subscription content is converted to a Clash proxy list, then the proxy list is inserted into the template at the `$payload$` placeholder. This gives you full control over indentation and placement.
+
+**Template example:**
+
+https://github.com/legiz-ru/mihomo-rule-sets/tree/main/examples/px/payload
+
+The `$payload$` placeholder must be on its own line. The leading whitespace on that line is used as indentation for every inserted proxy entry.
+
+**Available placeholders for this mode:**
+
+| Placeholder | Replaced with |
+|---|---|
+| `$payload$` | The full converted proxy list block |
+| `$subscription_url$` | The subscription source URL |
+| `$User-Agent$` | Prizrak-Box User-Agent string |
+| `$profile-update-interval$` | Update interval in **seconds** (from `profile-update-interval` header × 3600) |
+| `$x-hwid$` | Device hardware ID (empty if HWID is disabled in app settings) |
+| `$x-device-os$` | `Android` (empty if HWID disabled) |
+| `$x-ver-os$` | Android OS version, e.g. `14` (empty if HWID disabled) |
+| `$x-device-model$` | Device model name, e.g. `Pixel 8` (empty if HWID disabled) |
+
+---
+
+#### Mode 3: `px(a|d)-template-scheme: proxy-providers`
+
+The subscription URL itself is embedded into the template via the `$subscription_url$` placeholder. The proxy content is **not converted** — Mihomo will fetch it directly at runtime via a proxy-provider mihomo fork in Prizrak-Box. This is the most flexible mode for advanced configurations.
+
+**Full template example with all placeholders:**
+
+https://github.com/legiz-ru/mihomo-rule-sets/tree/main/examples/px/proxy-providers
+
+**Available placeholders for this mode:**
+
+| Placeholder | Replaced with |
+|---|---|
+| `$subscription_url$` | The subscription source URL |
+| `$User-Agent$` | Prizrak-Box User-Agent string |
+| `$profile-update-interval$` | Update interval in **seconds** (from `profile-update-interval` header × 3600) |
+| `$x-hwid$` | Device hardware ID (empty if HWID is disabled in app settings) |
+| `$x-device-os$` | `Android` (empty if HWID disabled) |
+| `$x-ver-os$` | Android OS version, e.g. `14` (empty if HWID disabled) |
+| `$x-device-model$` | Device model name, e.g. `Pixel 8` (empty if HWID disabled) |
+
+</details>
+
