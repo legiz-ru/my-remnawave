@@ -297,7 +297,6 @@ services:
       options:
         max-size: 100m
         max-file: 5
-    network_mode: hos
     restart: always
     cap_add:
       - NET_ADMIN
