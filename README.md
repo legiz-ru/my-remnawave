@@ -154,12 +154,12 @@ included apps:
   - [sing-box (1.11 sing-box, 1.10 sing-box legacy)](https://github.com/legiz-ru/sb-rule-sets/tree/main/.github/sub2sing-box)
   - [simple xray-json template](https://github.com/legiz-ru/marz-sub/blob/main/v2ray/default.json)
   - - [xray-json template with ru-bundle](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/other/marzban-v2ray-ru-bundle.json)
-  - happ routing:
+  - happ /incy routing:
   - - [simple-ru-routing by frayZV](https://github.com/frayZV/simple-ru-routing/blob/master/README.md#happ-routing) (fullproxy with category-ban-ru without RU)
   - - [allow-domains-happ-routing by KazZzeL](https://github.com/KazZzeL/allow-domains-happ-routing/blob/master/README.md)
   - - re-filter:
 ```shell
-happ://routing/onadd/ewogICAgIk5hbWUiOiAiUmU6ZmlsdGVyIiwKICAgICJHbG9iYWxQcm94eSI6ICJmYWxzZSIsCiAgICAiUmVtb3RlRG5zIjogIjEuMS4xLjEiLAogICAgIkRvbWVzdGljRG5zIjogIjc3Ljg4LjguOCIsCiAgICAiR2VvaXB1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tLzFhbmRyZXZpY2gvUmUtZmlsdGVyLWxpc3RzL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9pcC5kYXQiLAogICAgIkdlb3NpdGV1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tLzFhbmRyZXZpY2gvUmUtZmlsdGVyLWxpc3RzL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9zaXRlLmRhdCIsCiAgICAiRG5zSG9zdHMiOiB7fSwKICAgICJEaXJlY3RTaXRlcyI6IFtdLAogICAgIkRpcmVjdElwIjogWwogICAgICAgICIxMC4wLjAuMC84IiwKICAgICAgICAiMTcyLjE2LjAuMC8xMiIsCiAgICAgICAgIjE5Mi4xNjguMC4wLzE2IiwKICAgICAgICAiMTY5LjI1NC4wLjAvMTYiLAogICAgICAgICIyMjQuMC4wLjAvNCIsCiAgICAgICAgIjI1NS4yNTUuMjU1LjI1NSIKICAgIF0sCiAgICAiUHJveHlTaXRlcyI6IFsKICAgICAgICAiZ2Vvc2l0ZTpyZWZpbHRlciIKICAgIF0sCiAgICAiUHJveHlJcCI6IFsKICAgICAgICAiZ2VvaXA6cmVmaWx0ZXIiCiAgICBdLAogICAgIkJsb2NrU2l0ZXMiOiBbXSwKICAgICJCbG9ja0lwIjogW10sCiAgICAiRG9tYWluU3RyYXRlZ3kiOiAiSVBPbkRlbWFuZCIKfQ==
+happ://routing/onadd/eyJOYW1lIjoiUmU6ZmlsdGVyIiwiR2xvYmFsUHJveHkiOiJmYWxzZSIsIlJvdXRlT3JkZXIiOiJibG9jay1kaXJlY3QtcHJveHkiLCJSZW1vdGVETlNUeXBlIjoiRG9VIiwiUmVtb3RlRE5TRG9tYWluIjoiaHR0cHM6Ly9jbG91ZGZsYXJlLWRucy5jb20vZG5zLXF1ZXJ5IiwiUmVtb3RlRE5TSVAiOiIxLjEuMS4xIiwiRG9tZXN0aWNETlNUeXBlIjoiRG9VIiwiRG9tZXN0aWNETlNEb21haW4iOiJodHRwczovL2NvbW1vbi5kb3QuZG5zLnlhbmRleC5uZXQvZG5zLXF1ZXJ5IiwiRG9tZXN0aWNETlNJUCI6Ijc3Ljg4LjguOCIsIkdlb2lwdXJsIjoiaHR0cHM6Ly9naXRodWIuY29tLzFhbmRyZXZpY2gvUmUtZmlsdGVyLWxpc3RzL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9pcC5kYXQiLCJHZW9zaXRldXJsIjoiaHR0cHM6Ly9naXRodWIuY29tLzFhbmRyZXZpY2gvUmUtZmlsdGVyLWxpc3RzL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9zaXRlLmRhdCIsIkxhc3RVcGRhdGVkIjoiIiwiRG5zSG9zdHMiOnt9LCJEaXJlY3RTaXRlcyI6W10sIkRpcmVjdElwIjpbIjEwLjAuMC4wLzgiLCIxNzIuMTYuMC4wLzEyIiwiMTkyLjE2OC4wLjAvMTYiLCIxNjkuMjU0LjAuMC8xNiIsIjIyNC4wLjAuMC80IiwiMjU1LjI1NS4yNTUuMjU1Il0sIlByb3h5U2l0ZXMiOlsiZ2Vvc2l0ZTpyZWZpbHRlciJdLCJQcm94eUlwIjpbImdlb2lwOnJlZmlsdGVyIl0sIkJsb2NrU2l0ZXMiOltdLCJCbG9ja0lwIjpbXSwiRG9tYWluU3RyYXRlZ3kiOiJJUE9uRGVtYW5kIiwiRmFrZUROUyI6ImZhbHNlIiwiVXNlQ2h1bmtGaWxlcyI6InRydWUifQ==
 ```
 
 ## Support the Project
@@ -213,14 +213,19 @@ If you like this project and want to support its development, you can make a don
   <summary>↓ XHTTP nginx reverse proxy:</summary>
 
 ```nginx
-        location /xhttppath/ {
-            client_max_body_size 0;
-            grpc_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            client_body_timeout 5m;
-            grpc_read_timeout 315;
-            grpc_send_timeout 5m;
-            grpc_pass unix:/dev/shm/xrxh.socket;
-        }
+    location /xhttppath/ {
+        client_max_body_size 0;
+        proxy_set_header X-Real-IP $proxy_protocol_addr;
+        proxy_set_header X-Forwarded-For $proxy_protocol_addr;
+        proxy_set_header Host $host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+        proxy_http_version 1.1;
+        client_body_timeout 5m;
+        proxy_read_timeout 315s;
+        proxy_send_timeout 5m;
+        proxy_pass http://unix:/dev/shm/xrxh.socket;
+    }
 ```
 
 </details>
@@ -228,12 +233,12 @@ If you like this project and want to support its development, you can make a don
 <details>
   <summary>↓ host settings for inbound screenshot</summary>
 
-![image](https://github.com/user-attachments/assets/5cc1c68a-517f-4f35-86ef-c81a668df793)
+<img alt="host settings for inbound" src="https://github.com/user-attachments/assets/a295ccac-aecf-48d9-9ce1-5a587ce56092" />
 
 </details>
 
 <details>
-  <summary>↓ host extra xhttp json:</summary>
+  <summary>↓ Advanced Edit Host➔Xray Json & Raw➔xHTTP extra parameters</summary>
 
 ```json
 {
@@ -283,18 +288,31 @@ services:
     image: remnawave/node:latest
     container_name: remnanode
     hostname: remnanode
+    ulimits:
+      nofile:
+        soft: 1048576
+        hard: 1048576
+    logging:
+      driver: json-file
+      options:
+        max-size: 100m
+        max-file: 5
+    network_mode: hos
     restart: always
-    env_file:
-      - .env-node
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - NODE_PORT=2222
+      - SECRET_KEY=cekpet
     volumes:
-      - /dev/shm:/dev/shm
+      - /dev/shm:/dev/shm:rw
     network_mode: host
 ```
 
 </details>
 
 
-## How to use XHTTP from Remnawave in Prizrak-Box
+## DEPRECATED WARNING How to use XHTTP from Remnawave in Prizrak-Box
 
 <details>
   <summary>faq</summary>
