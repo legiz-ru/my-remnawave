@@ -10,6 +10,7 @@ included apps:
 
 ### iOS
 
+- RabbitHole ⭐
 - Happ ⭐
 - Clash Mi ⭐
 - Stash
@@ -42,8 +43,9 @@ included apps:
 
 - Happ ⭐
 - FlClashX ⭐
-- Koala Clash
+- Koala Clash ⭐
 - Prizrak-Box
+- RabbitHole
 - Clash Verge
 
 ***
@@ -84,6 +86,7 @@ included apps:
 
 ### iOS
 
+- RabbitHole ⭐
 - Happ ⭐
 - Clash Mi ⭐
 - v2RayTun
@@ -115,6 +118,7 @@ included apps:
 - FlClashX ⭐
 - Koala Clash
 - Prizrak-Box
+- RabbitHole
 
 ***
 
@@ -167,6 +171,7 @@ happ://routing/onadd/eyJOYW1lIjoiUmU6ZmlsdGVyIiwiR2xvYmFsUHJveHkiOiJmYWxzZSIsIlJ
 If you like this project and want to support its development, you can make a donation:
 
 *   [Tribute on Telegram](https://t.me/tribute/app?startapp=drzu)
+*   **USDT (TRC20):** `TScDFnfpe7pc3AM4cxnj3KYR2GSUU4RVXm`
 
 ## remnawave xhttp inbound tls via nginx + stream separation
 <details>

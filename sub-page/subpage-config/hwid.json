@@ -136,7 +136,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
+                  "link": "https://apps.apple.com/ru/app/happ-proxy-utility/id6783623643",
                   "type": "external",
                   "text": {
                     "en": "App Store (RU)",
@@ -1134,7 +1134,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-debian-system-qt-x64.deb",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-debian-amd64-system-qt.deb",
                   "type": "external",
                   "text": {
                     "en": "Debian/Ubuntu (system Qt, x64)",
@@ -1146,7 +1146,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-debian-x64.deb",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-debian-amd64.deb",
                   "type": "external",
                   "text": {
                     "en": "Debian/Ubuntu (x64)",
@@ -1158,7 +1158,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-linux-amd64.zip",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-linux-amd64.zip",
                   "type": "external",
                   "text": {
                     "en": "Linux (amd64, portable)",
@@ -1170,7 +1170,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-linux-arm64.zip",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-linux-arm64.zip",
                   "type": "external",
                   "text": {
                     "en": "Linux (arm64, portable)",
@@ -1310,7 +1310,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
+                  "link": "https://apps.apple.com/ru/app/happ-proxy-utility/id6783623643",
                   "type": "external",
                   "text": {
                     "en": "App Store (RU)",
@@ -2897,7 +2897,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows64-installer.exe",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-windows-universal-installer.exe",
                   "type": "external",
                   "text": {
                     "en": "Windows 64-bit (Installer)",
@@ -2909,7 +2909,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows64.zip",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-windows64.zip",
                   "type": "external",
                   "text": {
                     "en": "Windows 64-bit (Portable)",
@@ -2921,7 +2921,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows32.zip",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-windows32.zip",
                   "type": "external",
                   "text": {
                     "en": "Windows 32-bit",
@@ -2933,7 +2933,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windows-arm64.zip",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-windows-arm64.zip",
                   "type": "external",
                   "text": {
                     "en": "Windows ARM64",
@@ -2945,7 +2945,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/throneproj/Throne/releases/download/1.0.13/Throne-1.0.13-windowslegacy64.zip",
+                  "link": "https://github.com/throneproj/Throne/releases/download/1.1.6/Throne-1.1.6-windowslegacy64.zip",
                   "type": "external",
                   "text": {
                     "en": "Windows Legacy 64-bit",
