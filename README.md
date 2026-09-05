@@ -155,7 +155,7 @@ included apps:
 ## remnawave subscription templates for clients
   - [mihomo](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/examples/remnawave.yaml)
   - [stash](https://github.com/legiz-ru/mihomo-rule-sets/tree/main/examples/stash)
-  - [sing-box (1.11 sing-box, 1.10 sing-box legacy)](https://github.com/legiz-ru/sb-rule-sets/tree/main/.github/sub2sing-box)
+  - [sing-box (1.14, 1.11, 1.10)](https://github.com/legiz-ru/sb-rule-sets/tree/main/.github/sub2sing-box)
   - [simple xray-json template](https://github.com/legiz-ru/marz-sub/blob/main/v2ray/default.json)
   - - [xray-json template with ru-bundle](https://github.com/legiz-ru/mihomo-rule-sets/blob/main/other/marzban-v2ray-ru-bundle.json)
   - happ /incy routing:
