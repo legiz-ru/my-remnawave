@@ -295,7 +295,7 @@
                 "en": "On the main screen, tap the Disconnected button, then in the VPN configuration prompt tap Allow and enter your password to connect.",
                 "fa": "در صفحه اصلی روی دکمه Disconnected بزنید، سپس در پنجره مجوز پیکربندی VPN روی Allow ضربه بزنید و برای اتصال، رمز عبور خود را وارد کنید.",
                 "fr": "Sur l’écran principal, appuie sur « Disconnected », puis, dans la demande de configuration VPN, appuie sur « Allow » et entre ton mot de passe pour te connecter.",
-                "ru": "На главной странице нажми кнопку Disconnected,  в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN.",
+                "ru": "На главной странице нажмите кнопку Disconnected, в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN.",
                 "zh": "在主屏幕点击 Disconnected 按钮，然后在 VPN 配置提示中点击允许并输入您的密码以连接。"
               },
               "svgIconColor": "teal"
@@ -1705,7 +1705,7 @@
                 "en": "Read before first launch",
                 "fa": "قبل از اولین اجرا بخوانید",
                 "fr": "Read before first launch",
-                "ru": "Прочти перед первым запуском",
+                "ru": "Прочтите перед первым запуском",
                 "zh": "首次启动前阅读"
               },
               "description": {

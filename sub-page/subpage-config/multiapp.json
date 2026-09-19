@@ -287,7 +287,7 @@
                 "en": "On the main screen, tap the Disconnected button, then in the VPN configuration prompt tap Allow and enter your password to connect.",
                 "fa": "در صفحه اصلی روی دکمه Disconnected بزنید، سپس در پنجره مجوز پیکربندی VPN روی Allow ضربه بزنید و برای اتصال، رمز عبور خود را وارد کنید.",
                 "fr": "Sur l’écran principal, appuie sur « Disconnected », puis, dans la demande de configuration VPN, appuie sur « Allow » et entre ton mot de passe pour te connecter.",
-                "ru": "На главной странице нажми кнопку Disconnected,  в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN.",
+                "ru": "На главной странице нажмите кнопку Disconnected, в появившемся окне разрешения VPN-конфигурации нажмите Allow и введите свой пароль для подключения к VPN.",
                 "zh": "在主屏幕点击 Disconnected 按钮，然后在 VPN 配置提示中点击允许并输入您的密码以连接。"
               },
               "svgIconColor": "teal"
@@ -723,7 +723,7 @@
                 "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
                 "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
                 "fr": "Sur la page du tableau de bord, appuie sur « Enabled » pour te connecter au VPN.",
-                "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN.",
+                "ru": "На главной странице Dashboard нажмите кнопку Enabled для подключения к VPN.",
                 "zh": "在主面板页面，点击“已启用”按钮连接 VPN。"
               },
               "svgIconColor": "teal"
@@ -1898,7 +1898,7 @@
                 "en": "Read before first launch",
                 "fa": "قبل از اولین اجرا بخوانید",
                 "fr": "Read before first launch",
-                "ru": "Прочти перед первым запуском",
+                "ru": "Прочтите перед первым запуском",
                 "zh": "首次启动前阅读"
               },
               "buttons": [
@@ -2545,7 +2545,7 @@
                 "en": "Click the button below to open the profile creation window. You will need to specify the auto-update period, for example, 720 minutes. Click the Save button in the top right corner.",
                 "fa": "دکمه زیر را بزنید تا پنجره ایجاد پروفایل باز شود. شما باید دوره به‌روزرسانی خودکار را مشخص کنید، مثلاً ۷۲۰ دقیقه. دکمه ذخیره را در بالا سمت راست بزنید.",
                 "fr": "Clique sur le bouton ci‑dessous pour ouvrir la fenêtre de création de profil. Indique la période d’actualisation automatique, par exemple 720 minutes. Appuie sur « « Save » » en haut à droite.",
-                "ru": "Нажми кнопку ниже — откроется окно создания профиля. Тебе потребуется указать период автообновления, например, 720 минут. Справа вверху нажми на кнопку Сохранить.",
+                "ru": "Нажмите кнопку ниже — откроется окно создания профиля. Вам потребуется указать период автообновления, например, 720 минут. Справа вверху нажмите на кнопку Сохранить.",
                 "zh": "点击下方按钮打开配置文件创建窗口。你需要指定自动更新周期，例如 720 分钟。点击右上角的保存按钮。"
               },
               "svgIconColor": "cyan"
@@ -2564,7 +2564,7 @@
                 "en": "Go to the Profiles section and select the created profile, then return to the main page. Now you can connect by clicking the Stopped button.",
                 "fa": "به بخش پروفایل‌ها بروید و پروفایل ایجاد شده را انتخاب کنید، سپس به صفحه اصلی بازگردید. اکنون می‌توانید با زدن دکمه «متوقف شده» متصل شوید.",
                 "fr": "Va dans « Profiles » et sélectionne le profil créé, puis reviens à la page principale. Tu peux maintenant te connecter en appuyant sur « Stopped ».",
-                "ru": "Перейди в пункт Профили и выбери созданный профиль, затем вернись на главную страницу. Теперь ты можешь подключиться, нажав на кнопку Остановлен",
+                "ru": "Перейдите в пункт Профили и выберите созданный профиль, затем вернитесь на главную страницу. Теперь вы можете подключиться, нажав на кнопку Остановлен",
                 "zh": "进入“配置文件”部分并选择已创建的配置文件，然后返回主页面。现在你可以点击“已停止”按钮连接。"
               },
               "svgIconColor": "teal"
@@ -3089,7 +3089,7 @@
                 "en": "On the main Dashboard page, click the Enabled button to connect to the VPN.",
                 "fa": "در صفحه اصلی داشبورد، دکمه «فعال» را برای اتصال به VPN بزنید.",
                 "fr": "Sur la page du tableau de bord, appuie sur « Enabled » pour te connecter au VPN.",
-                "ru": "На главной странице Dashboard нажми кнопку Enabled для подключения к VPN.",
+                "ru": "На главной странице Dashboard нажмите кнопку Enabled для подключения к VPN.",
                 "zh": "在主面板页面，点击“已启用”按钮连接 VPN。"
               },
               "svgIconColor": "teal"
