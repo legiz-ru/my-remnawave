@@ -1232,11 +1232,47 @@
                 {
                   "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x64.deb",
                   "text": {
-                    "en": "Linux",
-                    "fa": "لینوکس",
-                    "fr": "Linux",
-                    "ru": "Linux",
-                    "zh": "Linux"
+                    "en": "amd64 (.deb)",
+                    "fa": "amd64 (.deb)",
+                    "fr": "amd64 (.deb)",
+                    "ru": "amd64 (.deb)",
+                    "zh": "amd64 (.deb)"
+                  },
+                  "type": "external",
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x64.rpm",
+                  "text": {
+                    "en": "amd64 (.rpm)",
+                    "fa": "amd64 (.rpm)",
+                    "fr": "amd64 (.rpm)",
+                    "ru": "amd64 (.rpm)",
+                    "zh": "amd64 (.rpm)"
+                  },
+                  "type": "external",
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.arm64.deb",
+                  "text": {
+                    "en": "arm64 (.deb)",
+                    "fa": "arm64 (.deb)",
+                    "fr": "arm64 (.deb)",
+                    "ru": "arm64 (.deb)",
+                    "zh": "arm64 (.deb)"
+                  },
+                  "type": "external",
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.arm64.rpm",
+                  "text": {
+                    "en": "arm64 (.rpm)",
+                    "fa": "arm64 (.rpm)",
+                    "fr": "arm64 (.rpm)",
+                    "ru": "arm64 (.rpm)",
+                    "zh": "arm64 (.rpm)"
                   },
                   "type": "external",
                   "svgIconKey": "ExternalLink"
@@ -3514,11 +3550,23 @@
                 {
                   "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
                   "text": {
-                    "en": "Windows",
-                    "fa": "ویندوز",
-                    "fr": "Windows",
-                    "ru": "Windows",
-                    "zh": "Windows"
+                    "en": "Windows (Setup)",
+                    "fa": "ویندوز (نصب)",
+                    "fr": "Windows (Setup)",
+                    "ru": "Windows (Установщик)",
+                    "zh": "Windows（安装程序）"
+                  },
+                  "type": "external",
+                  "svgIconKey": "ExternalLink"
+                },
+                {
+                  "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.arm64.exe",
+                  "text": {
+                    "en": "Windows on ARM (Setup)",
+                    "fa": "ویندوز ARM (نصب)",
+                    "fr": "Windows on ARM (Setup)",
+                    "ru": "Windows на ARM (Установщик)",
+                    "zh": "Windows on ARM（安装程序）"
                   },
                   "type": "external",
                   "svgIconKey": "ExternalLink"
