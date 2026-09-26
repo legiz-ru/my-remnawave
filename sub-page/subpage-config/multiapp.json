@@ -1859,7 +1859,7 @@
               },
               "buttons": [
                 {
-                  "link": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/macos-arm64-dmg.zip",
+                  "link": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/macos-arm64.zip",
                   "text": {
                     "en": "macOS (Apple Silicon)",
                     "fa": "macOS (Apple Silicon)",
@@ -1871,7 +1871,7 @@
                   "svgIconKey": "ExternalLink"
                 },
                 {
-                  "link": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/macos-amd64-dmg.zip",
+                  "link": "https://github.com/legiz-ru/Prizrak-Box/releases/latest/download/macos-amd64.zip",
                   "text": {
                     "en": "macOS (Intel)",
                     "fa": "macOS (Intel)",
